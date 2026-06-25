@@ -11,8 +11,11 @@ const basePath = isPages ? `/${repo}` : "";
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
-  // Static HTML export for GitHub Pages.
-  ...(isPages ? { output: "export", basePath, assetPrefix: basePath } : {}),
+  // Static HTML export for GitHub Pages. `trailingSlash` makes every route a
+  // directory with index.html so paths resolve cleanly on static hosting.
+  ...(isPages
+    ? { output: "export", basePath, assetPrefix: basePath, trailingSlash: true }
+    : {}),
   // Expose the base path to the app (used for favicon/manifest links).
   env: { NEXT_PUBLIC_BASE_PATH: basePath },
   images: {
