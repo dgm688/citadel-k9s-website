@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-sans: "Inter", system-ui, sans-serif;
+  }
+
+  * {
+    border-color: theme("colors.ink.500");
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-ink text-bone font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: theme("colors.gold.DEFAULT");
+    color: #0b0b0b;
+  }
+
+  /* Refined, accessible focus ring */
+  :focus-visible {
+    outline: 2px solid theme("colors.gold.DEFAULT");
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0b0b0b;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: theme("colors.gold.deep");
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-site px-6 sm:px-8 lg:px-12;
+  }
+
+  /* Small uppercase gold label above headings */
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-xs font-medium uppercase tracking-luxe text-gold;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply h-px w-8 bg-gold/60;
+  }
+
+  /* Gradient gold text for emphasis words */
+  .text-gold-gradient {
+    background: linear-gradient(180deg, #e7ce7a 0%, #d4af37 55%, #a98a28 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .hairline {
+    @apply h-px w-full bg-gold-line;
+  }
+
+  /* Primary gold button */
+  .btn {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5
+      text-sm font-medium tracking-wide2 transition-all duration-300 ease-out
+      focus-visible:outline-offset-4 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-primary {
+    @apply bg-gold text-ink shadow-gold hover:bg-gold-soft hover:shadow-luxe;
+  }
+  .btn-outline {
+    @apply border border-gold/40 text-bone hover:border-gold hover:text-gold;
+  }
+  .btn-ghost {
+    @apply text-bone/80 hover:text-gold;
+  }
+
+  /* Luxe surface panel */
+  .panel {
+    @apply rounded-2xl border border-white/5 bg-ink-800/70 backdrop-blur-sm;
+  }
+
+  .link-underline {
+    @apply relative after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0
+      after:bg-gold after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  /* Gentle noise/grain overlay helper */
+  .grain {
+    position: relative;
+  }
+}
+
+/* Respect reduced-motion preferences globally */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
