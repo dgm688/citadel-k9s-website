@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { SITE } from "@/lib/site";
 
-export const runtime = "edge";
+export const dynamic = "force-static";
 export const alt = `${SITE.name} — ${SITE.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -34,8 +34,17 @@ export default function OgImage() {
         >
           German Shepherds · Kenya
         </div>
-        <div style={{ fontSize: 120, fontWeight: 600, lineHeight: 1 }}>
-          Citadel <span style={{ color: "#D4AF37" }}>K9s</span>
+        <div
+          style={{
+            display: "flex",
+            gap: 24,
+            fontSize: 120,
+            fontWeight: 600,
+            lineHeight: 1,
+          }}
+        >
+          <span>Citadel</span>
+          <span style={{ color: "#D4AF37" }}>K9s</span>
         </div>
         <div
           style={{

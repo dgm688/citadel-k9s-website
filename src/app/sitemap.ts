@@ -4,6 +4,9 @@ import { BLOG_POSTS } from "@/lib/data/blog";
 import { DOGS } from "@/lib/data/dogs";
 import { PUPPIES } from "@/lib/data/puppies";
 
+// Required so the route can be emitted during static export.
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 

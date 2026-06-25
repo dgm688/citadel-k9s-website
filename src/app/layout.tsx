@@ -21,6 +21,9 @@ const sans = Inter({
   display: "swap",
 });
 
+// Empty for Vercel/Node; "/citadel-k9s-website" for the GitHub Pages export.
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
@@ -46,10 +49,10 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
   icons: {
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
-    apple: "/favicon.svg",
+    icon: [{ url: `${BASE_PATH}/favicon.svg`, type: "image/svg+xml" }],
+    apple: `${BASE_PATH}/favicon.svg`,
   },
-  manifest: "/site.webmanifest",
+  manifest: `${BASE_PATH}/site.webmanifest`,
 };
 
 export const viewport: Viewport = {
