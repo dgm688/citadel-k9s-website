@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { ButtonLink } from "@/components/ui/Button";
 import { ArrowRight } from "@/components/ui/Icons";
-import { NAV } from "@/lib/site";
+import { NAV_ALL } from "@/lib/site";
 
 export default function NotFound() {
-  const quickLinks = NAV.filter((n) =>
+  const quickLinks = NAV_ALL.filter((n) =>
     ["/available-puppies", "/our-dogs", "/gallery", "/contact"].includes(n.href),
   );
 

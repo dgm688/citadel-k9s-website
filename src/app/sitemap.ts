@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
-import { SITE, NAV, LEGAL_NAV } from "@/lib/site";
+import { SITE, NAV_ALL, LEGAL_NAV } from "@/lib/site";
 import { BLOG_POSTS } from "@/lib/data/blog";
-import { DOGS } from "@/lib/data/dogs";
+import { PUBLISHED_DOGS } from "@/lib/data/dogs";
 import { PUPPIES } from "@/lib/data/puppies";
 
 // Required so the route can be emitted during static export.
@@ -10,14 +10,14 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
-  const staticPages = [...NAV, ...LEGAL_NAV].map((item) => ({
+  const staticPages = [...NAV_ALL, ...LEGAL_NAV].map((item) => ({
     url: new URL(item.href, SITE.url).toString(),
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: item.href === "/" ? 1 : 0.7,
   }));
 
-  const dogPages = DOGS.map((d) => ({
+  const dogPages = PUBLISHED_DOGS.map((d) => ({
     url: new URL(`/our-dogs/${d.slug}`, SITE.url).toString(),
     lastModified: now,
     changeFrequency: "yearly" as const,

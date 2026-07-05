@@ -21,9 +21,6 @@ const sans = Inter({
   display: "swap",
 });
 
-// Empty for Vercel/Node; "/citadel-k9s-website" for the GitHub Pages export.
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
@@ -32,14 +29,6 @@ export const metadata: Metadata = {
   },
   description: SITE.shortDescription,
   applicationName: SITE.name,
-  keywords: [
-    "German Shepherd Kenya",
-    "German Shepherd puppies Kenya",
-    "GSD breeder Nairobi",
-    "Citadel K9s",
-    "premium German Shepherd kennel",
-    "German Shepherd for sale Kenya",
-  ],
   authors: [{ name: SITE.name }],
   creator: SITE.name,
   publisher: SITE.name,
@@ -48,11 +37,17 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
+  // Official brand favicon set (from the uploaded brand package)
   icons: {
-    icon: [{ url: `${BASE_PATH}/favicon.svg`, type: "image/svg+xml" }],
-    apple: `${BASE_PATH}/favicon.svg`,
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16.png", type: "image/png", sizes: "16x16" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
-  manifest: `${BASE_PATH}/site.webmanifest`,
+  manifest: "/site.webmanifest",
 };
 
 export const viewport: Viewport = {

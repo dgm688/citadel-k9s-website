@@ -57,7 +57,7 @@ export default function AboutPage() {
         </Reveal>
         <div className="flex flex-col gap-6">
           <SectionHeading
-            eyebrow={`Est. ${SITE.foundingYear} · ${SITE.country}`}
+            eyebrow={`${SITE.city} · ${SITE.country}`}
             title="A kennel defined by what it refuses to compromise."
           />
           <div className="space-y-4 text-base leading-relaxed text-bone-muted">

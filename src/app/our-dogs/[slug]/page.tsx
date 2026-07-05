@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { DOGS, getDog } from "@/lib/data/dogs";
+import { PUBLISHED_DOGS, getDog } from "@/lib/data/dogs";
 import { pageMeta, breadcrumbJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { ImageFrame } from "@/components/ui/ImageFrame";
@@ -12,7 +12,7 @@ import { Check, ArrowRight } from "@/components/ui/Icons";
 import { formatDate } from "@/lib/format";
 
 export function generateStaticParams() {
-  return DOGS.map((d) => ({ slug: d.slug }));
+  return PUBLISHED_DOGS.map((d) => ({ slug: d.slug }));
 }
 
 export async function generateMetadata({
@@ -25,7 +25,7 @@ export async function generateMetadata({
   if (!dog) return pageMeta({ title: "Dog", description: "", path: "/our-dogs" });
   return pageMeta({
     title: dog.name,
-    description: `${dog.name} — ${dog.role}, ${dog.color}. ${dog.description}`,
+    description: `${dog.name} — ${dog.role}. ${dog.description}`,
     path: `/our-dogs/${dog.slug}`,
   });
 }
@@ -79,9 +79,11 @@ export default async function DogPage({
             <Reveal delay={0.1} className="flex flex-col gap-6">
               <div className="flex flex-wrap items-center gap-3">
                 <Badge tone="gold">{dog.role}</Badge>
-                <span className="text-xs uppercase tracking-wide2 text-bone-faint">
-                  {dog.bloodline}
-                </span>
+                {dog.bloodline && (
+                  <span className="text-xs uppercase tracking-wide2 text-bone-faint">
+                    {dog.bloodline}
+                  </span>
+                )}
               </div>
               <h1 className="text-4xl font-light lg:text-5xl">{dog.name}</h1>
               {dog.titles && (
@@ -98,20 +100,24 @@ export default async function DogPage({
                   <dt className="text-xs uppercase tracking-wide2 text-bone-faint">Sex</dt>
                   <dd className="mt-1 text-bone">{dog.sex}</dd>
                 </div>
-                <div>
-                  <dt className="text-xs uppercase tracking-wide2 text-bone-faint">Colour</dt>
-                  <dd className="mt-1 text-bone">{dog.color}</dd>
-                </div>
+                {dog.color && (
+                  <div>
+                    <dt className="text-xs uppercase tracking-wide2 text-bone-faint">Colour</dt>
+                    <dd className="mt-1 text-bone">{dog.color}</dd>
+                  </div>
+                )}
                 {dog.dob && (
                   <div>
                     <dt className="text-xs uppercase tracking-wide2 text-bone-faint">Born</dt>
                     <dd className="mt-1 text-bone">{formatDate(dog.dob)}</dd>
                   </div>
                 )}
-                <div>
-                  <dt className="text-xs uppercase tracking-wide2 text-bone-faint">Bloodline</dt>
-                  <dd className="mt-1 text-bone">{dog.bloodline}</dd>
-                </div>
+                {dog.bloodline && (
+                  <div>
+                    <dt className="text-xs uppercase tracking-wide2 text-bone-faint">Bloodline</dt>
+                    <dd className="mt-1 text-bone">{dog.bloodline}</dd>
+                  </div>
+                )}
               </dl>
             </Reveal>
           </div>
@@ -121,49 +127,70 @@ export default async function DogPage({
         <div className="container-site mt-20 grid gap-8 lg:grid-cols-3">
           <Reveal className="panel flex flex-col gap-4 p-7">
             <h2 className="text-xl font-light">Pedigree</h2>
-            <ul className="space-y-3 text-sm text-bone-muted">
-              <li>
-                <span className="text-xs uppercase tracking-wide2 text-bone-faint">Sire</span>
-                <br />
-                {dog.pedigree.sire}
-              </li>
-              <li>
-                <span className="text-xs uppercase tracking-wide2 text-bone-faint">Dam</span>
-                <br />
-                {dog.pedigree.dam}
-              </li>
-              {dog.pedigree.kennel && (
+            {dog.pedigree ? (
+              <ul className="space-y-3 text-sm text-bone-muted">
                 <li>
-                  <span className="text-xs uppercase tracking-wide2 text-bone-faint">Kennel</span>
+                  <span className="text-xs uppercase tracking-wide2 text-bone-faint">Sire</span>
                   <br />
-                  {dog.pedigree.kennel}
+                  {dog.pedigree.sire}
                 </li>
-              )}
-            </ul>
+                <li>
+                  <span className="text-xs uppercase tracking-wide2 text-bone-faint">Dam</span>
+                  <br />
+                  {dog.pedigree.dam}
+                </li>
+                {dog.pedigree.kennel && (
+                  <li>
+                    <span className="text-xs uppercase tracking-wide2 text-bone-faint">Kennel</span>
+                    <br />
+                    {dog.pedigree.kennel}
+                  </li>
+                )}
+              </ul>
+            ) : (
+              <p className="text-sm leading-relaxed text-bone-muted">
+                Taken directly from registration papers and shared during your
+                enquiry or visit.
+              </p>
+            )}
           </Reveal>
 
           <Reveal delay={0.1} className="panel flex flex-col gap-4 p-7">
             <h2 className="text-xl font-light">Health</h2>
-            <ul className="space-y-2.5 text-sm text-bone-muted">
-              {dog.health.map((h) => (
-                <li key={h} className="flex items-start gap-2">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                  {h}
-                </li>
-              ))}
-            </ul>
+            {dog.health && dog.health.length > 0 ? (
+              <ul className="space-y-2.5 text-sm text-bone-muted">
+                {dog.health.map((h) => (
+                  <li key={h} className="flex items-start gap-2">
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                    {h}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sm leading-relaxed text-bone-muted">
+                We publish only health information we can document. Ask us
+                anything about this dog&apos;s health record directly.
+              </p>
+            )}
           </Reveal>
 
           <Reveal delay={0.2} className="panel flex flex-col gap-4 p-7">
-            <h2 className="text-xl font-light">Achievements</h2>
-            <ul className="space-y-2.5 text-sm text-bone-muted">
-              {dog.achievements.map((a) => (
-                <li key={a} className="flex items-start gap-2">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                  {a}
-                </li>
-              ))}
-            </ul>
+            <h2 className="text-xl font-light">Titles & Training</h2>
+            {dog.achievements && dog.achievements.length > 0 ? (
+              <ul className="space-y-2.5 text-sm text-bone-muted">
+                {dog.achievements.map((a) => (
+                  <li key={a} className="flex items-start gap-2">
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                    {a}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sm leading-relaxed text-bone-muted">
+                Listed only when we hold the certificates — no invented
+                titles, ever.
+              </p>
+            )}
           </Reveal>
         </div>
 

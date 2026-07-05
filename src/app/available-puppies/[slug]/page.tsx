@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { PUPPIES, getPuppy } from "@/lib/data/puppies";
-import { DOGS } from "@/lib/data/dogs";
+import { PUBLISHED_DOGS } from "@/lib/data/dogs";
 import { pageMeta, breadcrumbJsonLd } from "@/lib/seo";
 import { SITE, whatsappLink } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
@@ -34,13 +34,14 @@ export async function generateMetadata({
     return pageMeta({ title: "Puppy", description: "", path: "/available-puppies" });
   return pageMeta({
     title: puppy.name,
-    description: `${puppy.name} — ${puppy.sex} German Shepherd puppy, ${puppy.color}. ${puppy.temperament}`,
+    description: `${puppy.name} — ${puppy.sex} German Shepherd puppy in Kenya. ${puppy.temperament}`,
     path: `/available-puppies/${puppy.slug}`,
   });
 }
 
-function dogSlugByName(name: string) {
-  return DOGS.find((d) => d.name === name)?.slug;
+function dogSlugByName(name: string | null) {
+  if (!name) return undefined;
+  return PUBLISHED_DOGS.find((d) => d.name === name)?.slug;
 }
 
 export default async function PuppyPage({
@@ -125,9 +126,11 @@ export default async function PuppyPage({
             <Reveal delay={0.1} className="flex flex-col gap-6">
               <div className="flex flex-wrap items-center gap-3">
                 <Badge tone={statusTone[puppy.status]}>{puppy.status}</Badge>
-                <span className="text-xs uppercase tracking-wide2 text-bone-faint">
-                  {puppy.litter}
-                </span>
+                {puppy.litter && (
+                  <span className="text-xs uppercase tracking-wide2 text-bone-faint">
+                    {puppy.litter}
+                  </span>
+                )}
               </div>
               <h1 className="text-4xl font-light lg:text-5xl">{puppy.name}</h1>
 
@@ -142,16 +145,20 @@ export default async function PuppyPage({
                 </div>
                 <div>
                   <dt className="text-xs uppercase tracking-wide2 text-bone-faint">Colour</dt>
-                  <dd className="mt-1 text-bone">{puppy.color}</dd>
+                  <dd className="mt-1 text-bone">{puppy.color ?? "Confirmed on enquiry"}</dd>
                 </div>
                 <div>
                   <dt className="text-xs uppercase tracking-wide2 text-bone-faint">Born</dt>
-                  <dd className="mt-1 text-bone">{formatDate(puppy.dob)}</dd>
+                  <dd className="mt-1 text-bone">
+                    {puppy.dob ? formatDate(puppy.dob) : "Confirmed on enquiry"}
+                  </dd>
                 </div>
-                <div>
-                  <dt className="text-xs uppercase tracking-wide2 text-bone-faint">Age</dt>
-                  <dd className="mt-1 text-bone">{ageInWeeks(puppy.dob)} weeks</dd>
-                </div>
+                {puppy.dob && (
+                  <div>
+                    <dt className="text-xs uppercase tracking-wide2 text-bone-faint">Age</dt>
+                    <dd className="mt-1 text-bone">{ageInWeeks(puppy.dob)} weeks</dd>
+                  </div>
+                )}
                 <div>
                   <dt className="text-xs uppercase tracking-wide2 text-bone-faint">Price</dt>
                   <dd className="mt-1 text-bone">{puppy.price ?? "On request"}</dd>
@@ -170,7 +177,7 @@ export default async function PuppyPage({
 
               <a
                 href={whatsappLink(
-                  `Hello Citadel K9s, I'm interested in ${puppy.name} (${puppy.litter}). Is this puppy still available?`,
+                  `Hello Citadel K9s, I'm interested in the available puppy. Is he still available? Could we arrange a video call or visit?`,
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -236,13 +243,15 @@ function ParentLink({
   slug,
 }: {
   role: string;
-  name: string;
+  name: string | null;
   slug?: string;
 }) {
   const inner = (
     <>
       <span className="text-xs uppercase tracking-wide2 text-bone-faint">{role}</span>
-      <span className="mt-1 block text-bone">{name}</span>
+      <span className="mt-1 block text-bone">
+        {name ?? "Introduced on enquiry & visits"}
+      </span>
     </>
   );
   return slug ? (
