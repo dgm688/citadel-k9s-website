@@ -1,36 +1,27 @@
 import type { Testimonial } from "@/lib/types";
 
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    name: "James & Wanjiru M.",
-    location: "Karen, Nairobi",
-    quote:
-      "From the first call to the day we collected our boy, Citadel K9s set a standard we didn't know existed in Kenya. Our shepherd is healthy, confident and astonishingly well-mannered. This is breeding done properly.",
-    rating: 5,
-    dog: "Male — Black & Red",
-  },
-  {
-    name: "Dr. Aisha O.",
-    location: "Lavington, Nairobi",
-    quote:
-      "As a veterinarian I am cautious about breeders. The health documentation, the temperament and the structure of my puppy were all exactly as promised. I recommend Citadel K9s without hesitation.",
-    rating: 5,
-    dog: "Female — Black & Tan",
-  },
-  {
-    name: "Brian K.",
-    location: "Runda, Nairobi",
-    quote:
-      "I wanted a stable family protector, not a nervous dog. Citadel delivered a calm, devoted shepherd that is wonderful with my children and unshakeable when it matters. World-class support throughout.",
-    rating: 5,
-    dog: "Male — Sable",
-  },
-  {
-    name: "Grace N.",
-    location: "Nakuru",
-    quote:
-      "The whole experience felt premium and personal. They guided us on nutrition, training and settling-in, and they still check in months later. You can feel how much they care about every puppy.",
-    rating: 5,
-    dog: "Female — Black & Red",
-  },
-];
+/**
+ * GENUINE testimonials only.
+ *
+ * This list is intentionally EMPTY. While it is empty, every
+ * testimonial section on the site hides itself automatically and the
+ * testimonials page shows an honest "verified reviews only" state.
+ *
+ * When a real family gives permission to publish their words, add an
+ * entry like the example below and the sections reappear on their own.
+ *
+ * @example
+ * {
+ *   name: "Jane W.",
+ *   location: "Nairobi",
+ *   quote: "Exactly what they promised…",
+ *   rating: 5,
+ *   source: "whatsapp",              // whatsapp | google | in-person
+ *   dog: "Male — Black & Red",
+ *   date: "2026-08-01",
+ *   media: { src: "/images/reviews/jane-dog.jpg", alt: "Jane's shepherd at home" },
+ * }
+ */
+export const TESTIMONIALS: Testimonial[] = [];
+
+export const HAS_TESTIMONIALS = TESTIMONIALS.length > 0;

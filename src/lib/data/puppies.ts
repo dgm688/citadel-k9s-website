@@ -1,48 +1,53 @@
 import type { Puppy } from "@/lib/types";
 
 /**
- * Available puppies. Currently one puppy is available.
- * To add a puppy, copy an entry and update the fields.
- * To mark as taken, change `status` to "Reserved" or "Sold".
+ * Available puppies.
+ *
+ * ⚠️ ACTION REQUIRED — EDIT WITH REAL DETAILS.
+ * The entry below is a structural placeholder for your one available
+ * puppy. Replace every "EDIT" note with the true value. Fields left
+ * as null render an honest "confirmed on enquiry" state — never an
+ * invented fact.
+ *
+ * To mark the puppy as taken: change `status` to "Reserved" or "Sold".
+ * To add a puppy: copy the entry.
  */
 export const PUPPIES: Puppy[] = [
   {
-    slug: "citadel-prince",
-    name: "Prince",
-    litter: "Zeus × Hera — Spring Litter",
-    sex: "Male",
-    dob: "2026-04-18",
-    color: "Black & Red",
+    slug: "available-male-puppy",
+    name: "Available Male Puppy", // EDIT: your puppy's call name if you use one
+    litter: undefined, // EDIT e.g. "Current litter" — only real litter info
+    sex: "Male", // EDIT if female
+    dob: null, // EDIT: real date of birth, e.g. "2026-05-02"
+    color: null, // EDIT: real colour, e.g. "Black & Red"
     status: "Available",
     price: "On request",
     temperament:
-      "Confident and outgoing with a calm, biddable core — early signs of a stable, people-focused dog suited to family life or structured work.",
+      "Confident and people-focused, raised underfoot with daily handling. Ask us on WhatsApp and we'll describe him honestly — including the things a listing can't show you.",
     description:
-      "Prince is the standout male of the Spring litter: rich pigment, heavy bone and a bold, curious temperament. Raised underfoot with daily handling, age-appropriate socialisation and early neurological stimulation, he is being prepared to step confidently into his new home.",
-    sire: "Zeus vom Citadel",
-    dam: "Hera vom Citadel",
+      "One male German Shepherd puppy is currently available to a well-prepared home. He is being raised inside our household with early socialisation, scheduled deworming and veterinary care. We'd rather tell you about him directly than oversell him here — message us and ask anything.",
+    sire: null, // EDIT: real sire name — renders "shared on enquiry" while null
+    dam: null, // EDIT: real dam name
     health: [
-      "Hip & elbow screened parents",
-      "Veterinary health check passed",
-      "Dewormed on schedule",
-      "Written health guarantee",
+      "Veterinary health check before going home",
+      "Deworming on schedule",
+      "Vaccination started, record handed over",
     ],
     vaccination: [
-      "First core vaccination administered",
-      "Deworming at 2, 4, 6 & 8 weeks",
-      "Vaccination & deworming record provided",
+      "Age-appropriate vaccinations administered",
+      "Full vaccination & deworming record provided at collection",
     ],
-    registration: "KSHA registration paperwork included",
+    registration: "Registration paperwork accompanies the puppy",
     hero: {
       src: null,
-      alt: "Prince, a black and red German Shepherd puppy, sitting alertly",
-      label: "Prince — Available",
+      alt: "Available male German Shepherd puppy",
+      label: "Available Male",
     },
     gallery: [
-      { src: null, alt: "Prince the puppy sitting", label: "Sitting" },
-      { src: null, alt: "Prince the puppy playing", label: "Play" },
-      { src: null, alt: "Prince the puppy portrait", label: "Portrait" },
-      { src: null, alt: "Prince the puppy exploring outdoors", label: "Outdoors" },
+      { src: null, alt: "Puppy portrait", label: "Portrait" },
+      { src: null, alt: "Puppy standing", label: "Standing" },
+      { src: null, alt: "Puppy at play", label: "Play" },
+      { src: null, alt: "Puppy outdoors", label: "Outdoors" },
     ],
   },
 ];
