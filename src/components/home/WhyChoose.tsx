@@ -1,3 +1,4 @@
+import { TRUST_COMMITMENTS } from "@/lib/site";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import {
@@ -6,59 +7,33 @@ import {
   Sparkle,
   Paw,
   Check,
-  Star,
+  WhatsApp,
 } from "@/components/ui/Icons";
 
-const reasons = [
-  {
-    icon: ShieldCheck,
-    title: "Health-first breeding",
-    text: "Hip and elbow screened parents, DM-clear lines and a written health guarantee on every puppy.",
-  },
-  {
-    icon: Sparkle,
-    title: "Championship structure",
-    text: "Sound conformation and correct movement bred for a lifetime of athletic, effortless health.",
-  },
-  {
-    icon: Heart,
-    title: "Stable temperament",
-    text: "Confident, biddable dogs raised underfoot — equally suited to family life and serious work.",
-  },
-  {
-    icon: Paw,
-    title: "Early socialisation",
-    text: "Neurological stimulation and varied exposure from day one for resilient, adaptable puppies.",
-  },
-  {
-    icon: Check,
-    title: "Full documentation",
-    text: "Vaccination records, registration paperwork and pedigree provided with every puppy.",
-  },
-  {
-    icon: Star,
-    title: "Lifetime support",
-    text: "Guidance on nutrition, training and care for the life of your dog. We never disappear.",
-  },
-];
+const icons = [Heart, Check, Paw, WhatsApp, Sparkle, ShieldCheck];
 
+/**
+ * "Why families trust Citadel K9s" — replaces the former statistics
+ * band. Every card is a verifiable commitment, not a claimed
+ * certification; no invented numbers, no pre-hydration zeros.
+ */
 export function WhyChoose() {
   return (
     <section className="container-site py-24 lg:py-32">
       <SectionHeading
-        eyebrow="Why Citadel K9s"
+        eyebrow="Why Families Trust Citadel K9s"
         title={
           <>
-            An uncompromising standard,
-            <br className="hidden sm:block" /> from pedigree to porch.
+            We'd rather prove it
+            <br className="hidden sm:block" /> than promise it.
           </>
         }
-        description="We breed a small number of exceptional litters each year — never volume, always quality. Every decision serves the long-term health and character of the dog."
+        description="No breeder's website should ask for blind trust. Everything below is something you can see, verify, or hold in your hands — and we invite you to."
       />
 
       <div className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-white/5 bg-white/5 sm:grid-cols-2 lg:grid-cols-3">
-        {reasons.map((r, i) => {
-          const Icon = r.icon;
+        {TRUST_COMMITMENTS.map((r, i) => {
+          const Icon = icons[i % icons.length];
           return (
             <Reveal
               key={r.title}
@@ -69,7 +44,9 @@ export function WhyChoose() {
                 <Icon className="h-5 w-5" />
               </span>
               <h3 className="text-lg font-medium text-bone">{r.title}</h3>
-              <p className="text-sm leading-relaxed text-bone-muted">{r.text}</p>
+              <p className="text-sm leading-relaxed text-bone-muted">
+                {r.description}
+              </p>
             </Reveal>
           );
         })}

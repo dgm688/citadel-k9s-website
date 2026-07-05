@@ -1,17 +1,20 @@
-import { ShieldCheck, Check, Heart, Sparkle } from "@/components/ui/Icons";
+import { ShieldCheck, Check, Heart, WhatsApp } from "@/components/ui/Icons";
 
+/**
+ * Thin trust strip beneath the hero. Every item is a commitment a
+ * visitor can verify — nothing here claims a certification.
+ */
 const items = [
-  { icon: ShieldCheck, label: "Health-screened lines" },
-  { icon: Check, label: "Written guarantee" },
-  { icon: Sparkle, label: "Fully documented" },
-  { icon: Heart, label: "Lifetime support" },
+  { icon: Heart, label: "Visit by appointment" },
+  { icon: ShieldCheck, label: "Meet the parents" },
+  { icon: Check, label: "Records with every puppy" },
+  { icon: WhatsApp, label: "Direct line to the breeder" },
 ];
 
-/** Thin trust strip that sits directly beneath the hero. */
 export function GuaranteeStrip() {
   return (
     <section
-      aria-label="Our guarantees"
+      aria-label="Our commitments"
       className="border-y border-white/5 bg-ink-800/40"
     >
       <div className="container-site grid grid-cols-2 gap-x-6 gap-y-6 py-8 sm:grid-cols-4">

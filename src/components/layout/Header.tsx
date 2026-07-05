@@ -1,16 +1,18 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { NAV, whatsappLink } from "@/lib/site";
+import { NAV_PRIMARY, NAV_RESOURCES, whatsappLink } from "@/lib/site";
 import { Logo } from "@/components/ui/Logo";
-import { Menu, Close, WhatsApp } from "@/components/ui/Icons";
+import { Menu, Close, WhatsApp, ChevronDown } from "@/components/ui/Icons";
 
 export function Header() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [resourcesOpen, setResourcesOpen] = useState(false);
+  const resourcesRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -19,7 +21,7 @@ export function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Lock body scroll and enable Escape-to-close when the mobile menu is open
+  // Lock body scroll + Escape-to-close for the mobile menu.
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     function onKey(e: KeyboardEvent) {
@@ -32,11 +34,34 @@ export function Header() {
     };
   }, [open]);
 
-  // Close on route change
-  useEffect(() => setOpen(false), [pathname]);
+  // Close the resources dropdown on outside click / Escape.
+  useEffect(() => {
+    if (!resourcesOpen) return;
+    function onDocClick(e: MouseEvent) {
+      if (!resourcesRef.current?.contains(e.target as Node)) {
+        setResourcesOpen(false);
+      }
+    }
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setResourcesOpen(false);
+    }
+    document.addEventListener("mousedown", onDocClick);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDocClick);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [resourcesOpen]);
+
+  // Close menus on route change.
+  useEffect(() => {
+    setOpen(false);
+    setResourcesOpen(false);
+  }, [pathname]);
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
+  const resourcesActive = NAV_RESOURCES.some((r) => isActive(r.href));
 
   return (
     <header
@@ -53,11 +78,11 @@ export function Header() {
         Skip to content
       </a>
       <div className="container-site flex h-20 items-center justify-between gap-6">
-        <Logo />
+        <Logo variant="horizontal" priority className="shrink-0" />
 
         <nav aria-label="Primary" className="hidden lg:block">
           <ul className="flex items-center gap-7 text-sm">
-            {NAV.map((item) => (
+            {NAV_PRIMARY.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
@@ -72,6 +97,52 @@ export function Header() {
                 </Link>
               </li>
             ))}
+
+            {/* Resources dropdown */}
+            <li ref={resourcesRef} className="relative">
+              <button
+                type="button"
+                onClick={() => setResourcesOpen((v) => !v)}
+                aria-expanded={resourcesOpen}
+                aria-haspopup="true"
+                className={`inline-flex items-center gap-1.5 tracking-wide transition-colors ${
+                  resourcesActive || resourcesOpen
+                    ? "text-gold"
+                    : "text-bone-muted hover:text-bone"
+                }`}
+              >
+                Resources
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform duration-200 ${
+                    resourcesOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              <div
+                className={`absolute right-0 top-full mt-3 w-52 origin-top-right rounded-xl border border-white/10 bg-ink-800/95 p-2 shadow-luxe backdrop-blur-xl transition-all duration-200 ${
+                  resourcesOpen
+                    ? "pointer-events-auto translate-y-0 opacity-100"
+                    : "pointer-events-none -translate-y-1 opacity-0"
+                }`}
+              >
+                <ul>
+                  {NAV_RESOURCES.map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        className={`block rounded-lg px-4 py-2.5 text-sm transition-colors ${
+                          isActive(item.href)
+                            ? "bg-gold/10 text-gold"
+                            : "text-bone-muted hover:bg-white/5 hover:text-bone"
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </li>
           </ul>
         </nav>
 
@@ -99,18 +170,16 @@ export function Header() {
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu — grouped for low cognitive load */}
       <div
         id="mobile-menu"
-        className={`fixed inset-0 top-20 z-40 origin-top bg-ink/98 backdrop-blur-xl transition-all duration-300 lg:hidden ${
-          open
-            ? "pointer-events-auto opacity-100"
-            : "pointer-events-none opacity-0"
+        className={`fixed inset-0 top-20 z-40 origin-top overflow-y-auto bg-ink/98 backdrop-blur-xl transition-all duration-300 lg:hidden ${
+          open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
-        <nav aria-label="Mobile" className="container-site flex h-full flex-col py-8">
+        <nav aria-label="Mobile" className="container-site flex flex-col gap-8 py-8">
           <ul className="flex flex-col divide-y divide-white/5">
-            {NAV.map((item) => (
+            {NAV_PRIMARY.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
@@ -119,18 +188,37 @@ export function Header() {
                   }`}
                 >
                   {item.label}
-                  <span aria-hidden className="text-bone-faint">
-                    →
-                  </span>
+                  <span aria-hidden className="text-bone-faint">→</span>
                 </Link>
               </li>
             ))}
           </ul>
+
+          <div>
+            <p className="text-xs uppercase tracking-luxe text-bone-faint">
+              Resources
+            </p>
+            <ul className="mt-3 grid grid-cols-2 gap-x-6">
+              {NAV_RESOURCES.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className={`block py-2.5 ${
+                      isActive(item.href) ? "text-gold" : "text-bone-muted"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <a
             href={whatsappLink("Hello Citadel K9s, I'd like to enquire about a puppy.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-primary mt-8 w-full"
+            className="btn btn-primary w-full"
           >
             <WhatsApp className="h-4 w-4" />
             Enquire on WhatsApp

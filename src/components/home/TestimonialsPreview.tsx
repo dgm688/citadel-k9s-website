@@ -1,17 +1,23 @@
-import { TESTIMONIALS } from "@/lib/data/testimonials";
+import { TESTIMONIALS, HAS_TESTIMONIALS } from "@/lib/data/testimonials";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TestimonialCard } from "@/components/cards/TestimonialCard";
 import { ButtonLink } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "@/components/ui/Icons";
 
+/**
+ * Renders nothing until genuine testimonials exist in the data layer.
+ * We never display fabricated reviews.
+ */
 export function TestimonialsPreview() {
+  if (!HAS_TESTIMONIALS) return null;
+
   return (
     <section className="container-site py-24 lg:py-32">
       <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
         <SectionHeading
           eyebrow="In their words"
-          title="Trusted by discerning families across Kenya."
+          title="What Citadel families say."
         />
         <ButtonLink href="/testimonials" variant="ghost" className="shrink-0">
           All testimonials <ArrowRight className="h-4 w-4" />

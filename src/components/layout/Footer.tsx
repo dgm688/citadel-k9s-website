@@ -2,7 +2,7 @@ import Link from "next/link";
 import {
   SITE,
   CONTACT,
-  NAV,
+  NAV_ALL,
   LEGAL_NAV,
   whatsappLink,
 } from "@/lib/site";
@@ -39,9 +39,9 @@ export function Footer() {
       </div>
 
       <div className="container-site grid gap-12 py-16 lg:grid-cols-[1.3fr_1fr_1fr]">
-        {/* Brand */}
-        <div className="flex flex-col gap-6">
-          <Logo />
+        {/* Brand + NAP (kept consistent for Google Business Profile) */}
+        <div className="flex flex-col items-start gap-6">
+          <Logo variant="stacked" />
           <p className="max-w-sm text-sm leading-relaxed text-bone-muted">
             {SITE.shortDescription}
           </p>
@@ -76,7 +76,7 @@ export function Footer() {
             Explore
           </h3>
           <ul className="mt-5 grid grid-cols-2 gap-x-6 gap-y-3 text-sm">
-            {NAV.map((item) => (
+            {NAV_ALL.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
@@ -89,7 +89,7 @@ export function Footer() {
           </ul>
         </nav>
 
-        {/* Contact */}
+        {/* Contact — NAP block */}
         <div>
           <h3 className="text-xs uppercase tracking-luxe text-bone-faint">
             Get in touch
@@ -121,7 +121,7 @@ export function Footer() {
                 className="inline-flex items-center gap-3 text-bone-muted transition-colors hover:text-gold"
               >
                 <MapPin className="h-4 w-4 text-gold" />
-                {SITE.city}, {SITE.country}
+                {SITE.city}, {SITE.country} · Visits by appointment
               </a>
             </li>
           </ul>

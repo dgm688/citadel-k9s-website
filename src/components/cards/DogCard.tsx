@@ -19,9 +19,11 @@ export function DogCard({ dog }: { dog: Dog }) {
       <div className="flex flex-col gap-3 p-6">
         <div className="flex items-center justify-between gap-3">
           <Badge tone="gold">{dog.role}</Badge>
-          <span className="text-xs uppercase tracking-wide2 text-bone-faint">
-            {dog.color}
-          </span>
+          {dog.color && (
+            <span className="text-xs uppercase tracking-wide2 text-bone-faint">
+              {dog.color}
+            </span>
+          )}
         </div>
         <h3 className="text-2xl font-light">{dog.name}</h3>
         {dog.titles && (

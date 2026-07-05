@@ -34,9 +34,11 @@ export function PuppyCard({ puppy }: { puppy: Puppy }) {
             {puppy.sex}
           </span>
         </div>
-        <p className="text-xs uppercase tracking-wide2 text-gold/80">
-          {puppy.litter}
-        </p>
+        {puppy.litter && (
+          <p className="text-xs uppercase tracking-wide2 text-gold/80">
+            {puppy.litter}
+          </p>
+        )}
         <p className="line-clamp-2 text-sm text-bone-muted">
           {puppy.temperament}
         </p>
