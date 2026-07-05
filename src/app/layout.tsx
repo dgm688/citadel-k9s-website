@@ -7,6 +7,8 @@ import { JsonLd } from "@/components/JsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFab } from "@/components/layout/WhatsAppFab";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const display = Cormorant_Garamond({
   subsets: ["latin"],
@@ -70,6 +72,8 @@ export default function RootLayout({
         <main id="main">{children}</main>
         <Footer />
         <WhatsAppFab />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
