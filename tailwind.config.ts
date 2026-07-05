@@ -13,10 +13,11 @@ const config: Config = {
           600: "#1F1F1F",
           500: "#2A2A2A",
         },
+        // Official brand gold (from the Citadel K9s brand package)
         gold: {
-          DEFAULT: "#D4AF37",
-          soft: "#E7CE7A",
-          deep: "#A98A28",
+          DEFAULT: "#C9A227",
+          soft: "#F1D689",
+          deep: "#7B6019",
         },
         bone: {
           DEFAULT: "#F8F8F8",
@@ -37,11 +38,11 @@ const config: Config = {
       },
       boxShadow: {
         luxe: "0 30px 80px -30px rgba(0,0,0,0.85)",
-        gold: "0 0 0 1px rgba(212,175,55,0.35), 0 20px 50px -25px rgba(212,175,55,0.25)",
+        gold: "0 0 0 1px rgba(201,162,39,0.35), 0 20px 50px -25px rgba(201,162,39,0.25)",
       },
       backgroundImage: {
         "gold-line":
-          "linear-gradient(90deg, transparent, rgba(212,175,55,0.7), transparent)",
+          "linear-gradient(90deg, transparent, rgba(201,162,39,0.7), transparent)",
         "radial-ink":
           "radial-gradient(ellipse at top, rgba(31,31,31,0.9), rgba(11,11,11,1) 60%)",
       },

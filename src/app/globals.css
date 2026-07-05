@@ -76,7 +76,8 @@
 
   /* Gradient gold text for emphasis words */
   .text-gold-gradient {
-    background: linear-gradient(180deg, #e7ce7a 0%, #d4af37 55%, #a98a28 100%);
+    /* Official brand gold gradient (matches the logo's gradient stops) */
+    background: linear-gradient(180deg, #f1d689 0%, #c9a227 55%, #7b6019 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

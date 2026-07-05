@@ -28,7 +28,7 @@ export default function OgImage() {
             fontSize: 26,
             letterSpacing: 14,
             textTransform: "uppercase",
-            color: "#D4AF37",
+            color: "#C9A227",
             marginBottom: 28,
           }}
         >
@@ -44,7 +44,7 @@ export default function OgImage() {
           }}
         >
           <span>Citadel</span>
-          <span style={{ color: "#D4AF37" }}>K9s</span>
+          <span style={{ color: "#C9A227" }}>K9s</span>
         </div>
         <div
           style={{
