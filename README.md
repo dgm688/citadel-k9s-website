@@ -9,7 +9,7 @@ A fast, accessible, luxury-grade website built with Next.js.
 
 ## ✨ Highlights
 
-- **Luxury dark theme** — black + gold (`#0B0B0B` / `#D4AF37`) with elegant serif display typography.
+- **Luxury dark theme** — black + official brand gold (`#0B0B0B` / `#C9A227`) with elegant serif display typography.
 - **13 pages** — Home, About, Our Dogs (+ profiles), Available Puppies (+ profiles), Gallery, Testimonials, Puppy Care, Blog (+ articles), FAQ, Contact, Privacy, Terms, 404.
 - **Cinematic motion** — Framer Motion scroll reveals that fully respect `prefers-reduced-motion`.
 - **Content-driven** — every dog, puppy, article, testimonial and FAQ lives in a typed data layer. No design files to touch to add content.
@@ -54,6 +54,43 @@ npm run lint     # lint
 
 ---
 
+## 🔒 Truth Policy (V2)
+
+This site publishes **only verifiable content**. No invented testimonials,
+titles, certificates or statistics — ever. See `docs/V2-AUDIT.md` for the
+full specification. Practical rules:
+
+- Testimonial sections stay hidden until `src/lib/data/testimonials.ts` has
+  genuine entries (each states its source).
+- Dog profiles render only with `published: true`, and only documented
+  credentials.
+- The puppy entry in `src/lib/data/puppies.ts` has fields marked `EDIT` —
+  fill them with the real puppy's details; null fields render an honest
+  "confirmed on enquiry" state.
+- The Transparency Ledger (`TRANSPARENCY_LEDGER` in `src/lib/site.ts`)
+  accepts document links (PDFs in /public/docs) as they become available.
+
+## 📥 Lead Capture (V2)
+
+Forms validate, block spam (honeypot) and store to **Supabase**
+(`citadel_leads` table, insert-only row-level security). If the network
+fails, the visitor is routed to WhatsApp with their message pre-filled —
+enquiries are never lost. View leads in the Supabase dashboard.
+
+Email/Slack alerts: set `LEAD_WEBHOOK_URL` in `src/lib/leads.ts` to an
+n8n/Make/Zapier webhook; every lead is mirrored there.
+
+## 🌐 Domain switch (when citadelk9s.com is purchased)
+
+1. Add the domain in Vercel → Project → Domains.
+2. Set `NEXT_PUBLIC_SITE_URL=https://citadelk9s.com` in Vercel env vars
+   (or update the fallback in `src/lib/site.ts`). That single value drives
+   canonicals, sitemap, robots and Open Graph.
+3. Email: add the domain to Cloudflare, enable **Email Routing**, create
+   `hello@citadelk9s.com` → forward to citadelk9s@gmail.com.
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -89,7 +126,7 @@ Everything lives in **`src/lib/`** — no component edits required.
 | To change…              | Edit…                              |
 | ----------------------- | ---------------------------------- |
 | Phone / email / socials | `src/lib/site.ts` (`CONTACT`)      |
-| Navigation              | `src/lib/site.ts` (`NAV`)          |
+| Navigation              | `src/lib/site.ts` (`NAV_PRIMARY` / `NAV_RESOURCES`) |
 | Sires & dams            | `src/lib/data/dogs.ts`             |
 | Available puppies       | `src/lib/data/puppies.ts`          |
 | Blog articles           | `src/lib/data/blog.ts`             |
@@ -106,14 +143,14 @@ Everything lives in **`src/lib/`** — no component edits required.
 Until real photography is ready, every photo slot renders an elegant on-brand
 placeholder automatically. To use a real photo:
 
-1. Drop the file into `public/images/` (e.g. `public/images/dogs/zeus-1.jpg`).
+1. Drop the file into `public/images/` (e.g. `public/images/dogs/dam-1.jpg`).
 2. In the relevant data file, set the `src`:
 
    ```ts
    // Before
-   hero: { src: null, alt: "Zeus …", label: "Zeus — Sire" }
+   hero: { src: null, alt: "…", label: "…" }
    // After
-   hero: { src: "/images/dogs/zeus-1.jpg", alt: "Zeus …" }
+   hero: { src: "/images/dogs/dam-1.jpg", alt: "…" }
    ```
 
 That's it — `ImageFrame` switches from placeholder to optimised `next/image`
@@ -124,14 +161,11 @@ needed — but you can replace it by editing `src/app/opengraph-image.tsx`.
 
 ---
 
-## 🔧 Before You Deploy
+## 🔧 Before You Go Further
 
-1. **Set the real domain** in `src/lib/site.ts` → `SITE.url`. This drives canonical
-   URLs, the sitemap and structured data.
+1. Fill the real puppy details in `src/lib/data/puppies.ts` (fields marked `EDIT`).
 2. Confirm contact details in `src/lib/site.ts` → `CONTACT`.
-3. (Optional) Wire the newsletter and form submissions to a backend — see
-   `src/components/ui/Newsletter.tsx` and `src/components/forms/*` (each has a
-   clearly marked `TODO`). By default, forms open a pre-filled WhatsApp message.
+3. Forms already store to Supabase — check the dashboard for incoming leads.
 
 ---
 
