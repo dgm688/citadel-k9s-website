@@ -4,6 +4,8 @@ import { Hero } from "@/components/home/Hero";
 import { GuaranteeStrip } from "@/components/home/GuaranteeStrip";
 import { BrandPillars } from "@/components/home/BrandPillars";
 import { FeaturedPuppy } from "@/components/home/FeaturedPuppy";
+import { KennelShowcase } from "@/components/home/KennelShowcase";
+import { AVAILABLE_PUPPIES } from "@/lib/data/puppies";
 import { WhyChoose } from "@/components/home/WhyChoose";
 import { TransparencyLedger } from "@/components/home/TransparencyLedger";
 import { CitadelDifference } from "@/components/home/CitadelDifference";
@@ -25,7 +27,8 @@ export default function HomePage() {
       <Hero />
       <GuaranteeStrip />
       <BrandPillars />
-      <FeaturedPuppy />
+      {/* Featured puppy when one is available, otherwise a real-photo showcase */}
+      {AVAILABLE_PUPPIES.length > 0 ? <FeaturedPuppy /> : <KennelShowcase />}
       <WhyChoose />
       <TransparencyLedger />
       <CitadelDifference />

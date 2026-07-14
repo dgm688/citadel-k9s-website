@@ -13,44 +13,44 @@ import type { Puppy } from "@/lib/types";
  * To add a puppy: copy the entry.
  */
 export const PUPPIES: Puppy[] = [
-  {
-    slug: "available-male-puppy",
-    name: "Available Male Puppy", // EDIT: your puppy's call name if you use one
-    litter: undefined, // EDIT e.g. "Current litter" — only real litter info
-    sex: "Male", // EDIT if female
-    dob: null, // EDIT: real date of birth, e.g. "2026-05-02"
-    color: null, // EDIT: real colour, e.g. "Black & Red"
-    status: "Available",
-    price: "On request",
-    temperament:
-      "Confident and people-focused, raised underfoot with daily handling. Ask us on WhatsApp and we'll describe him honestly — including the things a listing can't show you.",
-    description:
-      "One male German Shepherd puppy is currently available to a well-prepared home. He is being raised inside our household with early socialisation, scheduled deworming and veterinary care. We'd rather tell you about him directly than oversell him here — message us and ask anything.",
-    sire: null, // EDIT: real sire name — renders "shared on enquiry" while null
-    dam: null, // EDIT: real dam name
-    health: [
-      "Veterinary health check before going home",
-      "Deworming on schedule",
-      "Vaccination started, record handed over",
-    ],
-    vaccination: [
-      "Age-appropriate vaccinations administered",
-      "Full vaccination & deworming record provided at collection",
-    ],
-    registration: "Registration paperwork accompanies the puppy",
-    hero: {
-      src: null,
-      alt: "Available male German Shepherd puppy",
-      label: "Available Male",
-    },
-    gallery: [
-      { src: null, alt: "Puppy portrait", label: "Portrait" },
-      { src: null, alt: "Puppy standing", label: "Standing" },
-      { src: null, alt: "Puppy at play", label: "Play" },
-      { src: null, alt: "Puppy outdoors", label: "Outdoors" },
-    ],
-  },
+  // No puppies are available right now. When a litter is ready, copy the
+  // PUPPY_TEMPLATE below into this array and fill in the real details.
 ];
+
+/**
+ * Template for a future available puppy. Copy into PUPPIES and replace every
+ * "EDIT" value with the truth. Fields left as null render an honest
+ * "confirmed on enquiry" state — never an invented fact. Add real photos to
+ * /public/images/puppies/ and reference them in `hero` / `gallery`.
+ */
+export const PUPPY_TEMPLATE: Puppy = {
+  slug: "available-male-puppy",
+  name: "Available Puppy", // EDIT: call name
+  litter: undefined, // EDIT e.g. "Current litter"
+  sex: "Male", // EDIT
+  dob: null, // EDIT e.g. "2026-05-02"
+  color: null, // EDIT e.g. "Black & Red"
+  status: "Available",
+  price: "On request",
+  temperament:
+    "Confident and people-focused, raised underfoot with daily handling. Ask us on WhatsApp and we'll describe them honestly.",
+  description:
+    "Being raised inside our household with early socialisation, scheduled deworming and veterinary care. Message us and ask anything.",
+  sire: null, // EDIT
+  dam: null, // EDIT
+  health: [
+    "Veterinary health check before going home",
+    "Deworming on schedule",
+    "Vaccination started, record handed over",
+  ],
+  vaccination: [
+    "Age-appropriate vaccinations administered",
+    "Full vaccination & deworming record provided at collection",
+  ],
+  registration: "Registration paperwork accompanies the puppy",
+  hero: { src: null, alt: "Available German Shepherd puppy", label: "Available" },
+  gallery: [{ src: null, alt: "Puppy portrait", label: "Portrait" }],
+};
 
 export const AVAILABLE_PUPPIES = PUPPIES.filter((p) => p.status === "Available");
 

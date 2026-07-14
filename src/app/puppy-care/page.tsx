@@ -115,9 +115,8 @@ export default function PuppyCarePage() {
           <Reveal>
             <ImageFrame
               media={{
-                src: null,
-                alt: "A well-prepared home ready for a new puppy",
-                label: "Welcome Home",
+                src: "/images/gallery/young-sit-1.jpg",
+                alt: "A young Citadel K9s German Shepherd settled at home",
               }}
               aspect="aspect-[4/3]"
               sizes="(max-width: 1024px) 100vw, 50vw"

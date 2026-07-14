@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { ButtonLink } from "@/components/ui/Button";
 import { ArrowRight, ArrowUpRight } from "@/components/ui/Icons";
@@ -26,11 +25,23 @@ export function Hero() {
 
   return (
     <section className="relative flex min-h-[100svh] items-center overflow-hidden">
-      {/* Cinematic background layers */}
+      {/* Cinematic background — real footage of our dog (identity preserved) */}
       <div aria-hidden className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-radial-ink" />
-        <div className="absolute left-1/2 top-[-10%] h-[60vh] w-[60vh] -translate-x-1/2 rounded-full bg-gold/10 blur-[120px]" />
-        <svg className="absolute inset-0 h-full w-full opacity-[0.06]" aria-hidden>
+        <video
+          className="absolute inset-0 h-full w-full object-cover object-center"
+          poster="/images/gallery/adult-stack.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
+        {/* Legibility overlays: dark on the left where the text sits */}
+        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/60" />
+        <svg className="absolute inset-0 h-full w-full opacity-[0.05]" aria-hidden>
           <defs>
             <pattern id="hero-grid" width="64" height="64" patternUnits="userSpaceOnUse">
               <path d="M64 0H0V64" fill="none" stroke="#C9A227" strokeWidth="0.5" />
@@ -38,17 +49,6 @@ export function Hero() {
           </defs>
           <rect width="100%" height="100%" fill="url(#hero-grid)" />
         </svg>
-        {/* Official brand badge watermark */}
-        <div className="absolute -right-32 top-1/2 hidden -translate-y-1/2 opacity-[0.07] lg:block">
-          <Image
-            src="/brand/icon-gold.svg"
-            alt=""
-            width={720}
-            height={720}
-            priority
-            aria-hidden
-          />
-        </div>
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-ink to-transparent" />
       </div>
 

@@ -135,11 +135,25 @@ export function GalleryGrid() {
               className="w-full max-w-3xl"
               onClick={(e) => e.stopPropagation()}
             >
-              <ImageFrame
-                media={items[lightbox].media}
-                aspect="aspect-[4/3]"
-                sizes="90vw"
-              />
+              {items[lightbox].type === "video" && items[lightbox].videoSrc ? (
+                <video
+                  key={items[lightbox].videoSrc}
+                  src={items[lightbox].videoSrc}
+                  poster={items[lightbox].media.src ?? undefined}
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="max-h-[80vh] w-full rounded-2xl bg-ink"
+                />
+              ) : (
+                <ImageFrame
+                  media={items[lightbox].media}
+                  aspect="aspect-[4/3]"
+                  sizes="90vw"
+                />
+              )}
               <p className="mt-4 text-center text-sm text-bone-muted">
                 {items[lightbox].media.alt}
               </p>

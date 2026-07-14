@@ -5,12 +5,12 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Instagram, ArrowUpRight } from "@/components/ui/Icons";
 
 const tiles = [
-  "Stack",
-  "Puppy",
-  "Working",
-  "Candid",
-  "Head study",
-  "Litter",
+  { src: "/images/gallery/adult-stack.jpg", alt: "Citadel K9s German Shepherd standing in profile" },
+  { src: "/images/gallery/young-front.jpg", alt: "German Shepherd puppy with ears up" },
+  { src: "/images/gallery/adult-portrait-2.jpg", alt: "German Shepherd resting on a veranda" },
+  { src: "/images/gallery/young-sit-2.jpg", alt: "Young German Shepherd sitting by plants" },
+  { src: "/images/gallery/adult-portrait-1.jpg", alt: "German Shepherd resting in a garden" },
+  { src: "/images/gallery/adult-indoor.jpg", alt: "German Shepherd relaxing indoors" },
 ];
 
 export function InstagramPreview() {
@@ -35,17 +35,17 @@ export function InstagramPreview() {
         </div>
 
         <div className="mt-14 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-          {tiles.map((label, i) => (
-            <Reveal key={label} delay={(i % 6) * 0.05}>
+          {tiles.map((tile, i) => (
+            <Reveal key={tile.src} delay={(i % 6) * 0.05}>
               <a
                 href={CONTACT.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`View Citadel K9s on Instagram — ${label}`}
+                aria-label="View Citadel K9s on Instagram"
                 className="group relative block"
               >
                 <ImageFrame
-                  media={{ src: null, alt: `Instagram post — ${label}`, label }}
+                  media={{ src: tile.src, alt: tile.alt }}
                   aspect="aspect-square"
                   rounded="rounded-xl"
                   sizes="(max-width: 768px) 50vw, 16vw"

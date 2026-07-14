@@ -46,9 +46,8 @@ export default function AboutPage() {
         <Reveal>
           <ImageFrame
             media={{
-              src: null,
-              alt: "A Citadel K9s German Shepherd standing proudly",
-              label: "The Citadel Standard",
+              src: "/images/gallery/adult-portrait-2.jpg",
+              alt: "A Citadel K9s long-coat German Shepherd resting calmly at home",
             }}
             aspect="aspect-[4/5]"
             sizes="(max-width: 1024px) 100vw, 50vw"

@@ -99,4 +99,6 @@ export interface GalleryItem {
   type: "image" | "video";
   category: string;
   media: Media;
+  /** For video items: the web-optimized MP4 path (poster lives in `media.src`). */
+  videoSrc?: string;
 }

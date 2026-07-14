@@ -75,9 +75,8 @@ export default function OurDogsPage() {
             <Reveal>
               <ImageFrame
                 media={{
-                  src: null,
-                  alt: "Citadel K9s breeding dogs — professional profiles in preparation",
-                  label: "Profiles in preparation",
+                  src: "/images/gallery/adult-stack.jpg",
+                  alt: "A Citadel K9s long-coat black and red German Shepherd standing in profile",
                 }}
                 aspect="aspect-[4/5]"
                 sizes="(max-width: 1024px) 100vw, 50vw"
