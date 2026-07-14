@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { Hero } from "@/components/home/Hero";
 import { GuaranteeStrip } from "@/components/home/GuaranteeStrip";
 import { BrandPillars } from "@/components/home/BrandPillars";
@@ -9,6 +11,13 @@ import { Journey } from "@/components/home/Journey";
 import { TestimonialsPreview } from "@/components/home/TestimonialsPreview";
 import { InstagramPreview } from "@/components/home/InstagramPreview";
 import { CTASection } from "@/components/sections/CTASection";
+
+export const metadata: Metadata = pageMeta({
+  title: "Elite German Shepherds in Kenya",
+  description:
+    "Citadel K9s breeds German Shepherds in Kenya for structure, health and temperament — raised underfoot, with records at every step. Visit us, meet the parents, and judge our standards in person.",
+  path: "/",
+});
 
 export default function HomePage() {
   return (
