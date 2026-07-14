@@ -46,27 +46,59 @@ export function pageMeta({
   };
 }
 
-/** Organization / LocalBusiness structured data for the whole site. */
+/**
+ * Rich LocalBusiness structured data for the whole site. Helps Google
+ * understand what Citadel K9s is, where it operates, and what it offers —
+ * important for local and commercial search.
+ */
 export function organizationJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": `${SITE.url}#organization`,
     name: SITE.name,
+    alternateName: "Citadel K9s Kenya",
     description: SITE.shortDescription,
     url: SITE.url,
     telephone: CONTACT.phoneE164,
     email: CONTACT.email,
     slogan: SITE.tagline,
-    image: `${SITE.url}/og.png`,
+    image: `${SITE.url}${SITE.ogImage}`,
+    logo: `${SITE.url}/brand/icon-gold-512.png`,
+    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
       addressLocality: SITE.city,
+      addressRegion: SITE.region,
       addressCountry: "KE",
     },
-    areaServed: SITE.country,
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: SITE.geo.lat,
+      longitude: SITE.geo.lng,
+    },
+    areaServed: [
+      { "@type": "Country", name: "Kenya" },
+      { "@type": "City", name: "Nairobi" },
+    ],
     sameAs: [CONTACT.instagram],
-    knowsAbout: ["German Shepherd Dogs", "Dog breeding", "Puppy care"],
+    knowsAbout: [
+      "German Shepherd Dogs",
+      "German Shepherd puppies",
+      "Long coat German Shepherds",
+      "Responsible dog breeding",
+      "Puppy care",
+    ],
+    makesOffer: {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Product",
+        name: "German Shepherd puppies",
+        category: "German Shepherd Dog",
+      },
+      areaServed: { "@type": "Country", name: "Kenya" },
+      availability: "https://schema.org/LimitedAvailability",
+    },
   };
 }
 
@@ -75,7 +107,10 @@ export function websiteJsonLd() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: SITE.name,
+    alternateName: "Citadel K9s Kenya",
     url: SITE.url,
+    inLanguage: "en-KE",
+    publisher: { "@id": `${SITE.url}#organization` },
   };
 }
 

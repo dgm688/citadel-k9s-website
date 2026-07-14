@@ -17,14 +17,37 @@ export const SITE = {
   tagline: "Structure • Health • Temperament",
   positioning: "Elite German Shepherds · Kenya",
   shortDescription:
-    "Citadel K9s is a German Shepherd kennel in Kenya breeding for structure, health and temperament — with transparency at every step, from enquiry to lifetime support.",
+    "Citadel K9s is a German Shepherd breeder in Kenya, offering health-tested German Shepherd puppies raised for structure, health and temperament — with transparency at every step, from enquiry to lifetime support.",
   url: SITE_URL,
   locale: "en_KE",
   country: "Kenya",
   city: "Nairobi",
   region: "Kenya",
   breed: "German Shepherd Dog",
+  /** Approx. Nairobi coordinates for local structured data. */
+  geo: { lat: -1.2921, lng: 36.8219 },
+  /** Default social/preview image (a real photo). */
+  ogImage: "/images/gallery/adult-stack.jpg",
 } as const;
+
+/**
+ * Google Search Console verification token.
+ * Set NEXT_PUBLIC_GOOGLE_VERIFICATION in Vercel once you create the Search
+ * Console property (HTML-tag method) and the site will emit the meta tag.
+ */
+export const GOOGLE_SITE_VERIFICATION =
+  process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION ?? "";
+
+/** Search terms this site targets — used to keep content and copy aligned. */
+export const TARGET_KEYWORDS = [
+  "German Shepherd Kenya",
+  "German Shepherd puppies Kenya",
+  "German Shepherd breeder Kenya",
+  "German Shepherd for sale Nairobi",
+  "German Shepherd price Kenya",
+  "long coat German Shepherd Kenya",
+  "dog breeder Kenya",
+] as const;
 
 export const CONTACT = {
   phoneDisplay: "+254 726 588 688",

@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
-import { SITE } from "@/lib/site";
+import { SITE, GOOGLE_SITE_VERIFICATION } from "@/lib/site";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { Header } from "@/components/layout/Header";
@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
+  ...(GOOGLE_SITE_VERIFICATION
+    ? { verification: { google: GOOGLE_SITE_VERIFICATION } }
+    : {}),
   // Official brand favicon set (from the uploaded brand package)
   icons: {
     icon: [

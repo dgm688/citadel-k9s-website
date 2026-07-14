@@ -10,9 +10,9 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PUPPIES, AVAILABLE_PUPPIES } from "@/lib/data/puppies";
 
 export const metadata: Metadata = pageMeta({
-  title: "Available Puppies",
+  title: "German Shepherd Puppies for Sale in Kenya",
   description:
-    "Browse the German Shepherd puppies currently available at Citadel K9s in Kenya — health-tested, fully documented and ready for exceptional homes.",
+    "German Shepherd puppies for sale in Kenya from Citadel K9s — health-tested, vaccinated and fully documented, raised in Nairobi. See availability, prices on enquiry, and join the waiting list.",
   path: "/available-puppies",
 });
 

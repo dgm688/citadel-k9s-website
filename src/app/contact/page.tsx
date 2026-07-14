@@ -14,9 +14,9 @@ import {
 } from "@/components/ui/Icons";
 
 export const metadata: Metadata = pageMeta({
-  title: "Contact",
+  title: "Contact a German Shepherd Breeder in Kenya",
   description:
-    "Contact Citadel K9s in Kenya — WhatsApp, phone, email and Instagram. Enquire about available German Shepherd puppies or join the waiting list.",
+    "Contact Citadel K9s, a German Shepherd breeder in Nairobi, Kenya — WhatsApp, phone, email and Instagram. Enquire about German Shepherd puppies, arrange a visit or join the waiting list.",
   path: "/contact",
 });
 
