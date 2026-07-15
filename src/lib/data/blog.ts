@@ -1,8 +1,9 @@
 import type { BlogPost } from "@/lib/types";
 
 /**
- * Placeholder, SEO-ready articles. Each is genuine, useful content —
- * replace or expand freely. Add a post by copying an entry.
+ * SEO articles targeting real Kenyan search intent. Every article is
+ * genuine, useful guidance — no invented statistics, prices or claims.
+ * Add a post by copying an entry; covers use real photography.
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
@@ -15,8 +16,8 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: "6 min read",
     author: "Citadel K9s",
     cover: {
-      src: null,
-      alt: "A young German Shepherd puppy being evaluated",
+      src: "/images/gallery/young-front.jpg",
+      alt: "A young German Shepherd puppy sitting attentively",
       label: "Buyer's Guide",
     },
     body: [
@@ -55,8 +56,8 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: "7 min read",
     author: "Citadel K9s",
     cover: {
-      src: null,
-      alt: "A German Shepherd puppy resting in a new home",
+      src: "/images/gallery/young-sit-1.jpg",
+      alt: "A young German Shepherd settled at its new home",
       label: "Puppy Care",
     },
     body: [
@@ -91,8 +92,8 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: "5 min read",
     author: "Citadel K9s",
     cover: {
-      src: null,
-      alt: "A healthy German Shepherd at a feeding bowl",
+      src: "/images/gallery/adult-portrait-3.jpg",
+      alt: "A healthy, well-conditioned German Shepherd lying on the grass",
       label: "Health",
     },
     body: [
@@ -127,8 +128,8 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: "6 min read",
     author: "Citadel K9s",
     cover: {
-      src: null,
-      alt: "A person video-calling a breeder to verify a puppy",
+      src: "/images/gallery/young-sit-2.jpg",
+      alt: "A young German Shepherd photographed honestly at the breeder's home",
       label: "Avoiding Scams",
     },
     body: [
@@ -172,8 +173,8 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: "5 min read",
     author: "Citadel K9s",
     cover: {
-      src: null,
-      alt: "A German Shepherd puppy beside its health records",
+      src: "/images/gallery/adult-handler.jpg",
+      alt: "A Citadel K9s German Shepherd with its handler",
       label: "Price Guide",
     },
     body: [
@@ -212,8 +213,8 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: "6 min read",
     author: "Citadel K9s",
     cover: {
-      src: null,
-      alt: "Two German Shepherds of different breeding types side by side",
+      src: "/images/gallery/adult-indoor.jpg",
+      alt: "A long-coat German Shepherd relaxing indoors",
       label: "Breed Education",
     },
     body: [
@@ -248,8 +249,8 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: "4 min read",
     author: "Citadel K9s",
     cover: {
-      src: null,
-      alt: "Long coat and stock coat German Shepherds compared",
+      src: "/images/gallery/adult-portrait-1.jpg",
+      alt: "A richly coated long-coat German Shepherd in a garden",
       label: "Coat Types",
     },
     body: [
@@ -271,6 +272,134 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         type: "p",
         text: "Temperament, trainability and health are set by breeding and rearing — not coat length. Choose the breeder first, the litter second, and the coat last.",
+      },
+    ],
+  },
+  {
+    slug: "are-german-shepherds-good-for-kenyan-homes",
+    title: "Are German Shepherds Good for Kenyan Homes?",
+    excerpt:
+      "Heat, compound living, security, family life — an honest look at whether a German Shepherd actually suits a Kenyan household, including when it doesn't.",
+    category: "Breed Education",
+    date: "2026-07-14",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-portrait-1.jpg",
+      alt: "A long-coat German Shepherd resting comfortably in a green Kenyan garden",
+    },
+    body: [
+      {
+        type: "p",
+        text: "It's the question we're asked most often, usually in some version of: 'won't the heat kill them?' The short answer is no — German Shepherds do very well in Kenya, and have done for decades. But they are not the right dog for every home, and we'd rather tell you that now than after you've paid.",
+      },
+      { type: "h2", text: "The climate is not the problem people think it is" },
+      {
+        type: "p",
+        text: "Most of Kenya's populated highlands — Nairobi, Nakuru, Eldoret, Nyeri — sit at altitude with mild temperatures. That is comfortable German Shepherd weather. The double coat insulates against heat as well as cold, which is exactly why you must never shave it. What genuinely matters is constant shade, constant clean water, and walking in the cooler morning or evening hours. In hotter, humid coastal areas it takes more care, but it is still very manageable.",
+      },
+      { type: "h2", text: "Space matters less than stimulation" },
+      {
+        type: "p",
+        text: "A common myth is that a German Shepherd needs acres. A dog on a big compound that is ignored all day is far worse off than a dog in a modest yard that gets walked, trained and included in family life. This is a working breed with a working brain — it needs a job, even if that job is a daily training session and a proper walk. Boredom is what produces digging, barking and destruction, not a small garden.",
+      },
+      { type: "h2", text: "Security and family life are not a trade-off" },
+      {
+        type: "p",
+        text: "Many Kenyan families want a dog that is gentle indoors and serious about the gate. A well-bred German Shepherd is exactly that: naturally watchful and territorial without being unstable. A sound one does not need to be made aggressive — and a dog made aggressive through mistreatment is a liability, not protection. Temperament comes from breeding and rearing, not from chaining a dog up.",
+      },
+      { type: "h2", text: "When a German Shepherd is NOT for you" },
+      {
+        type: "p",
+        text: "Be honest with yourself. If nobody is home for most of the day and the dog will live alone at the back of the compound, choose a different breed. If nobody will commit to grooming and shedding, or to training in the first year, choose a different breed. We would genuinely rather talk you out of a puppy than watch one end up neglected.",
+      },
+      {
+        type: "p",
+        text: "If you're weighing it up, message us and describe your home honestly. We'll give you a straight answer — including 'not yet'.",
+      },
+    ],
+  },
+  {
+    slug: "german-shepherd-vs-rottweiler-kenya",
+    title: "German Shepherd vs Rottweiler: Which Guard Dog for a Kenyan Home?",
+    excerpt:
+      "Both are serious protection breeds. They are not interchangeable. An honest comparison to help you pick the right one for your household — not just the tougher-looking one.",
+    category: "Breed Education",
+    date: "2026-07-10",
+    readingTime: "5 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-stack.jpg",
+      alt: "A Citadel K9s German Shepherd standing alert in profile",
+    },
+    body: [
+      {
+        type: "p",
+        text: "We breed German Shepherds, so treat this with the appropriate scepticism — but we have no interest in selling you the wrong dog. Both breeds are excellent guardians in Kenya. They simply suit different owners.",
+      },
+      { type: "h2", text: "Temperament and style of protection" },
+      {
+        type: "p",
+        text: "The German Shepherd is typically more alert, more vocal and more reactive — it tends to announce and patrol. The Rottweiler is generally more still and more silent, sizing a situation up before responding. If you want an early-warning system that is also endlessly trainable, the Shepherd suits you. If you want a calmer, heavier presence, the Rottweiler does.",
+      },
+      { type: "h2", text: "Trainability and energy" },
+      {
+        type: "p",
+        text: "German Shepherds are among the most trainable dogs in the world, which cuts both ways: they learn the good and the bad equally fast, and an untrained one becomes a nuisance quickly. They generally need more daily mental work than a Rottweiler. Rottweilers are highly intelligent too but often steadier and less busy in the home.",
+      },
+      { type: "h2", text: "Practical realities in Kenya" },
+      {
+        type: "p",
+        text: "Coat is the honest difference. A German Shepherd sheds — a lot — and a long coat needs regular grooming. The Rottweiler's short coat is far lower maintenance. On the other hand, Shepherds are more common here, so finding a knowledgeable vet, trainer or breeder is usually easier.",
+      },
+      { type: "h2", text: "The thing that matters more than the breed" },
+      {
+        type: "p",
+        text: "A badly bred, badly raised dog of either breed is a problem — often a dangerous one. A well-bred, well-socialised dog of either breed is a joy. Spend your energy choosing the breeder and committing to the training, not agonising over the breed. That decision matters ten times more.",
+      },
+    ],
+  },
+  {
+    slug: "german-shepherd-coat-care-kenya-ticks-heat-shedding",
+    title: "German Shepherd Coat Care in Kenya: Ticks, Heat and Shedding",
+    excerpt:
+      "The three things that catch new Kenyan owners out — and the one mistake that can genuinely harm your dog.",
+    category: "Puppy Care",
+    date: "2026-07-06",
+    readingTime: "5 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-portrait-2.jpg",
+      alt: "A well-groomed long-coat German Shepherd lying on a veranda",
+    },
+    body: [
+      {
+        type: "p",
+        text: "A German Shepherd's coat is a piece of engineering: a dense undercoat beneath a coarser outer coat. Understand it and your dog is comfortable year-round. Misunderstand it and you can do real damage with good intentions.",
+      },
+      { type: "h2", text: "Never shave your German Shepherd" },
+      {
+        type: "p",
+        text: "This is the mistake, and it is usually made out of kindness. The double coat insulates in both directions — it keeps heat out as much as it keeps warmth in, and it shields skin from the sun. Shaving it removes that protection, exposes the skin to sunburn, and the coat often grows back patchy or with a changed texture. Brush it out instead; never clip it down.",
+      },
+      { type: "h2", text: "Shedding is constant, and worse twice a year" },
+      {
+        type: "p",
+        text: "They shed year-round and 'blow' the undercoat heavily a couple of times a year. Brushing several times a week — daily during a heavy shed — removes far more hair than any diet or shampoo will. An undercoat rake does more for a Shepherd than any other grooming tool. Long coats need more of this than stock coats; there is no way around it.",
+      },
+      { type: "h2", text: "Ticks and fleas need a routine, not a reaction" },
+      {
+        type: "p",
+        text: "In much of Kenya, ticks are a year-round reality, and tick-borne disease is a genuine risk — not a nuisance. Keep to a preventative schedule agreed with your vet rather than treating only when you see one. Check the dog by hand after time in long grass, paying attention to ears, neck, armpits and between the toes. That dense undercoat hides ticks well, which is exactly why hands beat eyes.",
+      },
+      { type: "h2", text: "Heat: manage the day, not the coat" },
+      {
+        type: "p",
+        text: "Shade and fresh water at all times, walks and training in the cool of the morning or evening, and never leave a dog in a parked car. If a dog is panting hard, get it into shade with water and cool its paws and belly — not ice-cold water over the whole body. Manage the routine and the coat looks after itself.",
+      },
+      {
+        type: "p",
+        text: "Every Citadel family gets this guidance in person, plus our number for the life of the dog. Ask us anything — including the questions you think are silly.",
       },
     ],
   },
