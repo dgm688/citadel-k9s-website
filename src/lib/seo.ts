@@ -89,12 +89,15 @@ export function organizationJsonLd() {
       "Responsible dog breeding",
       "Puppy care",
     ],
+    // Described as a Service (not a Product) so it doesn't trigger Google's
+    // Product-snippet requirement for price/review/rating — which we won't
+    // fabricate. The puppy detail page carries the real Product schema.
     makesOffer: {
       "@type": "Offer",
       itemOffered: {
-        "@type": "Product",
+        "@type": "Service",
         name: "German Shepherd puppies",
-        category: "German Shepherd Dog",
+        serviceType: "German Shepherd breeding",
       },
       areaServed: { "@type": "Country", name: "Kenya" },
       availability: "https://schema.org/LimitedAvailability",
