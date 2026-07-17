@@ -5,19 +5,17 @@ interface PageMetaInput {
   title: string;
   description: string;
   path?: string;
-  /** Optional explicit OG image. Omit to use the generated default. */
+  /** Social-share image. Defaults to a real photo of our dogs — links
+   *  shared on WhatsApp/socials show the dog, not a text card. */
   image?: string;
 }
 
-/**
- * Build consistent, SEO-complete metadata for any page.
- * When no image is supplied, Next's file-based opengraph-image is used.
- */
+/** Build consistent, SEO-complete metadata for any page. */
 export function pageMeta({
   title,
   description,
   path = "/",
-  image,
+  image = SITE.ogImage,
 }: PageMetaInput): Metadata {
   const url = new URL(path, SITE.url).toString();
   // `title` stays bare so the root layout's title template appends the brand
@@ -35,7 +33,18 @@ export function pageMeta({
       title: fullTitle,
       description,
       locale: SITE.locale,
-      ...(image ? { images: [{ url: image, width: 1200, height: 630, alt: SITE.name }] } : {}),
+      ...(image
+        ? {
+            images: [
+              {
+                url: image,
+                width: 1920,
+                height: 1080,
+                alt: "A Citadel K9s long-coat German Shepherd",
+              },
+            ],
+          }
+        : {}),
     },
     twitter: {
       card: "summary_large_image",
@@ -66,10 +75,12 @@ export function organizationJsonLd() {
     image: `${SITE.url}${SITE.ogImage}`,
     logo: `${SITE.url}/brand/icon-gold-512.png`,
     priceRange: "$$",
+    // Matches the verified Google Business Profile (Ruaka, Kiambu) for
+    // NAP consistency — a local-ranking signal Google cross-checks.
     address: {
       "@type": "PostalAddress",
-      addressLocality: SITE.city,
-      addressRegion: SITE.region,
+      addressLocality: SITE.locality,
+      addressRegion: SITE.county,
       addressCountry: "KE",
     },
     geo: {

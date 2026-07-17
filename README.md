@@ -10,10 +10,10 @@ A fast, accessible, luxury-grade website built with Next.js.
 ## ✨ Highlights
 
 - **Luxury dark theme** — black + official brand gold (`#0B0B0B` / `#C9A227`) with elegant serif display typography.
-- **13 pages** — Home, About, Our Dogs (+ profiles), Available Puppies (+ profiles), Gallery, Testimonials, Puppy Care, Blog (+ articles), FAQ, Contact, Privacy, Terms, 404.
+- **Live at [citadelk9s.com](https://citadelk9s.com)** — 22 indexed routes: Home, About, Our Dogs, Puppies, Gallery, Testimonials, Puppy Care, Blog (10 articles), FAQ, Contact, legal pages, 404.
 - **Cinematic motion** — Framer Motion scroll reveals that fully respect `prefers-reduced-motion`.
 - **Content-driven** — every dog, puppy, article, testimonial and FAQ lives in a typed data layer. No design files to touch to add content.
-- **Swap-in-one-line images** — placeholders render automatically until you add real photos (see below).
+- **Real media** — genuine photography and 4K video of the actual dogs (gallery, cinematic hero clip, promo reel). Any slot without a photo yet renders an elegant branded placeholder.
 - **SEO complete** — metadata, Open Graph, Twitter cards, canonical URLs, dynamic OG image, JSON-LD structured data (LocalBusiness, Product, FAQPage, BlogPosting, Breadcrumbs), `sitemap.xml` and `robots.txt`.
 - **Accessible** — semantic HTML, skip link, keyboard-navigable menus, accordions and lightbox, ARIA labels, visible focus rings, WCAG-minded contrast.
 - **WhatsApp-first** — forms and CTAs deep-link to WhatsApp with pre-filled messages.
@@ -80,14 +80,16 @@ enquiries are never lost. View leads in the Supabase dashboard.
 Email/Slack alerts: set `LEAD_WEBHOOK_URL` in `src/lib/leads.ts` to an
 n8n/Make/Zapier webhook; every lead is mirrored there.
 
-## 🌐 Domain switch (when citadelk9s.com is purchased)
+## 🌐 Domain (live)
 
-1. Add the domain in Vercel → Project → Domains.
-2. Set `NEXT_PUBLIC_SITE_URL=https://citadelk9s.com` in Vercel env vars
-   (or update the fallback in `src/lib/site.ts`). That single value drives
-   canonicals, sitemap, robots and Open Graph.
-3. Email: add the domain to Cloudflare, enable **Email Routing**, create
-   `hello@citadelk9s.com` → forward to citadelk9s@gmail.com.
+Production runs on **https://citadelk9s.com** (bought via Vercel; apex + www
+attached, www 308-redirects to apex). `NEXT_PUBLIC_SITE_URL` in Vercel prod
+env drives canonicals, sitemap, robots and Open Graph — change the domain by
+changing that one value.
+
+Still to do when wanted — branded email: add the domain to Cloudflare, enable
+**Email Routing**, create `hello@citadelk9s.com` → forward to
+citadelk9s@gmail.com.
 
 ---
 
@@ -140,8 +142,8 @@ Everything lives in **`src/lib/`** — no component edits required.
 
 ## 🖼️ Replacing Placeholder Images (important)
 
-Until real photography is ready, every photo slot renders an elegant on-brand
-placeholder automatically. To use a real photo:
+Most slots already use real photography. Any slot left as `src: null` renders
+an elegant on-brand placeholder automatically. To point a slot at a photo:
 
 1. Drop the file into `public/images/` (e.g. `public/images/dogs/dam-1.jpg`).
 2. In the relevant data file, set the `src`:
@@ -161,23 +163,30 @@ needed — but you can replace it by editing `src/app/opengraph-image.tsx`.
 
 ---
 
-## 🔧 Before You Go Further
+## 🔧 Current Status & Next Content Tasks
 
-1. Fill the real puppy details in `src/lib/data/puppies.ts` (fields marked `EDIT`).
-2. Confirm contact details in `src/lib/site.ts` → `CONTACT`.
-3. Forms already store to Supabase — check the dashboard for incoming leads.
+- **No puppies available right now** — `PUPPIES` is an empty array (honest
+  empty state renders). When a litter is ready, copy `PUPPY_TEMPLATE` in
+  `src/lib/data/puppies.ts` into the array and fill the real details.
+- Publish real dog profiles: fill `src/lib/data/dogs.ts` and set
+  `published: true` per dog.
+- Add genuine testimonials to `src/lib/data/testimonials.ts` as families
+  give permission — hidden sections reappear automatically.
+- Leads arrive in Supabase (`citadel_leads`); check the dashboard.
 
 ---
 
 ## ☁️ Deployment
 
-### Vercel (recommended)
+### Vercel (current setup)
 
-1. Push this repo to GitHub/GitLab.
-2. Import it at [vercel.com/new](https://vercel.com/new) — Next.js is auto-detected.
-3. Deploy. Add your custom domain in **Project → Settings → Domains**.
+Already live. Deploy updates from the repo root with:
 
-No environment variables are required for the base site.
+```bash
+vercel deploy --prod --yes
+```
+
+Prod env vars in use: `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_GOOGLE_VERIFICATION`.
 
 ### Any Node host
 
@@ -187,10 +196,10 @@ npm run build
 npm run start    # serves on $PORT (default 3000)
 ```
 
-### Static export
+### Note
 
-This site uses a dynamic (edge) OG image and is intended to run on a Next.js
-runtime (Vercel/Node). If you need a fully static export, replace
+This site is intended to run on a Next.js runtime (Vercel/Node). If you ever
+need a fully static export, replace
 `src/app/opengraph-image.tsx` with a static `public/og.png` first.
 
 ---

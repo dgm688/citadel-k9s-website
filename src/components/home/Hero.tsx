@@ -25,19 +25,29 @@ export function Hero() {
 
   return (
     <section className="relative flex min-h-[100svh] items-center overflow-hidden">
-      {/* Cinematic background — real footage of our dog (identity preserved) */}
+      {/* Cinematic background — real footage of our dog (identity preserved).
+          Reduced-motion users get the still photograph instead of autoplay. */}
       <div aria-hidden className="absolute inset-0 -z-10">
-        <video
-          className="absolute inset-0 h-full w-full object-cover object-center"
-          poster="/images/gallery/adult-stack.jpg"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-        >
-          <source src="/videos/hero.mp4" type="video/mp4" />
-        </video>
+        {reduce ? (
+          // eslint-disable-next-line @next/next/no-img-element -- decorative full-bleed background
+          <img
+            src="/images/gallery/adult-stack.jpg"
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
+        ) : (
+          <video
+            className="absolute inset-0 h-full w-full object-cover object-center"
+            poster="/images/gallery/adult-stack.jpg"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+          >
+            <source src="/videos/hero.mp4" type="video/mp4" />
+          </video>
+        )}
         {/* Legibility overlays: dark on the left where the text sits */}
         <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/60" />

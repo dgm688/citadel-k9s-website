@@ -121,7 +121,7 @@ export function Footer() {
                 className="inline-flex items-center gap-3 text-bone-muted transition-colors hover:text-gold"
               >
                 <MapPin className="h-4 w-4 text-gold" />
-                {SITE.city}, {SITE.country} · Visits by appointment
+                {SITE.locality}, {SITE.city} · Visits by appointment
               </a>
             </li>
           </ul>

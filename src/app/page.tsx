@@ -17,7 +17,7 @@ import { CTASection } from "@/components/sections/CTASection";
 export const metadata: Metadata = pageMeta({
   title: "Elite German Shepherds in Kenya",
   description:
-    "Citadel K9s breeds German Shepherds in Kenya for structure, health and temperament — raised underfoot, with records at every step. Visit us, meet the parents, and judge our standards in person.",
+    "German Shepherd breeder in Kenya raising long-coat shepherds for structure, health and temperament. Visit us, meet the parents, judge our standards in person.",
   path: "/",
 });
 

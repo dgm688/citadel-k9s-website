@@ -22,6 +22,9 @@ export const SITE = {
   locale: "en_KE",
   country: "Kenya",
   city: "Nairobi",
+  /** Matches the Google Business Profile address for NAP consistency. */
+  locality: "Ruaka",
+  county: "Kiambu County",
   region: "Kenya",
   breed: "German Shepherd Dog",
   /** Approx. Nairobi coordinates for local structured data. */

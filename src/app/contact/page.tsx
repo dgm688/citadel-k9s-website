@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = pageMeta({
   title: "Contact a German Shepherd Breeder in Kenya",
   description:
-    "Contact Citadel K9s, a German Shepherd breeder in Nairobi, Kenya — WhatsApp, phone, email and Instagram. Enquire about German Shepherd puppies, arrange a visit or join the waiting list.",
+    "Contact Citadel K9s, German Shepherd breeder in Nairobi — WhatsApp, phone or email. Enquire about puppies, arrange a visit, or join the waiting list.",
   path: "/contact",
 });
 
@@ -105,7 +105,7 @@ export default function ContactPage() {
                   Location
                 </span>
                 <span className="text-lg text-bone">
-                  {SITE.city}, {SITE.country}
+                  {SITE.locality}, {SITE.city}, {SITE.country}
                 </span>
                 <a
                   href={CONTACT.maps}
@@ -131,7 +131,7 @@ export default function ContactPage() {
         <Reveal className="overflow-hidden rounded-2xl border border-white/5">
           <iframe
             title="Citadel K9s location on Google Maps"
-            src="https://www.google.com/maps?q=Nairobi,Kenya&output=embed"
+            src="https://www.google.com/maps?q=Ruaka,Kenya&output=embed"
             className="h-[420px] w-full grayscale-[0.3]"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

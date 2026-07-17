@@ -1,5 +1,10 @@
 # Citadel K9s — Getting Found on Google
 
+> **Status (15 Jul 2026):** Search Console verified · sitemap submitted (22
+> URLs) · homepage + key pages crawled by Googlebot · indexing requested ·
+> Business Profile verified, linked to the site both ways, photos uploaded.
+> Remaining: genuine reviews after handovers; Instagram bio link (mobile app).
+
 Honest framing: ranking has two very different timelines.
 
 - **Your brand ("Citadel K9s")** — days to a couple of weeks once Google indexes the site.

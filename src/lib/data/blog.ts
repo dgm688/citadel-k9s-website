@@ -323,7 +323,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "german-shepherd-vs-rottweiler-kenya",
     title: "German Shepherd vs Rottweiler: Which Guard Dog for a Kenyan Home?",
     excerpt:
-      "Both are serious protection breeds. They are not interchangeable. An honest comparison to help you pick the right one for your household — not just the tougher-looking one.",
+      "Both are serious protection breeds — but not interchangeable. An honest comparison to help you pick the right dog for your household.",
     category: "Breed Education",
     date: "2026-07-10",
     readingTime: "5 min read",

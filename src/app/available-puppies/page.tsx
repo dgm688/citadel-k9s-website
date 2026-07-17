@@ -12,7 +12,7 @@ import { PUPPIES, AVAILABLE_PUPPIES } from "@/lib/data/puppies";
 export const metadata: Metadata = pageMeta({
   title: "German Shepherd Puppies for Sale in Kenya",
   description:
-    "German Shepherd puppies for sale in Kenya from Citadel K9s — health-tested, vaccinated and fully documented, raised in Nairobi. See availability, prices on enquiry, and join the waiting list.",
+    "German Shepherd puppies for sale in Kenya — vet-checked, vaccinated and documented, raised in Nairobi by Citadel K9s. See availability or join the waiting list.",
   path: "/available-puppies",
 });
 
