@@ -76,17 +76,23 @@ export interface Testimonial {
   date?: string;
 }
 
+/** Blog content blocks: headings, paragraphs, and simple tables. */
+export type BlogBlock =
+  | { type: "h2" | "p" | "note"; text: string }
+  | { type: "table"; headers: string[]; rows: string[][] };
+
 export interface BlogPost {
   slug: string;
   title: string;
+  /** Optional shorter title for the <title> tag / search results. */
+  metaTitle?: string;
   excerpt: string;
   category: string;
   date: string; // ISO
   readingTime: string;
   author: string;
   cover: Media;
-  /** Simple paragraph/heading content blocks. */
-  body: { type: "h2" | "p"; text: string }[];
+  body: BlogBlock[];
 }
 
 export interface Faq {

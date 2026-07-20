@@ -165,41 +165,115 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "german-shepherd-price-kenya",
-    title: "What Determines a German Shepherd's Price in Kenya?",
+    title: "German Shepherd Price in Kenya (2026): What You'll Actually Pay — and Why",
+    metaTitle: "German Shepherd Price in Kenya (2026 Guide)",
     excerpt:
-      "Prices vary enormously — and the cheapest puppy is rarely the cheapest dog. Here's what you're actually paying for, and where corners get cut.",
+      "How much does a German Shepherd cost in Kenya? Honest 2026 price ranges, what drives the gap, and how to avoid paying cheap for an undocumented dog.",
     category: "Buyer's Guide",
-    date: "2026-06-10",
-    readingTime: "5 min read",
+    date: "2026-07-19",
+    readingTime: "7 min read",
     author: "Citadel K9s",
     cover: {
       src: "/images/gallery/adult-handler.jpg",
-      alt: "A Citadel K9s German Shepherd with its handler",
+      alt: "A Citadel K9s German Shepherd standing with its handler",
       label: "Price Guide",
     },
     body: [
       {
         type: "p",
-        text: "Ask five sellers for a German Shepherd price in Kenya and you'll get five very different numbers. The difference is rarely the puppy you see — it's everything you can't see: the health work, the rearing and the lineage behind it.",
-      },
-      { type: "h2", text: "What a fair price includes" },
-      {
-        type: "p",
-        text: "Quality nutrition for the dam and litter, deworming every two weeks, veterinary examination, age-appropriate vaccination, registration paperwork, and weeks of daily socialisation work. Each of these has a real cost. When a price looks impossibly low, one or more of them was skipped — and you inherit the consequences.",
-      },
-      { type: "h2", text: "Why lineage matters to price" },
-      {
-        type: "p",
-        text: "A puppy from documented, health-conscious breeding costs more to produce than one from unplanned mating. You're paying for a decade of predictability: temperament, structure and working ability you can reasonably expect.",
-      },
-      { type: "h2", text: "The real cost of a cheap puppy" },
-      {
-        type: "p",
-        text: "Veterinary treatment for a poorly reared puppy routinely exceeds any saving on the purchase price — before counting the heartbreak. Budget for the dog, not just the day you collect it.",
+        text: "If you've searched for a German Shepherd in Kenya, you've seen prices from KSh 2,500 on classifieds sites to KSh 150,000 and beyond from established kennels. That gap confuses buyers — and it's exactly where people get burned.",
       },
       {
         type: "p",
-        text: "We quote clearly on enquiry, explain exactly what's included, and never add surprises. Message us on WhatsApp for a straight answer.",
+        text: "This guide explains what German Shepherds actually cost in Kenya in 2026, why the range is so wide, and how to work out what a fair price is for the dog in front of you. We're a breeder, so we have a perspective — but everything here is something you can verify yourself.",
+      },
+      { type: "h2", text: "The short answer: 2026 price ranges" },
+      {
+        type: "table",
+        headers: ["What you're buying", "Typical price (KSh)", "What you're really getting"],
+        rows: [
+          [
+            "Unpapered \"German Shepherd\" from a classifieds listing",
+            "2,500 – 15,000",
+            "Often mixed lineage, no health records, no vaccination proof, seller unreachable after sale",
+          ],
+          [
+            "Purebred-type puppy, basic vaccination, no pedigree",
+            "15,000 – 40,000",
+            "May be purebred, but no verifiable lineage; health history depends entirely on the seller's word",
+          ],
+          [
+            "Documented purebred: vet-checked, vaccinated, dewormed, records handed over",
+            "40,000 – 90,000",
+            "Verifiable health work, parents you can meet, a breeder who answers the phone after payment",
+          ],
+          [
+            "Pedigree/registered lines, planned breeding, health-tested parents",
+            "90,000 – 150,000+",
+            "Predictable structure and temperament, lineage on paper, lifetime breeder support",
+          ],
+        ],
+      },
+      {
+        type: "note",
+        text: "Ranges are indicative of the open market in mid-2026, based on what we see as breeders in and around Nairobi. Individual dogs vary with coat, sex and demand — long coats and rare pigmentation command more.",
+      },
+      {
+        type: "p",
+        text: "Prices vary — but the biggest driver isn't the dog. It's what has been done to, and documented about, the dog before it reaches you.",
+      },
+      { type: "h2", text: "Why the cheap puppy usually costs more" },
+      {
+        type: "p",
+        text: "A KSh 5,000 puppy is not a bargain. It's a deferred bill. Parvo treatment for an unvaccinated puppy runs KSh 15,000–40,000 at a Nairobi vet — often more than you paid for the dog, with no guarantee it survives. A full vaccination and deworming course you'll have to complete yourself is another KSh 8,000–15,000.",
+      },
+      {
+        type: "p",
+        text: "Then come the slower bills. Hip dysplasia from poorly structured lines shows up at one to two years: lifelong pain management or surgery, both expensive. Temperament problems from puppies raised in isolated runs with no early handling — fear-biting, nervousness — are the issues that get dogs rehomed or chained for life.",
+      },
+      {
+        type: "p",
+        text: "When a documented puppy costs KSh 60,000 more than a classifieds puppy, a large part of that difference is health work already done and risk already removed — not margin.",
+      },
+      { type: "h2", text: "What actually drives a fair price" },
+      {
+        type: "p",
+        text: "When you're quoted a price, it should map to things you can verify. Vaccination and deworming records — dated, on paper, handed to you at collection, not \"he's had his injections, trust me.\" A vet health check for every puppy before it goes home. Parents you can meet — the mother at minimum; her temperament and structure tell you more about your puppy's future than any promise.",
+      },
+      {
+        type: "p",
+        text: "Then: how the puppies are raised — inside a household with daily handling, or in a back-plot run? This shapes temperament permanently. Lineage — registration paperwork or, at minimum, an honest open conversation about the parents' background. And after-sale support: will this person answer your call in month six when you have a feeding question?",
+      },
+      {
+        type: "p",
+        text: "If a seller can't show you these, you're not paying for a cheaper German Shepherd — you're paying for an undocumented one.",
+      },
+      { type: "h2", text: "Red flags that predict regret" },
+      {
+        type: "p",
+        text: "\"Delivery only, payment on delivery\" with no option to visit — the most common structure for scams and sick-puppy sales in Kenya. Pressure to pay a deposit today, before you've seen the dog, the parents or any records. Stock photos, or images that reverse-image-search to foreign websites. No fixed location — meets you at a mall or petrol station.",
+      },
+      {
+        type: "p",
+        text: "And the biggest one: a price far below market. Nobody vet-checks, vaccinates, deworms and properly feeds a litter for eight weeks and then sells at KSh 5,000. The maths doesn't work — something was skipped.",
+      },
+      { type: "h2", text: "Questions to ask any breeder (including us)" },
+      {
+        type: "p",
+        text: "Can I visit and meet the mother before paying anything? Can I see the vaccination and deworming records — dated and complete? Was each puppy checked by a licensed vet, and at which clinic? Where were the puppies raised, and how much daily handling did they get? What happens if I have problems in the first weeks — who do I call? And: will you tell me if this puppy is wrong for my situation?",
+      },
+      {
+        type: "p",
+        text: "A good breeder welcomes these questions. Evasiveness is your answer.",
+      },
+      { type: "h2", text: "How Citadel K9s prices its puppies" },
+      {
+        type: "p",
+        text: "We breed a small number of planned long-coat German Shepherd litters in Ruaka, Nairobi, raised inside our household. Every puppy leaves with a vet check, complete vaccination and deworming records, and a direct WhatsApp line to the breeder for the life of the dog. You visit by appointment, meet the parents, and judge our standards in person before committing a shilling.",
+      },
+      {
+        type: "p",
+        text: "That work has a cost, and our pricing reflects it. We'd rather explain a fair price than justify a cheap one. Every enquiry is answered personally — including \"is this breed right for me at all?\"",
       },
     ],
   },

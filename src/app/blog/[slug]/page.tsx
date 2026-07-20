@@ -25,7 +25,7 @@ export async function generateMetadata({
   const post = getPost(slug);
   if (!post) return pageMeta({ title: "Article", description: "", path: "/blog" });
   return pageMeta({
-    title: post.title,
+    title: post.metaTitle ?? post.title,
     description: post.excerpt,
     path: `/blog/${post.slug}`,
   });
@@ -105,17 +105,72 @@ export default async function BlogPostPage({
 
         <div className="container-site mt-12 max-w-3xl">
           <div className="prose-luxe flex flex-col gap-6">
-            {post.body.map((block, i) =>
-              block.type === "h2" ? (
-                <h2 key={i} className="mt-4 text-2xl font-light text-bone">
-                  {block.text}
-                </h2>
-              ) : (
+            {post.body.map((block, i) => {
+              if (block.type === "h2") {
+                return (
+                  <h2 key={i} className="mt-4 text-2xl font-light text-bone">
+                    {block.text}
+                  </h2>
+                );
+              }
+              if (block.type === "note") {
+                return (
+                  <p
+                    key={i}
+                    className="border-l-2 border-gold/40 pl-4 text-sm italic leading-relaxed text-bone-faint"
+                  >
+                    {block.text}
+                  </p>
+                );
+              }
+              if (block.type === "table") {
+                return (
+                  <div
+                    key={i}
+                    className="overflow-x-auto rounded-2xl border border-white/10"
+                  >
+                    <table className="w-full min-w-[560px] text-left text-sm">
+                      <thead>
+                        <tr className="border-b border-white/10 bg-ink-800">
+                          {block.headers.map((h) => (
+                            <th
+                              key={h}
+                              className="px-4 py-3 text-xs font-medium uppercase tracking-wide2 text-gold"
+                            >
+                              {h}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {block.rows.map((row, r) => (
+                          <tr
+                            key={r}
+                            className={r % 2 ? "bg-ink-800/40" : "bg-ink-900"}
+                          >
+                            {row.map((cell, c) => (
+                              <td
+                                key={c}
+                                className={`px-4 py-3 align-top leading-relaxed ${
+                                  c === 0 ? "text-bone" : "text-bone-muted"
+                                }`}
+                              >
+                                {cell}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                );
+              }
+              return (
                 <p key={i} className="text-base leading-relaxed text-bone-muted">
                   {block.text}
                 </p>
-              ),
-            )}
+              );
+            })}
           </div>
 
           <div className="mt-12 border-t border-white/5 pt-8">
