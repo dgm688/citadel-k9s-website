@@ -9,6 +9,7 @@ import { ImageFrame } from "@/components/ui/ImageFrame";
 import { BlogCard } from "@/components/cards/BlogCard";
 import { Reveal } from "@/components/ui/Reveal";
 import { CTASection } from "@/components/sections/CTASection";
+import { ButtonLink } from "@/components/ui/Button";
 import { ArrowRight } from "@/components/ui/Icons";
 import { formatDate } from "@/lib/format";
 
@@ -173,7 +174,17 @@ export default async function BlogPostPage({
             })}
           </div>
 
-          <div className="mt-12 border-t border-white/5 pt-8">
+          <div className="mt-12 flex flex-col gap-6 rounded-2xl border border-gold/20 bg-ink-800/40 p-6 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-bone">
+              Ready to see who's currently available?
+            </p>
+            <ButtonLink href="/available-puppies" variant="primary" className="shrink-0">
+              View available puppies
+              <ArrowRight className="h-4 w-4" />
+            </ButtonLink>
+          </div>
+
+          <div className="mt-8 border-t border-white/5 pt-8">
             <Link
               href="/blog"
               className="inline-flex items-center gap-2 text-sm text-bone-muted hover:text-gold"
