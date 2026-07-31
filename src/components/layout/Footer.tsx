@@ -135,6 +135,14 @@ export function Footer() {
             © {year} {SITE.legalName}. All rights reserved.
           </p>
           <ul className="flex items-center gap-6">
+            <li>
+              <a
+                href="/experience"
+                className="inline-flex items-center gap-1.5 text-gold/70 transition-colors hover:text-gold"
+              >
+                <span aria-hidden>✦</span> Experience
+              </a>
+            </li>
             {LEGAL_NAV.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className="hover:text-gold">
