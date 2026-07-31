@@ -90,7 +90,7 @@ export function BrandPillars() {
         {/* CTA tile */}
         <Reveal delay={0.32}>
           <Link
-            href="/puppies"
+            href="/available-puppies"
             className="group relative flex h-full min-h-[240px] flex-col justify-between overflow-hidden rounded-3xl bg-gradient-to-br from-ink-900 to-ink-700 p-8 transition-colors hover:from-ink-800 hover:to-ink-700"
           >
             <div className="flex items-start justify-between">
