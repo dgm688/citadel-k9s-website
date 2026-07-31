@@ -1,27 +1,37 @@
 import type { Testimonial } from "@/lib/types";
 
 /**
- * GENUINE testimonials only.
+ * GENUINE testimonials only — every entry is a real, public Google review
+ * from an actual Citadel K9s customer. Never add invented praise, and
+ * never add reviews from the owner or family (Google removes those and
+ * they undermine trust).
  *
- * This list is intentionally EMPTY. While it is empty, every
- * testimonial section on the site hides itself automatically and the
- * testimonials page shows an honest "verified reviews only" state.
- *
- * When a real family gives permission to publish their words, add an
- * entry like the example below and the sections reappear on their own.
- *
- * @example
- * {
- *   name: "Jane W.",
- *   location: "Nairobi",
- *   quote: "Exactly what they promised…",
- *   rating: 5,
- *   source: "whatsapp",              // whatsapp | google | in-person
- *   dog: "Male — Black & Red",
- *   date: "2026-08-01",
- *   media: { src: "/images/reviews/jane-dog.jpg", alt: "Jane's shepherd at home" },
- * }
+ * To add a new one: copy a real Google review's exact words + reviewer
+ * name, set source: "google". Sections that use this list reappear
+ * automatically once it is non-empty.
  */
-export const TESTIMONIALS: Testimonial[] = [];
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    name: "Alex Irungu",
+    quote:
+      "Excellent service and exceptional German Shepherds. You can tell the dogs are well cared for and raised in a clean, loving environment. Communication was excellent throughout the process, and I couldn't be happier with my puppy. Highly recommended!",
+    rating: 5,
+    source: "google",
+  },
+  {
+    name: "4k Wrld",
+    quote:
+      "If you're looking for a German Shepherd breeder that prioritizes structure, health, and temperament, Citadel K9s is an excellent choice. The attention to detail and passion for the breed are evident throughout the process. We couldn't be happier with our puppy and the support we've received.",
+    rating: 5,
+    source: "google",
+  },
+  {
+    name: "Peter Kinyanjui",
+    quote:
+      "Amazing experience from start to finish. Professional service, healthy puppies, and excellent communication. Highly recommend Citadel K9s!",
+    rating: 5,
+    source: "google",
+  },
+];
 
 export const HAS_TESTIMONIALS = TESTIMONIALS.length > 0;

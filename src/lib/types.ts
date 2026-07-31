@@ -64,7 +64,8 @@ export interface Puppy {
  */
 export interface Testimonial {
   name: string;
-  location: string;
+  /** Optional — omit when a reviewer's location isn't known. */
+  location?: string;
   quote: string;
   rating?: number;
   dog?: string;

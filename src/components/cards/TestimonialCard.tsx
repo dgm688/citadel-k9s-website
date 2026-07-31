@@ -1,17 +1,17 @@
 import type { Testimonial } from "@/lib/types";
 import { StarRating } from "@/components/ui/StarRating";
 import { ImageFrame } from "@/components/ui/ImageFrame";
-import { WhatsApp, Instagram, Heart } from "@/components/ui/Icons";
+import { WhatsApp, Star, Heart } from "@/components/ui/Icons";
 
 const sourceLabel: Record<Testimonial["source"], string> = {
-  whatsapp: "Via WhatsApp",
-  google: "Google review",
+  whatsapp: "Verified via WhatsApp",
+  google: "Verified Google review",
   "in-person": "In person",
 };
 
 const sourceIcon: Record<Testimonial["source"], typeof WhatsApp> = {
   whatsapp: WhatsApp,
-  google: Instagram, // swapped for a Google icon when reviews arrive
+  google: Star,
   "in-person": Heart,
 };
 
@@ -46,10 +46,11 @@ export function TestimonialCard({ t }: { t: Testimonial }) {
       {typeof t.rating === "number" && <StarRating rating={t.rating} />}
       <figcaption className="flex flex-col gap-1.5 border-t border-white/5 pt-4">
         <span className="font-medium text-bone">{t.name}</span>
-        <span className="text-xs uppercase tracking-wide2 text-bone-faint">
-          {t.location}
-          {t.dog ? ` · ${t.dog}` : ""}
-        </span>
+        {(t.location || t.dog) && (
+          <span className="text-xs uppercase tracking-wide2 text-bone-faint">
+            {[t.location, t.dog].filter(Boolean).join(" · ")}
+          </span>
+        )}
         <span className="inline-flex items-center gap-1.5 text-xs text-gold/80">
           <SourceIcon className="h-3.5 w-3.5" />
           {sourceLabel[t.source]}
