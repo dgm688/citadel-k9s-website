@@ -18,6 +18,12 @@ const canonicalHost = (
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // Clean URL for the standalone WebGL splash (isolated static page).
+  async rewrites() {
+    return [
+      { source: "/experience", destination: "/experiments/flow-wave.html" },
+    ];
+  },
   // Consolidate www → apex so Google sees one canonical version of every page.
   async redirects() {
     return [
