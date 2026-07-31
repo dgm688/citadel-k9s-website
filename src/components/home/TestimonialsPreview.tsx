@@ -1,8 +1,7 @@
 import { TESTIMONIALS, HAS_TESTIMONIALS } from "@/lib/data/testimonials";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { TestimonialCard } from "@/components/cards/TestimonialCard";
+import { TestimonialsShowcase } from "@/components/testimonials/TestimonialsShowcase";
 import { ButtonLink } from "@/components/ui/Button";
-import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "@/components/ui/Icons";
 
 /**
@@ -24,13 +23,7 @@ export function TestimonialsPreview() {
         </ButtonLink>
       </div>
 
-      <div className="mt-14 grid gap-6 md:grid-cols-3">
-        {TESTIMONIALS.slice(0, 3).map((t, i) => (
-          <Reveal key={t.name} delay={i * 0.1} className="h-full">
-            <TestimonialCard t={t} />
-          </Reveal>
-        ))}
-      </div>
+      <TestimonialsShowcase items={TESTIMONIALS.slice(0, 3)} className="mt-16" />
     </section>
   );
 }

@@ -3,7 +3,7 @@ import { pageMeta, breadcrumbJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/sections/PageHero";
 import { CTASection } from "@/components/sections/CTASection";
-import { TestimonialCard } from "@/components/cards/TestimonialCard";
+import { TestimonialsShowcase } from "@/components/testimonials/TestimonialsShowcase";
 import { Reveal } from "@/components/ui/Reveal";
 import { TESTIMONIALS, HAS_TESTIMONIALS } from "@/lib/data/testimonials";
 import { whatsappLink } from "@/lib/site";
@@ -42,13 +42,7 @@ export default function TestimonialsPage() {
 
       <section className="container-site py-16 lg:py-24">
         {HAS_TESTIMONIALS ? (
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {TESTIMONIALS.map((t, i) => (
-              <Reveal key={t.name} delay={(i % 3) * 0.1} className="h-full">
-                <TestimonialCard t={t} />
-              </Reveal>
-            ))}
-          </div>
+          <TestimonialsShowcase items={TESTIMONIALS} />
         ) : (
           <Reveal className="mx-auto max-w-2xl">
             <div className="panel flex flex-col items-center gap-6 p-10 text-center lg:p-14">
