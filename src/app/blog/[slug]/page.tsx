@@ -49,8 +49,21 @@ export default async function BlogPostPage({
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
+    // No separate revision date is tracked yet; a post's modified date equals
+    // its published date until it is genuinely revised.
+    dateModified: post.date,
+    ...(post.cover.src
+      ? { image: new URL(post.cover.src, SITE.url).toString() }
+      : {}),
     author: { "@type": "Organization", name: post.author },
-    publisher: { "@type": "Organization", name: SITE.name },
+    publisher: {
+      "@type": "Organization",
+      name: SITE.name,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE.url}/brand/icon-gold-512.png`,
+      },
+    },
     mainEntityOfPage: `${SITE.url}/blog/${post.slug}`,
   };
 

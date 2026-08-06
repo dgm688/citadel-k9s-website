@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = pageMeta({
   title: "Contact a German Shepherd Breeder in Kenya",
   description:
-    "Contact Citadel K9s, German Shepherd breeder in Nairobi — WhatsApp, phone or email. Enquire about puppies, arrange a visit, or join the waiting list.",
+    "Contact Citadel K9s, German Shepherd breeder near Nairobi (Ruaka, Kiambu County) — WhatsApp, phone or email. Enquire about puppies, arrange a visit, or join the waiting list.",
   path: "/contact",
 });
 
@@ -105,7 +105,7 @@ export default function ContactPage() {
                   Location
                 </span>
                 <span className="text-lg text-bone">
-                  {SITE.locality}, {SITE.city}, {SITE.country}
+                  {SITE.locality}, {SITE.county}, {SITE.country}
                 </span>
                 <a
                   href={CONTACT.maps}

@@ -8,25 +8,23 @@ import { PUPPIES } from "@/lib/data/puppies";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-
+  // Only emit `lastModified` where a genuine content date exists (blog posts).
+  // Stamping every page with the deploy time falsely signals freshness on
+  // pages that did not change, which dilutes the value of the lastmod signal.
   const staticPages = [...NAV_ALL, ...LEGAL_NAV].map((item) => ({
     url: new URL(item.href, SITE.url).toString(),
-    lastModified: now,
     changeFrequency: "monthly" as const,
     priority: item.href === "/" ? 1 : 0.7,
   }));
 
   const dogPages = PUBLISHED_DOGS.map((d) => ({
     url: new URL(`/our-dogs/${d.slug}`, SITE.url).toString(),
-    lastModified: now,
     changeFrequency: "yearly" as const,
     priority: 0.6,
   }));
 
   const puppyPages = PUPPIES.map((p) => ({
     url: new URL(`/available-puppies/${p.slug}`, SITE.url).toString(),
-    lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));

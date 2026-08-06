@@ -9,10 +9,17 @@ import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PUPPIES, AVAILABLE_PUPPIES } from "@/lib/data/puppies";
 
+// Metadata reflects the true state of the page: promise a sale only when a
+// real puppy is published; otherwise target the waiting-list intent honestly.
+const puppiesAvailable = AVAILABLE_PUPPIES.length > 0;
+
 export const metadata: Metadata = pageMeta({
-  title: "German Shepherd Puppies for Sale in Kenya",
-  description:
-    "German Shepherd puppies for sale in Kenya — vet-checked, vaccinated and documented, raised in Nairobi by Citadel K9s. See availability or join the waiting list.",
+  title: puppiesAvailable
+    ? "German Shepherd Puppies for Sale in Kenya"
+    : "German Shepherd Puppy Waiting List — Kenya",
+  description: puppiesAvailable
+    ? "German Shepherd puppies available now in Kenya — vet-checked, vaccinated and documented, raised near Nairobi by Citadel K9s. See this litter or join the waiting list."
+    : "No puppies are available right now. Join the Citadel K9s waiting list to be first to hear when our next German Shepherd litter is planned — raised near Nairobi, Kenya.",
   path: "/available-puppies",
 });
 

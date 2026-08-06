@@ -269,7 +269,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "How Citadel K9s prices its puppies" },
       {
         type: "p",
-        text: "We breed a small number of planned long-coat German Shepherd litters in Ruaka, Nairobi, raised inside our household. Every puppy leaves with a vet check, complete vaccination and deworming records, and a direct WhatsApp line to the breeder for the life of the dog. You visit by appointment, meet the parents, and judge our standards in person before committing a shilling.",
+        text: "We breed a small number of planned long-coat German Shepherd litters in Ruaka, Kiambu County (on the edge of Nairobi), raised inside our household. Every puppy leaves with a vet check, complete vaccination and deworming records, and a direct WhatsApp line to the breeder for the life of the dog. You visit by appointment, meet the parents, and judge our standards in person before committing a shilling.",
       },
       {
         type: "p",

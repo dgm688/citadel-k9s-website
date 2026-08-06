@@ -12,9 +12,12 @@ import { whatsappLink } from "@/lib/site";
 import { WhatsApp, Check } from "@/components/ui/Icons";
 
 export const metadata: Metadata = pageMeta({
-  title: "Our German Shepherd Dogs",
-  description:
-    "Meet the German Shepherd sires and dams behind Citadel K9s in Kenya — long-coat black and red lines bred for structure, health and temperament. Visit by appointment.",
+  title: HAS_DOGS
+    ? "Our German Shepherd Dogs"
+    : "Our German Shepherd Dogs — Profiles in Preparation",
+  description: HAS_DOGS
+    ? "Meet the German Shepherd sires and dams behind Citadel K9s in Kenya — long-coat black and red lines bred for structure, health and temperament. Visit by appointment."
+    : "The German Shepherd sires and dams behind Citadel K9s in Kenya — individual profiles are in preparation. Meet our dogs in person, by appointment, near Nairobi.",
   path: "/our-dogs",
 });
 

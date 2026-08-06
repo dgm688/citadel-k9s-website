@@ -56,29 +56,42 @@ export default async function PuppyPage({
   const sireSlug = dogSlugByName(puppy.sire);
   const damSlug = dogSlugByName(puppy.dam);
 
-  const productLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: `${puppy.name} — German Shepherd Puppy`,
-    description: puppy.description,
-    category: "German Shepherd Dog",
-    brand: { "@type": "Brand", name: SITE.name },
-    offers: {
-      "@type": "Offer",
-      availability:
-        puppy.status === "Available"
-          ? "https://schema.org/InStock"
-          : "https://schema.org/SoldOut",
-      priceCurrency: "KES",
-      url: `${SITE.url}/available-puppies/${puppy.slug}`,
-    },
-  };
+  // Only emit Product structured data when it can be backed by a real image
+  // AND a real numeric price. An Offer with a currency but no price triggers
+  // Google Product/Merchant warnings, so we omit the markup rather than
+  // fabricate a price (truth policy).
+  const priceNumber = puppy.price
+    ? Number(puppy.price.replace(/[^0-9.]/g, "")) || null
+    : null;
+
+  const productLd =
+    puppy.hero.src && priceNumber
+      ? {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: `${puppy.name} — German Shepherd Puppy`,
+          description: puppy.description,
+          category: "German Shepherd Dog",
+          brand: { "@type": "Brand", name: SITE.name },
+          image: new URL(puppy.hero.src, SITE.url).toString(),
+          offers: {
+            "@type": "Offer",
+            availability:
+              puppy.status === "Available"
+                ? "https://schema.org/InStock"
+                : "https://schema.org/SoldOut",
+            price: priceNumber,
+            priceCurrency: "KES",
+            url: `${SITE.url}/available-puppies/${puppy.slug}`,
+          },
+        }
+      : null;
 
   return (
     <>
       <JsonLd
         data={[
-          productLd,
+          ...(productLd ? [productLd] : []),
           breadcrumbJsonLd([
             { name: "Home", path: "/" },
             { name: "Available Puppies", path: "/available-puppies" },

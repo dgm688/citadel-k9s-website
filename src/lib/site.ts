@@ -9,7 +9,7 @@
  * canonicals, sitemap, robots and Open Graph all follow automatically.
  */
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://citadel-k9s-website.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://citadelk9s.com";
 
 export const SITE = {
   name: "Citadel K9s",
