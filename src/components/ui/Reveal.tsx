@@ -57,14 +57,17 @@ export function Stagger({
   className = "",
   stagger = 0.1,
   delayChildren = 0.05,
+  as = "div",
 }: {
   children: ReactNode;
   className?: string;
   stagger?: number;
   delayChildren?: number;
+  as?: "div" | "ul" | "ol" | "section";
 }) {
+  const MotionTag = motion[as] as typeof motion.div;
   return (
-    <motion.div
+    <MotionTag
       className={className}
       initial="hidden"
       whileInView="show"
@@ -75,7 +78,7 @@ export function Stagger({
       }}
     >
       {children}
-    </motion.div>
+    </MotionTag>
   );
 }
 
@@ -83,14 +86,17 @@ export function StaggerItem({
   children,
   className = "",
   y = 26,
+  as = "div",
 }: {
   children: ReactNode;
   className?: string;
   y?: number;
+  as?: "div" | "li" | "span";
 }) {
   const reduce = useReducedMotion();
+  const MotionTag = motion[as] as typeof motion.div;
   return (
-    <motion.div
+    <MotionTag
       className={className}
       variants={{
         hidden: reduce ? { opacity: 0 } : { opacity: 0, y },
@@ -102,6 +108,6 @@ export function StaggerItem({
       }}
     >
       {children}
-    </motion.div>
+    </MotionTag>
   );
 }

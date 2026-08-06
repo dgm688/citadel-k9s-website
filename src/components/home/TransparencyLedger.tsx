@@ -1,6 +1,6 @@
 import { TRANSPARENCY_LEDGER } from "@/lib/site";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Reveal } from "@/components/ui/Reveal";
+import { Stagger, StaggerItem } from "@/components/ui/Reveal";
 import { ArrowUpRight, Check } from "@/components/ui/Icons";
 
 /**
@@ -19,12 +19,15 @@ export function TransparencyLedger() {
           description="We publish only what we can prove. As our documentation library grows, it appears here; until then, every item tells you exactly how to verify it in person."
         />
 
-        <ul className="mt-14 grid gap-4 md:grid-cols-2">
-          {TRANSPARENCY_LEDGER.map((item, i) => (
-            <Reveal
+        <Stagger
+          as="ul"
+          stagger={0.08}
+          className="mt-14 grid gap-4 md:grid-cols-2"
+        >
+          {TRANSPARENCY_LEDGER.map((item) => (
+            <StaggerItem
               as="li"
               key={item.title}
-              delay={(i % 2) * 0.08}
               className="flex items-start gap-4 rounded-2xl border border-white/5 bg-ink-900 p-6"
             >
               <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-gold/30 text-gold">
@@ -46,9 +49,9 @@ export function TransparencyLedger() {
                   </a>
                 )}
               </div>
-            </Reveal>
+            </StaggerItem>
           ))}
-        </ul>
+        </Stagger>
       </div>
     </section>
   );

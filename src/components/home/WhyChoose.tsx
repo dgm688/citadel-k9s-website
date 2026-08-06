@@ -1,6 +1,6 @@
 import { TRUST_COMMITMENTS } from "@/lib/site";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Reveal } from "@/components/ui/Reveal";
+import { Stagger, StaggerItem } from "@/components/ui/Reveal";
 import {
   ShieldCheck,
   Heart,
@@ -31,13 +31,15 @@ export function WhyChoose() {
         description="No breeder's website should ask for blind trust. Everything below is something you can see, verify, or hold in your hands — and we invite you to."
       />
 
-      <div className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-white/5 bg-white/5 sm:grid-cols-2 lg:grid-cols-3">
+      <Stagger
+        stagger={0.09}
+        className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-white/5 bg-white/5 sm:grid-cols-2 lg:grid-cols-3"
+      >
         {TRUST_COMMITMENTS.map((r, i) => {
           const Icon = icons[i % icons.length];
           return (
-            <Reveal
+            <StaggerItem
               key={r.title}
-              delay={(i % 3) * 0.08}
               className="flex flex-col gap-4 bg-ink-900 p-8 transition-colors duration-500 hover:bg-ink-800"
             >
               <span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-gold/30 text-gold">
@@ -47,10 +49,10 @@ export function WhyChoose() {
               <p className="text-sm leading-relaxed text-bone-muted">
                 {r.description}
               </p>
-            </Reveal>
+            </StaggerItem>
           );
         })}
-      </div>
+      </Stagger>
     </section>
   );
 }
