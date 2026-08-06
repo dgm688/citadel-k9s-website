@@ -1,4 +1,5 @@
 import { ButtonLink } from "@/components/ui/Button";
+import { MagneticAnchor } from "@/components/ui/Magnetic";
 import { Reveal } from "@/components/ui/Reveal";
 import { whatsappLink } from "@/lib/site";
 import { WhatsApp, ArrowRight } from "@/components/ui/Icons";
@@ -14,7 +15,10 @@ export function CTASection({
 }: CTASectionProps) {
   return (
     <section className="container-site py-24 lg:py-32">
-      <Reveal className="relative overflow-hidden rounded-3xl border border-gold/20 bg-ink-800 px-8 py-16 text-center sm:px-12 lg:py-24">
+      <Reveal
+        blur
+        className="relative overflow-hidden rounded-3xl border border-gold/20 bg-ink-800 px-8 py-16 text-center sm:px-12 lg:py-24"
+      >
         <div
           aria-hidden
           className="absolute left-1/2 top-0 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold/15 blur-[100px]"
@@ -28,7 +32,7 @@ export function CTASection({
             {description}
           </p>
           <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
-            <a
+            <MagneticAnchor
               href={whatsappLink(
                 "Hello Citadel K9s, I'd like to enquire about your German Shepherds.",
               )}
@@ -38,7 +42,7 @@ export function CTASection({
             >
               <WhatsApp className="h-4 w-4" />
               Chat on WhatsApp
-            </a>
+            </MagneticAnchor>
             <ButtonLink href="/contact" variant="outline">
               Contact us
               <ArrowRight className="h-4 w-4" />

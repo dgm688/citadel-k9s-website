@@ -4,6 +4,7 @@ import "./globals.css";
 import { SITE, GOOGLE_SITE_VERIFICATION } from "@/lib/site";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
+import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFab } from "@/components/layout/WhatsAppFab";
@@ -71,6 +72,7 @@ export default function RootLayout({
     <html lang="en" className={`${display.variable} ${sans.variable}`}>
       <body className="min-h-screen overflow-x-hidden">
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
+        <ScrollProgress />
         <Header />
         <main id="main">{children}</main>
         <Footer />
