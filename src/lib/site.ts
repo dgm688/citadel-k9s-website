@@ -17,7 +17,7 @@ export const SITE = {
   tagline: "Structure • Health • Temperament",
   positioning: "Elite German Shepherds · Kenya",
   shortDescription:
-    "Citadel K9s is a German Shepherd breeder in Kenya, offering health-tested German Shepherd puppies raised for structure, health and temperament — with transparency at every step, from enquiry to lifetime support.",
+    "Citadel K9s is an EAKC-registered German Shepherd breeder in Kenya, offering health-tested puppies — hip-scored parents, microchipped and vet-checked pups — raised for structure, health and temperament, with transparency at every step from enquiry to lifetime support.",
   url: SITE_URL,
   locale: "en_KE",
   country: "Kenya",
@@ -111,7 +111,7 @@ export const BRAND_PILLARS = [
   {
     title: "Health",
     description:
-      "Health-first rearing: veterinary checks, scheduled deworming and vaccination, with records handed to every family.",
+      "Health-first: hip-scored parents, puppies vet-checked, microchipped, dewormed and vaccinated — every record, and EAKC registration, handed to your family.",
   },
   {
     title: "Temperament",
@@ -132,9 +132,14 @@ export const TRUST_COMMITMENTS = [
       "Visit by appointment and meet your puppy's mother — temperament you can see for yourself, not just read about.",
   },
   {
+    title: "EAKC registered",
+    description:
+      "Our dogs are registered with the East African Kennel Club — we breed as EAKC Associate Member #2217, and every puppy leaves with its EAKC registration paperwork.",
+  },
+  {
     title: "Records handed over",
     description:
-      "Every puppy leaves with its veterinary check, deworming and vaccination record. What we've done is written down.",
+      "Every puppy leaves with its veterinary check, microchip details, deworming and vaccination record. What we've done is written down.",
   },
   {
     title: "Raised underfoot",
@@ -181,13 +186,13 @@ export const TRANSPARENCY_LEDGER: LedgerItem[] = [
     href: null,
   },
   {
-    title: "Pedigree & registration",
-    note: "Registration paperwork accompanies each puppy; lineage discussed openly during enquiry.",
+    title: "EAKC pedigree & registration",
+    note: "Our dogs are East African Kennel Club registered (EAKC Associate Member #2217); registration paperwork accompanies each puppy and lineage is discussed openly during enquiry.",
     href: null,
   },
   {
-    title: "Health screening & DNA",
-    note: "Published here as our documentation library grows.",
+    title: "Hip scores & health screening",
+    note: "Breeding dogs are hip scored and puppies are microchipped; further screening published here as our documentation library grows.",
     href: null,
   },
   {

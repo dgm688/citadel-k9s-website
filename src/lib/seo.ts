@@ -93,6 +93,11 @@ export function organizationJsonLd() {
       { "@type": "City", name: "Nairobi" },
     ],
     sameAs: [CONTACT.instagram],
+    memberOf: {
+      "@type": "Organization",
+      name: "East African Kennel Club",
+      alternateName: "EAKC",
+    },
     knowsAbout: [
       "German Shepherd Dogs",
       "German Shepherd puppies",

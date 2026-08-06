@@ -6,7 +6,7 @@ export const FAQS: Faq[] = [
     category: "Trust & Verification",
     question: "How do I know Citadel K9s is legitimate and not a scam?",
     answer:
-      "Ask us the hard questions — we welcome them. You can visit by appointment and meet the puppies and their mother in person before paying anything. We do video calls showing the puppy live, on request, any day. We never pressure quick payments, and we put what we provide in writing. If a breeder anywhere refuses a live video call or a visit, walk away.",
+      "Ask us the hard questions — we welcome them. We breed as an East African Kennel Club (EAKC) Associate Member (#2217), our dogs are EAKC registered, hip scored and microchipped, and you can verify our membership with the club. Visit by appointment and meet the puppies and their mother in person before paying anything; we also do live video calls showing the puppy, on request, any day. We never pressure quick payments, and we put what we provide in writing. If a breeder anywhere refuses a live video call or a visit, walk away.",
   },
   {
     category: "Trust & Verification",
@@ -24,7 +24,7 @@ export const FAQS: Faq[] = [
     category: "Trust & Verification",
     question: "What documents come with a Citadel K9s puppy?",
     answer:
-      "Every puppy goes home with its veterinary health-check record, deworming schedule and vaccination record, plus registration paperwork. You'll know exactly what has been done and when — in writing, not promises.",
+      "Every puppy goes home with its East African Kennel Club (EAKC) registration paperwork, microchip details, veterinary health-check record, and deworming and vaccination records. You'll know exactly what has been done and when — in writing, not promises.",
   },
 
   // ── Buying ──
@@ -44,7 +44,7 @@ export const FAQS: Faq[] = [
     category: "Buying a Puppy",
     question: "How much does a German Shepherd puppy cost in Kenya?",
     answer:
-      "Price depends on lineage, registration and the rearing that has gone into the litter. We quote clearly on enquiry and the price includes the vet check, deworming, vaccination record and registration paperwork — there are no surprise add-ons. Be cautious of prices that look too good to be true; they usually are.",
+      "Price depends on lineage, registration and the rearing that has gone into the litter. We quote clearly on enquiry and the price includes the vet check, microchip, deworming, vaccination record and EAKC registration paperwork — there are no surprise add-ons. Be cautious of prices that look too good to be true; they usually are.",
   },
 
   // ── Health & rearing ──
@@ -52,7 +52,7 @@ export const FAQS: Faq[] = [
     category: "Health & Rearing",
     question: "What health care will my puppy have had?",
     answer:
-      "Puppies are dewormed on a strict schedule from two weeks, examined by a licensed veterinarian, and receive age-appropriate vaccinations before going home. You receive the complete record plus the schedule for remaining boosters.",
+      "Puppies are dewormed on a strict schedule from two weeks, examined by a licensed veterinarian, microchipped, and receive age-appropriate vaccinations before going home. Both parents are hip scored, so you're starting from health-tested breeding stock. You receive the complete record plus the schedule for remaining boosters.",
   },
   {
     category: "Health & Rearing",
