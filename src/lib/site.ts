@@ -27,8 +27,13 @@ export const SITE = {
   county: "Kiambu County",
   region: "Kenya",
   breed: "German Shepherd Dog",
-  /** Approx. Nairobi coordinates for local structured data. */
-  geo: { lat: -1.2921, lng: 36.8219 },
+  /**
+   * Approximate coordinates for Ruaka, Kiambu County (the real locality) —
+   * far closer than the old central-Nairobi pin. Replace with the EXACT
+   * latitude/longitude from the Google Business Profile map pin when handy,
+   * for perfect NAP/geo consistency.
+   */
+  geo: { lat: -1.2103, lng: 36.7785 },
   /** Default social/preview image (a real photo). */
   ogImage: "/images/gallery/adult-stack.jpg",
 } as const;
