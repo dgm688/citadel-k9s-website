@@ -7,6 +7,8 @@ export interface Word {
   text: string;
   /** Extra classes for styled emphasis words (e.g. gold gradient / italic). */
   className?: string;
+  /** Force a line break after this word on large screens (editorial rag). */
+  breakAfter?: boolean;
 }
 
 interface WordRevealProps {
@@ -34,10 +36,13 @@ export function WordReveal({
     return (
       <span className={className}>
         {words.map((w, i) => (
-          <span key={i} className={w.className}>
-            {w.text}
-            {i < words.length - 1 ? " " : ""}
-          </span>
+          <Fragment key={i}>
+            <span className={w.className}>
+              {w.text}
+              {i < words.length - 1 ? " " : ""}
+            </span>
+            {w.breakAfter ? <br className="hidden lg:block" /> : null}
+          </Fragment>
         ))}
       </span>
     );
@@ -73,6 +78,7 @@ export function WordReveal({
             </motion.span>
           </span>
           {i < words.length - 1 ? " " : ""}
+          {w.breakAfter ? <br className="hidden lg:block" /> : null}
         </Fragment>
       ))}
     </motion.span>

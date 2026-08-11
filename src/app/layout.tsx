@@ -13,7 +13,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const display = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  // 700 is unused (no font-bold anywhere); font-light headings fall back to
+  // 400, so 400/500/600 are the weights actually rendered. One fewer file.
+  weight: ["400", "500", "600"],
   variable: "--font-display",
   display: "swap",
 });

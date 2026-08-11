@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import ReactDOM from "react-dom";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { ButtonLink } from "@/components/ui/Button";
 import { MagneticLink } from "@/components/ui/Magnetic";
@@ -8,9 +10,29 @@ import { ArrowRight, ArrowUpRight } from "@/components/ui/Icons";
 import { SITE } from "@/lib/site";
 
 const gold = "text-gold-gradient italic";
+const POSTER = "/images/gallery/adult-stack.jpg";
 
 export function Hero() {
   const reduce = useReducedMotion();
+
+  // Prioritise the hero poster for LCP — it paints before the video decodes.
+  ReactDOM.preload(POSTER, { as: "image", fetchPriority: "high" });
+
+  // On Save-Data / reduced-data connections (common on Kenyan mobile), show
+  // the still poster instead of downloading the autoplaying video. Detected
+  // after mount so the first client render still matches SSR (no mismatch).
+  const [lowData, setLowData] = useState(false);
+  useEffect(() => {
+    const conn = (navigator as unknown as { connection?: { saveData?: boolean } })
+      .connection;
+    if (
+      conn?.saveData ||
+      window.matchMedia("(prefers-reduced-data: reduce)").matches
+    ) {
+      setLowData(true);
+    }
+  }, []);
+  const showStill = reduce || lowData;
 
   // Lightweight scroll parallax on the background (transform-only).
   const { scrollY } = useScroll();
@@ -36,17 +58,18 @@ export function Hero() {
           Reduced-motion users get the still photograph instead of autoplay. */}
       <div aria-hidden className="absolute inset-0 -z-10 overflow-hidden">
         <motion.div style={{ y: bgY }} className="absolute inset-x-0 -top-[8%] h-[116%]">
-          {reduce ? (
+          {showStill ? (
             // eslint-disable-next-line @next/next/no-img-element -- decorative full-bleed background
             <img
-              src="/images/gallery/adult-stack.jpg"
+              src={POSTER}
               alt=""
+              fetchPriority="high"
               className="h-full w-full object-cover object-center"
             />
           ) : (
             <video
               className="h-full w-full object-cover object-center"
-              poster="/images/gallery/adult-stack.jpg"
+              poster={POSTER}
               autoPlay
               muted
               loop
@@ -87,7 +110,7 @@ export function Hero() {
               words={[
                 { text: "Elite" },
                 { text: "German", className: gold },
-                { text: "Shepherds,", className: gold },
+                { text: "Shepherds,", className: gold, breakAfter: true },
                 { text: "raised" },
                 { text: "in" },
                 { text: "Kenya." },

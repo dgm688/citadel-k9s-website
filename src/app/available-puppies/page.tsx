@@ -7,6 +7,9 @@ import { PuppyCard } from "@/components/cards/PuppyCard";
 import { WaitingListForm } from "@/components/forms/WaitingListForm";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { MagneticAnchor } from "@/components/ui/Magnetic";
+import { WhatsApp } from "@/components/ui/Icons";
+import { whatsappLink } from "@/lib/site";
 import { PUPPIES, AVAILABLE_PUPPIES } from "@/lib/data/puppies";
 
 // Metadata reflects the true state of the page: promise a sale only when a
@@ -49,12 +52,24 @@ export default function AvailablePuppiesPage() {
             ))}
           </div>
         ) : (
-          <Reveal className="panel p-12 text-center">
+          <Reveal className="panel flex flex-col items-center p-12 text-center">
             <h2 className="text-2xl font-light">No puppies available right now</h2>
             <p className="mx-auto mt-3 max-w-md text-bone-muted">
               Our litters are planned and reserved quickly. Join the waiting list
-              below to be first to know when the next litter arrives.
+              below — or tell us your ideal timing on WhatsApp and we&apos;ll
+              reach out personally when the right litter is planned.
             </p>
+            <MagneticAnchor
+              href={whatsappLink(
+                "Hello Citadel K9s, I'd like to register my interest for an upcoming litter. My ideal timing is:",
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary mt-6"
+            >
+              <WhatsApp className="h-4 w-4" />
+              Message us your ideal timing
+            </MagneticAnchor>
           </Reveal>
         )}
       </section>
