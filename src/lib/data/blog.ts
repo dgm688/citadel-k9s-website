@@ -7,6 +7,95 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "buying-a-trained-german-shepherd-kenya",
+    title:
+      "Buying a Trained German Shepherd in Kenya: Puppy, Started, or Fully Trained?",
+    metaTitle: "Trained German Shepherd in Kenya — Puppy, Started or Trained?",
+    excerpt:
+      "“Trained” means very different things in Kenya — and it's a word that hides both real value and outright scams. Here's what each option actually involves, and how to choose honestly.",
+    category: "Buyer's Guide",
+    date: "2026-08-12",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-portrait-2.jpg",
+      alt: "A calm, well-structured adult German Shepherd looking to camera",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "Search for a German Shepherd in Kenya and you'll quickly meet the word “trained.” It sounds reassuring — a dog that already listens, already behaves, ready to slot into your home. But “trained” is one of the vaguest words in the dog trade. It can mean a genuinely schooled adult worth every shilling, or it can mean nothing at all. This guide breaks down what the word really covers, what each option asks of you, and how to tell the difference before you pay.",
+      },
+      { type: "h2", text: "What “trained” actually means" },
+      {
+        type: "p",
+        text: "There is no single “trained” dog. There is a spectrum, and where a dog sits on it changes everything about the price, the effort you'll put in, and the relationship you'll build. Broadly, buyers in Kenya are choosing between three stages.",
+      },
+      {
+        type: "table",
+        headers: ["Stage", "What it means", "Best for", "What to verify"],
+        rows: [
+          [
+            "Puppy (8–12 weeks)",
+            "A blank slate raised with early socialisation and the first house foundations. You do the training from here.",
+            "Families who want to bond with and shape the dog themselves.",
+            "Parent health testing, daily socialisation, and vaccination, deworming and registration records.",
+          ],
+          [
+            "Started / young (6–14 months)",
+            "Past the demanding puppy stage, with basic manners and structure already in place. Less mystery about adult size and temperament.",
+            "Buyers who want a head start but still their own relationship with the dog.",
+            "Exactly what has been taught, how the dog behaves around people and other dogs, and full health history.",
+          ],
+          [
+            "Fully trained adult",
+            "Months of professional obedience — and sometimes protection — work behind it. Priced to match that investment.",
+            "Specific working or security needs, or owners genuinely short on time to train.",
+            "Who trained it and how, a live demonstration, honest temperament tests, and complete health and ownership history.",
+          ],
+        ],
+      },
+      { type: "h2", text: "Option 1: Start with a well-raised puppy" },
+      {
+        type: "p",
+        text: "This is what most Kenyan families actually want, even when they type “trained” into Google. A German Shepherd raised well for its first eight to twelve weeks — handled daily, exposed to household life, sounds and people — arrives with the one thing you cannot buy later: a stable, confident foundation. From there, the training is yours to do, and it is far easier and more rewarding than people fear.",
+      },
+      {
+        type: "p",
+        text: "The lesson worth internalising is this: how a puppy was reared matters more than any certificate. A calm, well-socialised puppy from health-tested parents will out-perform a nervous puppy that later attended a training course. Get the foundation right and the obedience follows.",
+      },
+      { type: "h2", text: "Option 2: A started or young dog" },
+      {
+        type: "p",
+        text: "A “started” dog — typically six to fourteen months — is a sensible middle path. The hardest, most time-hungry puppy weeks are behind it, its adult structure and temperament are visible rather than a gamble, and it usually has basic manners in place. The trade-off is that you have less say over its earliest experiences, so you must look closely at how it was raised and socialised. Ask precisely what it has been taught, and insist on meeting it around other people and dogs.",
+      },
+      { type: "h2", text: "Option 3: A fully trained adult" },
+      {
+        type: "p",
+        text: "A properly trained adult — solid obedience, or genuine protection work — is a real and valuable thing. It also costs substantially more than a puppy, because you are paying for months of skilled professional work. If that is genuinely what you need, it can be money well spent. But this is exactly the category where the word “trained” is most abused, so verify everything: who did the training and how, watch a live demonstration rather than a video, and get the dog's full temperament and health history in writing.",
+      },
+      { type: "h2", text: "The catch: “trained” is also a sales word" },
+      {
+        type: "p",
+        text: "Here is the uncomfortable truth. Many dogs advertised as “trained” in Kenya have only been taught to sit and come — useful, but not what the price implied. Worse, “trained adult” is sometimes a polite label for a rehomed dog with problems the seller would rather not discuss. The word is doing marketing work, not describing a guarantee. Treat it as a claim to be checked, never as proof.",
+      },
+      {
+        type: "note",
+        text: "The test that cuts through it all: ask to see the dog demonstrate, live, whatever it is claimed to know — in person or on a live video call, not a pre-recorded clip. A seller confident in their training will welcome it. Anyone who refuses is telling you something.",
+      },
+      { type: "h2", text: "How we do it at Citadel K9s" },
+      {
+        type: "p",
+        text: "We are honest about what we are: a German Shepherd breeder, not a training kennel. What we focus on is the part that matters most and cannot be added later — health-tested parents, and puppies raised underfoot with a strong early foundation, so you can shape exactly the dog your home needs. Every family gets a direct line to us for the life of the dog, including guidance on training as your puppy grows. And if what you truly need is a fully trained adult rather than a puppy, we'll tell you so plainly — we'd rather point you right than make a sale.",
+      },
+      {
+        type: "p",
+        text: "If you're weighing up the cost of each route, our German Shepherd price guide for Kenya breaks down what puppies actually sell for and why. And whichever stage you choose, the buyer's fundamentals never change: verify the parents, verify the health records, and never let a single word do the work that a visit should.",
+      },
+    ],
+  },
+  {
     slug: "choosing-a-german-shepherd-puppy-in-kenya",
     title: "How to Choose a German Shepherd Puppy in Kenya",
     excerpt:
