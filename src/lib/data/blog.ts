@@ -7,6 +7,102 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "how-to-choose-an-ethical-german-shepherd-breeder-kenya",
+    title: "How to Choose an Ethical German Shepherd Breeder in Kenya",
+    metaTitle: "Ethical German Shepherd Breeder in Kenya — How to Choose",
+    excerpt:
+      "In Kenya, “breeder” covers everyone from devoted specialists to backyard operations chasing a quick sale. Here's how to tell a responsible, ethical breeder from the rest — and why that choice shapes the next decade of your dog's life.",
+    category: "Buyer's Guide",
+    date: "2026-08-16",
+    readingTime: "7 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/vid-puppy-garden.jpg",
+      alt: "A German Shepherd puppy raised at home in a garden",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "The word “breeder” does a lot of hiding in Kenya. It covers people who have devoted years to the German Shepherd — its health, its structure, its temperament — and it covers backyard operations breeding whatever they can, as often as they can, for a quick sale. They can look identical in a WhatsApp advert. The difference only shows up later, in your dog's hips, its nerves and its lifespan. Choosing an ethical breeder is not about being sentimental; it is the single most practical decision you will make.",
+      },
+      { type: "h2", text: "Why “ethical” is not just a feel-good word" },
+      {
+        type: "p",
+        text: "German Shepherds are a wonderful breed with some well-known vulnerabilities — hip and elbow dysplasia chief among them. Those risks are heavily influenced by breeding decisions made before a puppy is even born. An ethical breeder health-tests the parents and breeds to reduce those risks; a careless one breeds two dogs simply because they are available. Get this right and you get a decade of a sound, stable companion. Get it wrong and you can face years of pain, vet bills and heartbreak that no puppy price “saving” ever covers.",
+      },
+      { type: "h2", text: "The signs of a responsible breeder — and the red flags" },
+      {
+        type: "p",
+        text: "You do not need to be an expert to tell the two apart. Responsible breeders behave in consistent, recognisable ways, and so do the operations you should walk away from. Hold any breeder — including us — against this list.",
+      },
+      {
+        type: "table",
+        headers: [
+          "What a responsible breeder does",
+          "What to walk away from",
+        ],
+        rows: [
+          [
+            "Health-tests the parents — hip scoring at minimum, because the breed is prone to dysplasia.",
+            "Can't show any health testing, or waves the question away.",
+          ],
+          [
+            "Breeds a small number of carefully planned litters.",
+            "Always has puppies — multiple litters, sometimes multiple breeds, on hand.",
+          ],
+          [
+            "Raises puppies inside the home, handled and socialised every day.",
+            "Keeps puppies in isolated runs or cages, or off-site where you can't see them.",
+          ],
+          [
+            "Registers the dogs with a recognised body — in Kenya, the East African Kennel Club.",
+            "No registration, or vague talk of “papers” that never quite appear.",
+          ],
+          [
+            "Welcomes a visit and lets you meet the puppy's mother.",
+            "Refuses visits; wants to meet in a car park, or only to “deliver.”",
+          ],
+          [
+            "Hands over everything in writing — vet, vaccination and registration records.",
+            "Verbal promises only; documents are always “coming later.”",
+          ],
+          [
+            "Will take the dog back or help rehome it if your circumstances ever change.",
+            "Loses all interest in the dog the moment payment clears.",
+          ],
+          [
+            "Asks you questions, and may turn down a home they think is wrong for a puppy.",
+            "Sells to anyone who pays, on the spot, no questions asked.",
+          ],
+        ],
+      },
+      { type: "h2", text: "Why hip scoring matters so much here" },
+      {
+        type: "p",
+        text: "If you take one technical point from this guide, make it this one. Hip dysplasia is one of the most common serious conditions in German Shepherds, and it is partly inherited. Responsible breeders have their breeding dogs' hips formally scored and use those results to make sensible pairings, lowering the risk for the puppies. A breeder who hip-scores their parents is telling you they take the breed's future seriously. A breeder who has never heard of it, or dismisses it, is telling you something too.",
+      },
+      { type: "h2", text: "Questions to ask any breeder before you pay" },
+      {
+        type: "p",
+        text: "A short, calm conversation reveals almost everything. Ask to see the parents' hip scores. Ask to visit and meet the mother in person. Ask exactly what registration and paperwork the puppy comes with. Ask what health records you'll receive, and when. And ask what happens if, years from now, you can no longer keep the dog. A responsible breeder answers every one of these without hesitation, because they have nothing to hide. Hesitation, deflection or irritation is your answer.",
+      },
+      { type: "h2", text: "The Citadel K9s standard" },
+      {
+        type: "p",
+        text: "We built our kennel around exactly this list, because we would want it as buyers ourselves. Our dogs are registered with the East African Kennel Club (we breed as EAKC Associate Member #2217) and our breeding dogs are hip scored. We plan only a few litters, raised underfoot in our home and socialised from birth. Every puppy leaves microchipped, vet-checked and vaccinated, with its full records and registration paperwork in hand. We welcome visits so you can meet the parents, we keep a direct line open for the life of your dog, and if your circumstances ever change we will always help. We would rather prove all of this than simply promise it — and if we don't think a puppy is right for your home, we'll say so.",
+      },
+      {
+        type: "note",
+        text: "The single test that cuts through every advert: ask to visit and meet the mother, or to see the dogs live on a video call. An ethical breeder says yes without flinching. Anyone who refuses has just answered your most important question for you.",
+      },
+      {
+        type: "p",
+        text: "An ethical breeder usually costs a little more up front — and saves you far more in vet bills, heartbreak and regret over the years that follow. If you'd like to see how that reflects in real numbers, our German Shepherd price guide for Kenya breaks it down, and our guide to avoiding puppy scams covers the outright fraud to watch for. Choose the breeder first, and the right puppy follows.",
+      },
+    ],
+  },
+  {
     slug: "buying-a-trained-german-shepherd-kenya",
     title:
       "Buying a Trained German Shepherd in Kenya: Puppy, Started, or Fully Trained?",
