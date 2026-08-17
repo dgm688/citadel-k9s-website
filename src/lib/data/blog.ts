@@ -7,6 +7,116 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "how-to-train-a-german-shepherd-puppy-kenya",
+    title: "How to Train a German Shepherd Puppy: A Kenyan Owner's Guide",
+    metaTitle: "How to Train a German Shepherd Puppy in Kenya",
+    excerpt:
+      "German Shepherds are one of the most trainable breeds in the world — and you don't need a professional to raise a well-behaved one. Here's a realistic, step-by-step foundation for a Kenyan home, from the day your puppy arrives.",
+    category: "Puppy Care",
+    date: "2026-08-16",
+    readingTime: "9 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/vid-puppy-portrait.jpg",
+      alt: "An attentive young German Shepherd puppy during a training session",
+      label: "Puppy Care",
+    },
+    body: [
+      {
+        type: "p",
+        text: "The German Shepherd sits near the top of every list of the world's most trainable dogs — intelligent, eager to work, and deeply bonded to its family. That is the good news. The catch is that all of that ability points somewhere whether you direct it or not: a Shepherd with no training and no outlet will invent its own job, and you rarely like the one it chooses. The reassuring truth is that you do not need to be a professional to raise a superb family dog. You need consistency, kindness and a plan. Here is that plan, built for a Kenyan home.",
+      },
+      { type: "h2", text: "Start the day your puppy comes home" },
+      {
+        type: "p",
+        text: "The single most common mistake is waiting. People assume a puppy is “too young” to train at eight or ten weeks and plan to start at six months. By then, habits — good and bad — are already forming. Your puppy is learning from the moment it arrives, so decide what the rules are before you collect it and apply them from day one. Training at this age is not drilling; it is simply showing your puppy, gently and repeatedly, what earns good things.",
+      },
+      { type: "h2", text: "Socialisation is the real foundation" },
+      {
+        type: "p",
+        text: "If you do only one thing well in the first few months, make it socialisation. There is a window in early puppyhood when a dog learns what is normal and safe in the world — and what it learns then shapes its temperament for life. A well-socialised Shepherd grows into a confident, stable adult; a sheltered one is far more likely to become fearful or reactive, which in a large, powerful dog is a serious problem.",
+      },
+      {
+        type: "p",
+        text: "Socialising in Kenya means deliberately, calmly exposing your puppy to the life it will actually live: the gate and the people who come to it, boda bodas and matatus, the sound of a duka's crowd, other vaccinated dogs and household animals, children, umbrellas, brooms, and visitors of every kind. Keep each new thing positive and never force it. The goal is a dog that meets the world with curiosity rather than fear.",
+      },
+      { type: "h2", text: "House training, step by step" },
+      {
+        type: "p",
+        text: "House training is about your schedule, not your puppy's intelligence. Young puppies need to relieve themselves after waking, after eating, after play, and roughly every couple of hours in between. Take your puppy to the same spot each time, wait, and praise warmly the instant it goes. Accidents indoors mean you missed the timing — clean up calmly and watch more closely; never punish after the fact, because the puppy cannot connect a scolding to something it did minutes ago. With a consistent routine, most puppies are largely reliable within a few weeks.",
+      },
+      { type: "h2", text: "The first commands to teach" },
+      {
+        type: "p",
+        text: "Begin with the handful that make daily life work: the puppy's name (a happy sound that means “look at me”), sit, down, come (recall), and leave it. Use small food rewards and a warm voice, keep sessions short — five minutes, several times a day, beats one long, boring drill — and always end on a win. Reward the behaviour you want the moment it happens. Of these, recall is the one worth the most effort: a Shepherd that reliably comes when called is a safe dog, and it is far easier to teach a keen puppy than to fix an adult that has learned to ignore you.",
+      },
+      {
+        type: "h2",
+        text: "A realistic timeline",
+      },
+      {
+        type: "table",
+        headers: ["Age", "Focus on"],
+        rows: [
+          [
+            "8–12 weeks",
+            "Bonding, name recognition, gentle socialisation, house-training routine, first taste of sit and come.",
+          ],
+          [
+            "3–6 months",
+            "Solid basics (sit, down, come, leave it), lead manners in the compound, settling calmly, meeting the wider world.",
+          ],
+          [
+            "6–12 months",
+            "Proofing commands around distractions, longer walks, impulse control. Expect a “teenage” testing phase — stay consistent.",
+          ],
+          [
+            "12 months and beyond",
+            "A grown, capable dog. Keep training and exercising it; a bored adult Shepherd is a destructive one. Advanced work only now.",
+          ],
+        ],
+      },
+      { type: "h2", text: "Crate, settling and time alone" },
+      {
+        type: "p",
+        text: "Teach your puppy to be calm and to spend time alone early, and you prevent one of the breed's classic problems — separation anxiety. A crate or a defined safe space, introduced as a good place with treats and never as punishment, gives your puppy somewhere secure to rest. Build up alone-time gradually rather than disappearing for hours on the first day. A Shepherd that can settle by itself is a happier, steadier dog.",
+      },
+      { type: "h2", text: "Lead training and walking" },
+      {
+        type: "p",
+        text: "A ten-kilo puppy pulling on the lead is mildly annoying; a forty-kilo adult doing it is unmanageable. Start lead work in the calm of your own compound, reward your puppy for walking beside you with a loose lead, and stop moving when it pulls so pulling never “works.” Patience here pays off for the whole life of the dog.",
+      },
+      { type: "h2", text: "The mistakes to avoid" },
+      {
+        type: "p",
+        text: "A few errors do most of the damage. Harsh punishment — hitting, shouting, jerking — frightens an intelligent, sensitive breed and creates the very aggression owners fear; reward-based training is not softness, it is what actually works. Skipping socialisation produces a nervous adult. Inconsistency, where a behaviour is allowed one day and scolded the next, simply confuses the dog. And chaining or isolating a Shepherd in a yard, with no company and no training, is the surest way to ruin one of the finest family dogs there is.",
+      },
+      { type: "h2", text: "A word on guard and protection training" },
+      {
+        type: "p",
+        text: "Many Kenyan families want a Shepherd partly for security, and a well-raised one is naturally watchful and protective of its home without any special training — that instinct comes free with a confident, well-socialised dog. Resist the temptation to encourage aggression in a puppy; it backfires badly and can create a dangerous, unstable adult. Genuine protection work is a specialist discipline for a mature, stable dog and belongs with an experienced professional, never a young puppy.",
+      },
+      { type: "h2", text: "Training in the Kenyan climate" },
+      {
+        type: "p",
+        text: "Work with the weather. Train and exercise in the cooler parts of the day — early morning and late afternoon — and go easy in the midday heat, especially with thicker-coated dogs. Keep fresh water available throughout, and watch for signs your puppy is overheating. A short, focused session in the cool beats a long one in the sun that leaves your puppy flat and unwilling.",
+      },
+      { type: "h2", text: "When to get help" },
+      {
+        type: "p",
+        text: "Most families can teach a well-bred Shepherd everything it needs at home. But there is no shame in help — a reputable, reward-based trainer or a good group class can be excellent, both for the dog and for your own confidence. Choose a trainer who works with rewards rather than fear, and avoid anyone whose methods rely on intimidation.",
+      },
+      {
+        type: "note",
+        text: "The whole of dog training fits in one sentence: reward what you want, calmly prevent what you don't, and be consistent every single day. A Shepherd will meet you more than halfway.",
+      },
+      {
+        type: "p",
+        text: "One last thing worth saying plainly: training is far easier when you start with a sound, well-socialised puppy. A confident foundation, built by the breeder in those first crucial weeks, is what makes everything above go smoothly — it is exactly why we raise our puppies underfoot in the home. Every Citadel K9s family also gets a direct line to us for the life of the dog, so if you're ever stuck on a training question, you're never on your own.",
+      },
+    ],
+  },
+  {
     slug: "how-to-choose-an-ethical-german-shepherd-breeder-kenya",
     title: "How to Choose an Ethical German Shepherd Breeder in Kenya",
     metaTitle: "Ethical German Shepherd Breeder in Kenya — How to Choose",
