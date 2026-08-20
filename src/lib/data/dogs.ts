@@ -17,6 +17,39 @@ import type { Dog } from "@/lib/types";
  * while this list has no published entries.
  */
 export const DOGS: Dog[] = [
+  {
+    slug: "desouza-wren",
+    published: true,
+    name: "Desouza Wren",
+    callName: "Queen",
+    role: "Dam",
+    sex: "Female",
+    dob: "2024-02-10",
+    color: "Long-coat black & tan",
+    description:
+      "Queen — registered as Desouza Wren — is a long-coat black-and-tan German Shepherd from Serbian and German lines. Calm and confident, and wonderful with children, she has exactly the steady, trustworthy temperament we want at the heart of our breeding. EAKC registered and hip scored, she passes her balance of sound structure and easy nature on to her puppies.",
+    bloodline: "Serbian & German lines",
+    pedigree: {
+      sire: "Gishka Team Carrera",
+      dam: "Didi vom Zwingerwalder",
+    },
+    health: [
+      "Hip scored under the EAKC / KESCAVA Hip Dysplasia Scheme",
+      "Microchipped",
+      "EAKC registered with full pedigree (Class 1)",
+    ],
+    hero: {
+      src: "/images/dogs/desouza-wren.jpg",
+      alt: "Desouza Wren (Queen), a long-coat black and tan German Shepherd dam",
+    },
+    gallery: [
+      {
+        src: "/images/dogs/desouza-wren-full.jpg",
+        alt: "Queen, a Citadel K9s German Shepherd dam, relaxing in the garden",
+      },
+    ],
+  },
+
   // ── TEMPLATE — copy, fill with real data, set published: true ──
   {
     slug: "example-dog",
