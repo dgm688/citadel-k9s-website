@@ -7,6 +7,98 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "hip-dysplasia-in-german-shepherds-kenya",
+    title:
+      "Hip Dysplasia in German Shepherds: What Every Kenyan Buyer Should Know",
+    metaTitle: "Hip Dysplasia in German Shepherds (Kenya Guide)",
+    excerpt:
+      "Hip dysplasia is the health problem most associated with German Shepherds — and the one buyers fear most. Here's what it actually is, why the breed is prone to it, and how to lower the risk long before you bring a puppy home.",
+    category: "Health",
+    date: "2026-08-21",
+    readingTime: "8 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-handler.jpg",
+      alt: "A healthy, well-cared-for adult German Shepherd with its handler",
+      label: "Health",
+    },
+    body: [
+      {
+        type: "p",
+        text: "If you ask people what health problem German Shepherds are known for, most will say the same two words: hip dysplasia. It's the condition the breed is most associated with, and understandably the one that worries buyers most. The good news is that it is far better understood — and far more preventable — than the rumours suggest. This guide explains what hip dysplasia actually is, why German Shepherds are prone to it, and the concrete steps that lower the risk, most of which happen before you ever collect a puppy.",
+      },
+      { type: "h2", text: "What is hip dysplasia?" },
+      {
+        type: "p",
+        text: "The hip is a ball-and-socket joint: the top of the thigh bone (the ball) sits in a socket in the pelvis. In a healthy hip, the two fit snugly and move smoothly. In a dysplastic hip, the fit is loose or shallow, so the joint is unstable. Over time that looseness causes the surfaces to grind and wear, which leads to inflammation, arthritis and — for the dog — stiffness and pain. It can affect one hip or both, and it ranges from mild (a dog that lives a normal life) to severe (a dog that struggles to move comfortably).",
+      },
+      { type: "h2", text: "Why are German Shepherds prone to it?" },
+      {
+        type: "p",
+        text: "Two reasons, working together. First, genetics: hip dysplasia is strongly inherited — not through a single gene, but through many, which is why it runs in some lines and not others. Large, fast-growing breeds like the German Shepherd carry more risk simply because of their size and build. Second, environment: how a puppy is fed, grown and exercised in its first year meaningfully affects whether inherited risk turns into an actual problem. In other words, a puppy inherits a predisposition, and its early life either keeps that risk low or pushes it higher.",
+      },
+      { type: "h2", text: "Signs and symptoms to watch for" },
+      {
+        type: "p",
+        text: "Hip dysplasia can show up in a young dog or only appear later in life as arthritis sets in. Common signs include a “bunny-hopping” gait (using both back legs together when running), stiffness or difficulty getting up after resting, reluctance to jump, climb stairs or leap into a vehicle, a noticeable decrease in activity or play, and looseness or a sway in the hindquarters. If you ever notice these, a vet can assess the hips — often with an X-ray. Catching it early gives you the most options for keeping your dog comfortable.",
+      },
+      { type: "h2", text: "Can hip dysplasia be prevented?" },
+      {
+        type: "p",
+        text: "You can't change a dog's genes, but you can dramatically lower the odds of inherited risk becoming a real problem. There are four levers, and the first is the most powerful.",
+      },
+      {
+        type: "table",
+        headers: ["Lever", "What it means"],
+        rows: [
+          [
+            "Buy from hip-scored parents",
+            "The single biggest factor. Choosing a puppy whose parents have been formally hip scored, and bred sensibly on those results, stacks the odds in your favour before the puppy is even born.",
+          ],
+          [
+            "Keep the puppy lean",
+            "Excess weight during growth puts extra load on developing joints. A lean, steadily grown puppy is at lower risk than a heavy, force-grown one — overfeeding to make a puppy “big fast” does real harm.",
+          ],
+          [
+            "Sensible exercise while growing",
+            "Let a young puppy play and move naturally, but avoid forced running, repetitive jumping and hard-surface impact before the growth plates close (around 12–18 months).",
+          ],
+          [
+            "Good nutrition & lifelong weight",
+            "A balanced large-breed diet supports healthy joint development, and keeping your adult dog at a healthy weight protects the hips for life.",
+          ],
+        ],
+      },
+      { type: "h2", text: "What is hip scoring — and why it matters so much" },
+      {
+        type: "p",
+        text: "Hip scoring is how responsible breeders take the guesswork out of that first, most important lever. A mature dog's hips are X-rayed and the images are formally assessed against a recognised scheme — in our region, the East African Kennel Club / KESCAVA Hip Dysplasia Scheme, which follows the same principles as the long-established British scheme. Each hip is given a score, and lower is better. A breeder then uses those results to make sensible pairings — for example, avoiding breeding two dogs that both score poorly — which lowers the risk passed on to the puppies.",
+      },
+      {
+        type: "p",
+        text: "This is the crucial point: hip scoring is the single most meaningful thing a breeder can actually do about hip dysplasia. A breeder who scores their dogs is managing the risk deliberately. A breeder who has never heard of it, or waves the question away, is leaving it entirely to chance — and passing that chance on to you.",
+      },
+      { type: "h2", text: "The one question that protects you" },
+      {
+        type: "p",
+        text: "When you're choosing a German Shepherd puppy in Kenya, this is the question that matters most: “Have the parents been hip scored, and can I see the results?” A breeder who tests their dogs will answer it happily and show you the paperwork. Vague answers, deflection, or a blank look are an answer in themselves. It costs you nothing to ask, and it tells you more about a breeder than almost anything else.",
+      },
+      { type: "h2", text: "If a dog does develop hip dysplasia" },
+      {
+        type: "p",
+        text: "It's important to be honest: even with every precaution, no one can promise a dog will never have any joint issue. If a dog is affected, a great deal can be done to keep it comfortable — keeping it lean, appropriate exercise, joint supplements, physiotherapy, and pain-relief medication where a vet advises it. In more severe cases there are surgical options. Many dogs with managed hip dysplasia go on to live full, happy lives. The goal of everything above isn't a guarantee — it's stacking the odds firmly in your dog's favour.",
+      },
+      {
+        type: "note",
+        text: "Hip scoring reduces risk; it does not eliminate it, and any breeder who promises a puppy is “guaranteed” free of hip problems for life is over-promising. The honest position — the one worth trusting — is a breeder who tests, breeds carefully, and tells you the truth about what testing can and can't do.",
+      },
+      {
+        type: "p",
+        text: "That's exactly our approach at Citadel K9s. Our breeding dogs are hip scored under the EAKC / KESCAVA scheme, we breed with those results in mind, and we raise our puppies for steady, healthy growth rather than rushed size. And because proof matters more than promises, we're glad to show you the paperwork and answer that all-important question in person. It's the clearest way we know to give a family a German Shepherd built to stay sound for life.",
+      },
+    ],
+  },
+  {
     slug: "how-big-do-german-shepherds-get-kenya",
     title: "How Big Do German Shepherds Get? A Kenyan Growth Guide",
     metaTitle: "German Shepherd Size & Growth by Age (Kenya)",
