@@ -7,6 +7,134 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "how-big-do-german-shepherds-get-kenya",
+    title: "How Big Do German Shepherds Get? A Kenyan Growth Guide",
+    metaTitle: "German Shepherd Size & Growth by Age (Kenya)",
+    excerpt:
+      "Wondering how big your German Shepherd will get — or whether your puppy is growing normally? Here's a month-by-month size guide for Kenyan owners: what's typical, when they stop growing, and what actually affects it.",
+    category: "Puppy Care",
+    date: "2026-08-21",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/vid-adult-stack.jpg",
+      alt: "A full-grown German Shepherd showing adult size and structure",
+      label: "Puppy Care",
+    },
+    body: [
+      {
+        type: "p",
+        text: "“How big will my German Shepherd get?” is one of the first questions new owners ask — usually meaning two things at once: how large will my dog be as an adult, and is my puppy growing the way it should right now? Both are fair questions, and both have clear answers. German Shepherds are a large, powerful breed, and knowing what to expect helps you feed, exercise and plan for your dog properly.",
+      },
+      { type: "h2", text: "How big is a full-grown German Shepherd?" },
+      {
+        type: "p",
+        text: "A fully grown male German Shepherd typically stands about 60–65 cm at the shoulder and weighs roughly 30–40 kg. Females are noticeably smaller, at about 55–60 cm and 22–32 kg. Long-coat Shepherds can look larger because of the coat, but their frame sits in the same range. These are the breed norms; a well-bred dog from health-tested parents will usually land within them.",
+      },
+      { type: "h2", text: "German Shepherd growth by age" },
+      {
+        type: "p",
+        text: "Puppies grow fastest in the first six months, then slow down as they fill out. The figures below are typical ranges — your puppy may sit a little above or below, and the surest guide is always the size of its parents.",
+      },
+      {
+        type: "table",
+        headers: ["Age", "Male (typical)", "Female (typical)"],
+        rows: [
+          ["8 weeks", "5.5 – 9 kg", "4.5 – 8 kg"],
+          ["3 months", "10 – 16 kg", "8 – 14 kg"],
+          ["6 months", "20 – 26 kg", "16 – 22 kg"],
+          ["9 months", "26 – 32 kg", "20 – 27 kg"],
+          ["12 months", "28 – 35 kg", "22 – 30 kg"],
+          ["Adult (2 yrs)", "30 – 40 kg", "22 – 32 kg"],
+        ],
+      },
+      { type: "h2", text: "When do German Shepherds stop growing?" },
+      {
+        type: "p",
+        text: "Most German Shepherds reach close to their full height by 12–18 months, but they keep filling out — in chest, muscle and overall substance — until around two to three years of age. So a lanky, gangly “teenager” at ten months is completely normal; the bulk comes later. Don't judge your dog's final build too early.",
+      },
+      { type: "h2", text: "What affects your puppy's size" },
+      {
+        type: "p",
+        text: "Three things matter most. Genetics come first — the single best predictor of your puppy's adult size is how big its parents are, which is one more reason to meet them before you buy. Sex is next, with males consistently larger than females. And nutrition matters enormously: a growing large-breed puppy needs good, balanced food, but overfeeding to force fast growth is harmful, not helpful — it stresses developing joints and can worsen problems like hip dysplasia. Steady, healthy growth beats rapid growth every time.",
+      },
+      { type: "h2", text: "Is my puppy growing normally?" },
+      {
+        type: "p",
+        text: "Look for steady, even growth and a healthy body condition — you should be able to feel your puppy's ribs without seeing them starkly, and there should be a visible waist. In Kenya, keep an eye out for the usual culprits behind poor growth: worms (a pot-bellied but thin puppy is a classic sign), skipped vaccinations, and poor-quality feed. Regular deworming, a good diet and routine vet checks keep growth on track. A puppy from a responsible breeder, with proper early care, rarely surprises you.",
+      },
+      {
+        type: "note",
+        text: "Every dog is an individual — these ranges are typical, not guarantees. If you want the clearest picture of how big your puppy will grow, look at its mother and father. Their size, more than any chart, is what your dog will inherit.",
+      },
+      {
+        type: "p",
+        text: "This is exactly why we encourage every family to meet the parents before choosing a puppy. At Citadel K9s our long-coat German Shepherds are raised to the breed standard and fed for healthy, steady growth — and when you visit, you can see for yourself the size and structure your puppy is likely to grow into.",
+      },
+    ],
+  },
+  {
+    slug: "male-or-female-german-shepherd-kenya",
+    title: "Male or Female German Shepherd? How to Choose in Kenya",
+    metaTitle: "Male vs Female German Shepherd: Which to Choose (Kenya)",
+    excerpt:
+      "Male or female German Shepherd — which is right for your home? An honest look at the real differences (and the ones that don't matter), for Kenyan families and working homes.",
+    category: "Buyer's Guide",
+    date: "2026-08-21",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-stack.jpg",
+      alt: "A German Shepherd standing in profile, showing breed structure",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "Once someone decides on a German Shepherd, the next question is almost always: male or female? It's a good question — there are some genuine differences — but it's also one where a lot of myth gets repeated. Here is the honest version, so you can choose the right dog for your home rather than the one an old wives' tale recommends.",
+      },
+      { type: "h2", text: "Size and presence" },
+      {
+        type: "p",
+        text: "This is the clearest, most reliable difference. Males are bigger — typically 30–40 kg and more heavily built — while females are lighter and often more agile, at around 22–32 kg. If sheer deterrent presence at your gate is the priority, a male's size does more of that work on sight alone. If you'd prefer a slightly smaller, easier-to-handle dog — which many first-time owners and families do — a female is a sensible choice.",
+      },
+      { type: "h2", text: "Temperament — the honest tendencies" },
+      {
+        type: "p",
+        text: "Here you must hold two things at once: there are broad tendencies, and there are far bigger individual differences. As tendencies, males are often more territorial and physically confident, with a strong, obvious guarding drive; they can also be a little more independent and slower to mature. Females often mature earlier, can be a touch more attentive and biddable in training, and are frequently very focused on their family. But none of this is a rule — a well-bred, well-raised dog of either sex makes a superb, stable companion, and a badly raised one of either sex does not.",
+      },
+      {
+        type: "table",
+        headers: ["", "Male", "Female"],
+        rows: [
+          ["Size", "Larger, heavier (30–40 kg)", "Smaller, lighter (22–32 kg)"],
+          ["Guarding presence", "Bigger physical deterrent", "Alert and protective, less imposing"],
+          ["Maturity", "Matures a little later", "Often matures earlier"],
+          ["Training", "Confident, sometimes more independent", "Often very attentive and focused"],
+          ["With family", "Devoted; can be more territorial", "Devoted; often closely family-focused"],
+        ],
+      },
+      { type: "h2", text: "What matters far more than sex" },
+      {
+        type: "p",
+        text: "If you take one thing from this article, make it this: the individual puppy's temperament, its parents, and how it's socialised and trained matter far more than whether it's a male or a female. A confident, well-socialised female will out-perform a nervous, poorly raised male every time — and the reverse is just as true. Choosing a good breeder and a well-reared puppy is a bigger decision than choosing the sex.",
+      },
+      { type: "h2", text: "For a Kenyan family or guard home" },
+      {
+        type: "p",
+        text: "In practice: for a family-first companion that also watches the home — which is what most Kenyan buyers want — either sex works beautifully, and many families lean toward a female for a slightly gentler, easier first dog. If your main goal is maximum guarding presence, a male's size and territorial confidence suit that role. Either way, a German Shepherd's loyalty and watchfulness come as standard; the sex only shapes the details.",
+      },
+      {
+        type: "note",
+        text: "Choose the puppy, not just the sex. Tell a good breeder about your home, your experience and what you need the dog to be — and let them help you match the right individual to you. That single conversation matters more than the male-or-female decision.",
+      },
+      {
+        type: "p",
+        text: "That's exactly how we work at Citadel K9s. When you enquire, we ask about your home and what you're looking for, and we match each family thoughtfully — male or female — to the puppy that genuinely fits. And if we think a particular puppy is wrong for you, we'll say so.",
+      },
+    ],
+  },
+  {
     slug: "how-to-train-a-german-shepherd-puppy-kenya",
     title: "How to Train a German Shepherd Puppy: A Kenyan Owner's Guide",
     metaTitle: "How to Train a German Shepherd Puppy in Kenya",
@@ -569,6 +697,21 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         type: "p",
         text: "That work has a cost, and our pricing reflects it. We'd rather explain a fair price than justify a cheap one. Every enquiry is answered personally — including \"is this breed right for me at all?\"",
+      },
+      { type: "h2", text: "How much is a German Shepherd in Kenyan shillings?" },
+      {
+        type: "p",
+        text: "A German Shepherd puppy in Kenya typically costs between KSh 15,000 and KSh 150,000, depending entirely on what you're buying. Unpapered classifieds puppies go for KSh 2,500–15,000; documented, vet-checked puppies for KSh 40,000–90,000; and pedigree, EAKC-registered puppies from health-tested parents for KSh 90,000–150,000 and beyond. The price reflects the health work already done and the lineage behind the dog — see the full breakdown in the table above.",
+      },
+      { type: "h2", text: "What is the lowest price of a German Shepherd puppy in Kenya?" },
+      {
+        type: "p",
+        text: "You'll find German Shepherd puppies advertised for as little as KSh 2,500–5,000 on classifieds sites — but that is almost never a genuine bargain. At that price, nothing has been spent on vet checks, vaccinations, deworming or proper feeding, and the lineage is usually unknown. The apparent saving is simply a bill deferred to your vet: treating parvo in an unvaccinated puppy can cost KSh 15,000–40,000, often more than you paid for the dog. A genuinely healthy, documented puppy starts at around KSh 40,000.",
+      },
+      { type: "h2", text: "How much is a good German Shepherd puppy in Kenya?" },
+      {
+        type: "p",
+        text: "A good German Shepherd puppy — vet-checked, vaccinated, dewormed and with its records handed over — starts at around KSh 40,000. For a pedigree puppy from EAKC-registered, health-tested (hip-scored) parents, expect KSh 90,000–150,000 or more. Citadel K9s puppies come from exactly that pedigree, health-tested tier, and start from around KSh 80,000 with everything included and no surprise add-ons.",
       },
     ],
   },
