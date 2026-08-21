@@ -7,6 +7,102 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "german-shepherd-puppy-vaccination-deworming-schedule-kenya",
+    title: "German Shepherd Puppy Vaccination & Deworming Schedule (Kenya)",
+    metaTitle: "Puppy Vaccination & Deworming Schedule in Kenya",
+    excerpt:
+      "Vaccinations and deworming are the foundation of a healthy German Shepherd puppy. Here's a typical schedule for Kenyan owners — what's given when, why it matters, and what to always confirm with your own vet.",
+    category: "Health",
+    date: "2026-08-21",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/young-sit-1.jpg",
+      alt: "A healthy young German Shepherd puppy",
+      label: "Health",
+    },
+    body: [
+      {
+        type: "p",
+        text: "Nothing you do in a puppy's first few months matters more for its health than staying on top of vaccinations and deworming. In Kenya, parvovirus and distemper are common, and they kill unvaccinated puppies — quickly and painfully. Rabies is both a legal requirement and fatal, to dogs and people alike. The reassuring part is that protecting your puppy is simple and affordable when you follow a clear schedule. Here's a typical one, along with the reasons behind it — but treat it as a guide, and always follow the exact plan your own vet sets, since products and timing can vary.",
+      },
+      { type: "h2", text: "Why it matters so much in Kenya" },
+      {
+        type: "p",
+        text: "Parvovirus is the big one. It spreads easily, survives a long time in the environment, and an unvaccinated puppy that catches it often doesn't survive — and treatment, if you try, runs into tens of thousands of shillings with no guarantee. Distemper is similarly dangerous. Rabies is always fatal once symptoms appear and is a genuine public-health risk, which is why vaccinating against it is required by law in Kenya. Vaccination isn't an optional extra; it's the difference between a healthy dog and a heartbreaking, expensive loss.",
+      },
+      { type: "h2", text: "Typical puppy vaccination schedule" },
+      {
+        type: "p",
+        text: "Most puppies follow a course of core vaccinations over their first few months, each building on the last, then move to annual boosters. A reputable breeder will have started this course before the puppy goes home and will hand you the record so your vet can continue it.",
+      },
+      {
+        type: "table",
+        headers: ["Puppy's age", "Typically given"],
+        rows: [
+          [
+            "6 – 8 weeks",
+            "First core vaccination (distemper, hepatitis, parvovirus, parainfluenza — the “5-in-1” / “7-in-1”)",
+          ],
+          ["10 – 12 weeks", "Second core vaccination (booster of the above)"],
+          [
+            "14 – 16 weeks",
+            "Third core vaccination, plus the first rabies vaccination (usually from 12 weeks)",
+          ],
+          [
+            "12 months, then yearly",
+            "Annual boosters for the core vaccines and rabies, for life",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        text: "Your puppy isn't considered fully protected until about a week or two after the final vaccination in the puppy course — which matters for the next point.",
+      },
+      { type: "h2", text: "Deworming schedule" },
+      {
+        type: "p",
+        text: "Worms are almost universal in puppies and stunt growth, cause the classic “pot-belly,” and in heavy burdens can be dangerous. Deworming starts early and repeats often while a puppy is growing, then settles into a routine for adult life.",
+      },
+      {
+        type: "table",
+        headers: ["Age / stage", "Deworming"],
+        rows: [
+          ["From 2 weeks", "Deworm, then repeat every 2 weeks until 12 weeks old"],
+          ["3 – 6 months", "Deworm once a month"],
+          ["6 months and older", "Deworm every 3 months (adult routine)"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Fleas and ticks are a separate job — important in Kenya, since ticks carry serious diseases — so ask your vet about a suitable tick-and-flea prevention alongside the worming plan.",
+      },
+      { type: "h2", text: "Rabies — the legal one" },
+      {
+        type: "p",
+        text: "Rabies deserves its own mention. Vaccinating your dog against rabies is a legal requirement in Kenya, given once from around 12 weeks and then boosted annually. Keep the rabies certificate safe — you'll need it for travel, boarding, and simply as proof your dog is protected. It safeguards your dog, your family and your community.",
+      },
+      { type: "h2", text: "Protect your puppy before the course is complete" },
+      {
+        type: "p",
+        text: "Until your puppy has finished its vaccination course and is fully protected, be careful where you take it. Avoid places where many unknown dogs gather or where sick dogs may have been, since parvovirus in particular lingers in the environment. You can still socialise your puppy safely — in your own clean compound, with healthy, vaccinated dogs you know, and by carrying it to experience new sights and sounds — just hold off on public dog areas until your vet gives the all-clear.",
+      },
+      { type: "h2", text: "Keep the records" },
+      {
+        type: "p",
+        text: "Every vaccination and deworming should be written down — most vets provide a vaccination card or record. Keep it up to date and safe: you'll need it for boosters, boarding, travel, and as honest proof of what has been done. A good breeder hands this record over with the puppy, so you're never guessing where the schedule stands.",
+      },
+      {
+        type: "note",
+        text: "This is a general guide, not a substitute for your vet. Vaccine brands, exact ages and local disease risks vary, so let a licensed vet set and adjust your puppy's plan. If a breeder can't show you dated vaccination and deworming records, treat that as a serious warning sign.",
+      },
+      {
+        type: "p",
+        text: "At Citadel K9s, our puppies are dewormed on a strict schedule from two weeks, examined by a licensed vet, and vaccinated on time before they go home — and every puppy leaves with its complete, dated records so you and your vet can carry the plan forward without missing a step. It's the unglamorous foundation of a healthy German Shepherd, and we don't cut corners on it.",
+      },
+    ],
+  },
+  {
     slug: "hip-dysplasia-in-german-shepherds-kenya",
     title:
       "Hip Dysplasia in German Shepherds: What Every Kenyan Buyer Should Know",
