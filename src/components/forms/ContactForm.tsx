@@ -3,16 +3,16 @@
 import { useState } from "react";
 import { Field, inputBase } from "./Field";
 import { Button } from "@/components/ui/Button";
-import { Check, ArrowRight, WhatsApp } from "@/components/ui/Icons";
+import { Check, WhatsApp } from "@/components/ui/Icons";
 import { whatsappLink } from "@/lib/site";
-import { submitLead, validators } from "@/lib/leads";
+import { validators } from "@/lib/leads";
 
-type Status = "idle" | "sending" | "sent" | "error";
+type Status = "idle" | "sent";
 
 /**
- * Contact form. Leads are validated, spam-filtered (honeypot) and
- * stored in Supabase; if the network fails the visitor is routed to
- * WhatsApp with their message pre-filled — an enquiry is never lost.
+ * Contact form — WhatsApp-first. On submit we validate, filter spam
+ * (honeypot), then open a WhatsApp chat pre-filled with the enquiry so it
+ * reaches the breeder instantly. Nothing is stored server-side.
  */
 export function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
@@ -43,25 +43,22 @@ export function ContactForm() {
     return Object.keys(next).length === 0;
   }
 
-  async function handleSubmit(e: React.FormEvent) {
+  const enquiryWhatsApp = whatsappLink(
+    `Hello Citadel K9s,\n\nName: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email}\nInterest: ${form.interest}\n\n${form.message}`,
+  );
+
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!validate()) return;
-    setStatus("sending");
-    const result = await submitLead({
-      form: "contact",
-      name: form.name,
-      email: form.email,
-      phone: form.phone,
-      interest: form.interest,
-      message: form.message,
-      company: form.company,
-    });
-    setStatus(result.ok ? "sent" : "error");
+    // Honeypot: quietly pretend success so bots don't adapt.
+    if (form.company.trim() !== "") {
+      setStatus("sent");
+      return;
+    }
+    // Open WhatsApp with the enquiry pre-filled (direct user gesture — no await).
+    window.open(enquiryWhatsApp, "_blank", "noopener,noreferrer");
+    setStatus("sent");
   }
-
-  const fallbackWhatsApp = whatsappLink(
-    `Hello Citadel K9s,\n\nName: ${form.name}\nPhone: ${form.phone}\nInterest: ${form.interest}\n\n${form.message}`,
-  );
 
   if (status === "sent") {
     return (
@@ -69,18 +66,19 @@ export function ContactForm() {
         <span className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-emerald-400/40 text-emerald-300">
           <Check className="h-6 w-6" />
         </span>
-        <h3 className="text-xl font-light">Enquiry received — thank you.</h3>
+        <h3 className="text-xl font-light">Your message is ready on WhatsApp.</h3>
         <p className="max-w-sm text-sm text-bone-muted">
-          We reply personally, usually within a day. Prefer an instant answer?
+          We&apos;ve opened WhatsApp with your enquiry filled in — just tap send
+          to reach us. Didn&apos;t open? Use the button below.
         </p>
         <a
-          href={fallbackWhatsApp}
+          href={enquiryWhatsApp}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-outline"
+          className="btn btn-primary"
         >
           <WhatsApp className="h-4 w-4" />
-          Continue on WhatsApp
+          Open WhatsApp
         </a>
       </div>
     );
@@ -186,34 +184,13 @@ export function ContactForm() {
         />
       </div>
 
-      {status === "error" && (
-        <div
-          role="alert"
-          className="flex flex-col gap-3 rounded-xl border border-red-400/30 bg-red-400/5 p-4 text-sm text-red-300"
-        >
-          <p>
-            We couldn&apos;t save your enquiry just now — but don&apos;t retype
-            anything. Send it straight to us on WhatsApp instead:
-          </p>
-          <a
-            href={fallbackWhatsApp}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-outline self-start"
-          >
-            <WhatsApp className="h-4 w-4" />
-            Send via WhatsApp
-          </a>
-        </div>
-      )}
-
-      <Button type="submit" disabled={status === "sending"} className="self-start">
-        {status === "sending" ? "Sending…" : "Send enquiry"}
-        <ArrowRight className="h-4 w-4" />
+      <Button type="submit" className="self-start">
+        <WhatsApp className="h-4 w-4" />
+        Send on WhatsApp
       </Button>
       <p className="text-xs text-bone-faint">
-        We use your details only to respond to this enquiry. We never share
-        them.
+        Your enquiry opens in WhatsApp so we can reply to you personally and
+        fast. We use your details only to respond — never shared.
       </p>
     </form>
   );

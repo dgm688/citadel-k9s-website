@@ -1,40 +1,55 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, Check } from "@/components/ui/Icons";
-import { submitLead, validators } from "@/lib/leads";
+import { WhatsApp, Check } from "@/components/ui/Icons";
+import { whatsappLink } from "@/lib/site";
+import { validators } from "@/lib/leads";
 
-type Status = "idle" | "sending" | "sent" | "error";
+type Status = "idle" | "sent";
 
-/** Newsletter sign-up — stored in Supabase like every other lead. */
+/**
+ * "Be first to know" sign-up — WhatsApp-first. On submit we open a WhatsApp
+ * chat asking to be added to the litter-announcement list, with the email
+ * included, so the breeder can follow up personally. Nothing stored server-side.
+ */
 export function Newsletter() {
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState(""); // honeypot
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState("");
 
-  async function handleSubmit(e: React.FormEvent) {
+  const joinWhatsApp = whatsappLink(
+    `Hello Citadel K9s, I'd like to join the Citadel Circle and be first to hear when a litter is planned.\nEmail: ${email}`,
+  );
+
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!validators.email(email)) {
       setError("Please enter a valid email address.");
       return;
     }
     setError("");
-    setStatus("sending");
-    const result = await submitLead({ form: "newsletter", email, company });
-    if (result.ok) {
+    if (company.trim() !== "") {
       setStatus("sent");
-    } else {
-      setStatus("error");
-      setError("Something went wrong — please try again in a moment.");
+      return;
     }
+    window.open(joinWhatsApp, "_blank", "noopener,noreferrer");
+    setStatus("sent");
   }
 
   if (status === "sent") {
     return (
-      <p role="status" className="inline-flex items-center gap-2 text-sm text-emerald-300">
-        <Check className="h-4 w-4" /> You&apos;re on the list — welcome to the
-        Citadel Circle.
+      <p role="status" className="inline-flex flex-wrap items-center gap-2 text-sm text-emerald-300">
+        <Check className="h-4 w-4" /> Opened WhatsApp — tap send and we&apos;ll
+        keep you posted.
+        <a
+          href={joinWhatsApp}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline decoration-emerald-300/40 underline-offset-2 hover:decoration-emerald-300"
+        >
+          Didn&apos;t open?
+        </a>
       </p>
     );
   }
@@ -67,13 +82,9 @@ export function Newsletter() {
           autoComplete="off"
           aria-hidden="true"
         />
-        <button
-          type="submit"
-          disabled={status === "sending"}
-          className="btn btn-primary shrink-0"
-        >
-          {status === "sending" ? "Joining…" : "Subscribe"}
-          <ArrowRight className="h-4 w-4" />
+        <button type="submit" className="btn btn-primary shrink-0">
+          <WhatsApp className="h-4 w-4" />
+          Notify me
         </button>
       </div>
       {error && (

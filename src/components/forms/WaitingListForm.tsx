@@ -3,16 +3,16 @@
 import { useState } from "react";
 import { Field, inputBase } from "./Field";
 import { Button } from "@/components/ui/Button";
-import { Check, ArrowRight, WhatsApp } from "@/components/ui/Icons";
+import { Check, WhatsApp } from "@/components/ui/Icons";
 import { whatsappLink } from "@/lib/site";
-import { submitLead, validators } from "@/lib/leads";
+import { validators } from "@/lib/leads";
 
-type Status = "idle" | "sending" | "sent" | "error";
+type Status = "idle" | "sent";
 
 /**
- * Waiting-list / reservation form. Same guarantees as the contact
- * form: validated, spam-filtered, stored in Supabase, WhatsApp
- * fallback on failure — an enquiry is never lost.
+ * Waiting-list / reservation form — WhatsApp-first. On submit we validate,
+ * filter spam (honeypot), then open a WhatsApp chat pre-filled with the
+ * details so the breeder can add the family to the list personally.
  */
 export function WaitingListForm({ puppyName }: { puppyName?: string }) {
   const [status, setStatus] = useState<Status>("idle");
@@ -39,26 +39,20 @@ export function WaitingListForm({ puppyName }: { puppyName?: string }) {
     return Object.keys(next).length === 0;
   }
 
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (!validate()) return;
-    setStatus("sending");
-    const result = await submitLead({
-      form: "waiting-list",
-      name: form.name,
-      phone: form.phone,
-      location: form.location,
-      preference: form.preference,
-      message: form.notes,
-      puppy: puppyName,
-      company: form.company,
-    });
-    setStatus(result.ok ? "sent" : "error");
-  }
-
-  const fallbackWhatsApp = whatsappLink(
+  const enquiryWhatsApp = whatsappLink(
     `Hello Citadel K9s,\n\n${puppyName ? `Enquiry about ${puppyName}` : "Waiting list enquiry"}\nName: ${form.name}\nPhone: ${form.phone}\nLocation: ${form.location}\nPreference: ${form.preference}\n\n${form.notes}`,
   );
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!validate()) return;
+    if (form.company.trim() !== "") {
+      setStatus("sent");
+      return;
+    }
+    window.open(enquiryWhatsApp, "_blank", "noopener,noreferrer");
+    setStatus("sent");
+  }
 
   if (status === "sent") {
     return (
@@ -69,19 +63,20 @@ export function WaitingListForm({ puppyName }: { puppyName?: string }) {
         <span className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-emerald-400/40 text-emerald-300">
           <Check className="h-5 w-5" />
         </span>
-        <h3 className="text-lg font-light">You&apos;re on the list.</h3>
+        <h3 className="text-lg font-light">Almost there — send it on WhatsApp.</h3>
         <p className="max-w-sm text-sm text-bone-muted">
-          We&apos;ll be in touch personally about availability and next steps.
-          Want to talk sooner?
+          We&apos;ve opened WhatsApp with your details filled in. Just tap send,
+          and we&apos;ll add you to the waiting list and be in touch personally.
+          Didn&apos;t open? Use the button below.
         </p>
         <a
-          href={fallbackWhatsApp}
+          href={enquiryWhatsApp}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-outline"
+          className="btn btn-primary"
         >
           <WhatsApp className="h-4 w-4" />
-          Chat on WhatsApp
+          Open WhatsApp
         </a>
       </div>
     );
@@ -172,30 +167,9 @@ export function WaitingListForm({ puppyName }: { puppyName?: string }) {
         />
       </div>
 
-      {status === "error" && (
-        <div
-          role="alert"
-          className="flex flex-col gap-3 rounded-xl border border-red-400/30 bg-red-400/5 p-4 text-sm text-red-300"
-        >
-          <p>
-            We couldn&apos;t save your details just now — send them straight to
-            us on WhatsApp instead:
-          </p>
-          <a
-            href={fallbackWhatsApp}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-outline self-start"
-          >
-            <WhatsApp className="h-4 w-4" />
-            Send via WhatsApp
-          </a>
-        </div>
-      )}
-
-      <Button type="submit" disabled={status === "sending"} className="self-start">
-        {status === "sending" ? "Sending…" : "Join the waiting list"}
-        <ArrowRight className="h-4 w-4" />
+      <Button type="submit" className="self-start">
+        <WhatsApp className="h-4 w-4" />
+        Join the waiting list on WhatsApp
       </Button>
     </form>
   );
