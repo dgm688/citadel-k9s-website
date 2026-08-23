@@ -20,7 +20,6 @@ export function KennelShowcase() {
               alt: "Citadel K9s long-coat black and red German Shepherd standing in profile",
             }}
             aspect="aspect-[4/5]"
-            priority
             sizes="(max-width: 1024px) 50vw, 25vw"
             className="shadow-luxe"
           />

@@ -11,6 +11,9 @@ import { CTASection } from "@/components/sections/CTASection";
 import { Check, ArrowRight } from "@/components/ui/Icons";
 import { formatDate } from "@/lib/format";
 
+// Any slug not returned below yields a real 404 (not a soft 200).
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return PUBLISHED_DOGS.map((d) => ({ slug: d.slug }));
 }

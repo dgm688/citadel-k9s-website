@@ -13,6 +13,9 @@ import { ButtonLink } from "@/components/ui/Button";
 import { ArrowRight } from "@/components/ui/Icons";
 import { formatDate } from "@/lib/format";
 
+// Any slug not returned below yields a real 404 (not a soft 200).
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return BLOG_POSTS.map((p) => ({ slug: p.slug }));
 }

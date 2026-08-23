@@ -19,6 +19,9 @@ const statusTone = {
   Sold: "sold",
 } as const;
 
+// Any slug not returned below yields a real 404 (not a soft 200).
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return PUPPIES.map((p) => ({ slug: p.slug }));
 }
