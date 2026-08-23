@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ImageFrame } from "@/components/ui/ImageFrame";
 import { GALLERY, GALLERY_CATEGORIES } from "@/lib/data/gallery";
@@ -9,13 +9,29 @@ import { Close, ArrowRight } from "@/components/ui/Icons";
 export function GalleryGrid() {
   const [active, setActive] = useState<(typeof GALLERY_CATEGORIES)[number]>("All");
   const [lightbox, setLightbox] = useState<number | null>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const restoreFocusRef = useRef<HTMLElement | null>(null);
 
   const items =
     active === "All"
       ? GALLERY
       : GALLERY.filter((g) => g.category === active);
 
-  // Keyboard controls for the lightbox
+  const isOpen = lightbox !== null;
+
+  // Move focus into the dialog on open, and restore it to the trigger on close.
+  useEffect(() => {
+    if (!isOpen) return;
+    restoreFocusRef.current = document.activeElement as HTMLElement | null;
+    const t = window.setTimeout(() => closeButtonRef.current?.focus(), 0);
+    return () => {
+      window.clearTimeout(t);
+      restoreFocusRef.current?.focus?.();
+    };
+  }, [isOpen]);
+
+  // Keyboard controls for the lightbox (Escape, arrows, and a focus trap).
   useEffect(() => {
     if (lightbox === null) return;
     function onKey(e: KeyboardEvent) {
@@ -26,6 +42,21 @@ export function GalleryGrid() {
         setLightbox((i) =>
           i === null ? i : (i - 1 + items.length) % items.length,
         );
+      if (e.key === "Tab" && dialogRef.current) {
+        const focusable = dialogRef.current.querySelectorAll<HTMLElement>(
+          'button, [href], video, [tabindex]:not([tabindex="-1"])',
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
     }
     window.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
@@ -97,6 +128,7 @@ export function GalleryGrid() {
       <AnimatePresence>
         {lightbox !== null && items[lightbox] && (
           <motion.div
+            ref={dialogRef}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -107,6 +139,7 @@ export function GalleryGrid() {
             onClick={() => setLightbox(null)}
           >
             <button
+              ref={closeButtonRef}
               onClick={() => setLightbox(null)}
               aria-label="Close"
               className="absolute right-5 top-5 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-bone hover:border-gold hover:text-gold"

@@ -119,6 +119,7 @@ export function Header() {
                 />
               </button>
               <div
+                inert={!resourcesOpen}
                 className={`absolute right-0 top-full mt-3 w-52 origin-top-right rounded-xl border border-white/10 bg-ink-800/95 p-2 shadow-luxe backdrop-blur-xl transition-all duration-200 ${
                   resourcesOpen
                     ? "pointer-events-auto translate-y-0 opacity-100"
@@ -173,6 +174,7 @@ export function Header() {
       {/* Mobile menu — grouped for low cognitive load */}
       <div
         id="mobile-menu"
+        inert={!open}
         className={`fixed inset-0 top-20 z-40 origin-top overflow-y-auto bg-ink/98 backdrop-blur-xl transition-all duration-300 lg:hidden ${
           open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}

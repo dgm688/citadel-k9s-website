@@ -37,10 +37,9 @@ const nextConfig = {
   },
   images: {
     formats: ["image/avif", "image/webp"],
-    remotePatterns: [
-      // Allow swapping in remote CDN images later without code changes.
-      { protocol: "https", hostname: "**" },
-    ],
+    // Local images only. If a remote CDN is introduced later, allowlist its
+    // exact host here rather than opening the optimizer to every host.
+    remotePatterns: [],
   },
   async headers() {
     return [
