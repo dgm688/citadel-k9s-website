@@ -121,19 +121,9 @@ export function organizationJsonLd() {
       "Responsible dog breeding",
       "Puppy care",
     ],
-    // Described as a Service (not a Product) so it doesn't trigger Google's
-    // Product-snippet requirement for price/review/rating — which we won't
-    // fabricate. The puppy detail page carries the real Product schema.
-    makesOffer: {
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: "German Shepherd puppies",
-        serviceType: "German Shepherd breeding",
-      },
-      areaServed: { "@type": "Country", name: "Kenya" },
-      availability: "https://schema.org/LimitedAvailability",
-    },
+    // NOTE: no site-wide `makesOffer`/Offer node here. A bare Offer without a
+    // price trips Google's Product-snippet "invalid item" validator on every
+    // page. Real Offers live only on puppy detail pages (with a real price).
   };
 }
 
