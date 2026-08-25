@@ -93,6 +93,22 @@ export function organizationJsonLd() {
       { "@type": "City", name: "Nairobi" },
     ],
     sameAs: [CONTACT.instagram],
+    hasMap: CONTACT.maps,
+    // Mirrors the verified Google Business Profile hours.
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "07:00",
+        closes: "17:30",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "09:00",
+        closes: "13:00",
+      },
+    ],
     memberOf: {
       "@type": "Organization",
       name: "East African Kennel Club",

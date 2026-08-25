@@ -190,7 +190,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "p",
-        text: "That's exactly our approach at Citadel K9s. Our breeding dogs are hip scored under the EAKC / KESCAVA scheme, we breed with those results in mind, and we raise our puppies for steady, healthy growth rather than rushed size. And because proof matters more than promises, we're glad to show you the paperwork and answer that all-important question in person. It's the clearest way we know to give a family a German Shepherd built to stay sound for life.",
+        text: "That's exactly our approach at Citadel K9s. Our breeding dogs — including [our dam, Desouza Wren](/our-dogs/desouza-wren) — are hip scored under the EAKC / KESCAVA scheme, we breed with those results in mind, and we raise our puppies for steady, healthy growth rather than rushed size. And because proof matters more than promises, we're glad to show you the paperwork and answer that all-important question in person. It's the clearest way we know to give a family a German Shepherd built to stay sound for life.",
       },
     ],
   },
@@ -257,7 +257,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "p",
-        text: "This is exactly why we encourage every family to meet the parents before choosing a puppy. At Citadel K9s our long-coat German Shepherds are raised to the breed standard and fed for healthy, steady growth — and when you visit, you can see for yourself the size and structure your puppy is likely to grow into.",
+        text: "This is exactly why we encourage every family to [meet the parents](/our-dogs) before choosing a puppy. At Citadel K9s our long-coat German Shepherds are raised to the breed standard and fed for healthy, steady growth — and when you visit, you can see for yourself the size and structure your puppy is likely to grow into.",
       },
     ],
   },
@@ -516,7 +516,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "The Citadel K9s standard" },
       {
         type: "p",
-        text: "We built our kennel around exactly this list, because we would want it as buyers ourselves. Our dogs are registered with the East African Kennel Club (we breed as EAKC Associate Member #2217) and our breeding dogs are hip scored. We plan only a few litters, raised underfoot in our home and socialised from birth. Every puppy leaves microchipped, vet-checked and vaccinated, with its full records and registration paperwork in hand. We welcome visits so you can meet the parents, we keep a direct line open for the life of your dog, and if your circumstances ever change we will always help. We would rather prove all of this than simply promise it — and if we don't think a puppy is right for your home, we'll say so.",
+        text: "We built our kennel around exactly this list, because we would want it as buyers ourselves. [Our dogs](/our-dogs) are registered with the East African Kennel Club (we breed as EAKC Associate Member #2217) and our breeding dogs are hip scored. We plan only a few litters, raised underfoot in our home and socialised from birth. Every puppy leaves microchipped, vet-checked and vaccinated, with its full records and registration paperwork in hand. We welcome visits so you can meet the parents, we keep a direct line open for the life of your dog, and if your circumstances ever change we will always help. We would rather prove all of this than simply promise it — and if we don't think a puppy is right for your home, we'll say so.",
       },
       {
         type: "note",
@@ -524,7 +524,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "p",
-        text: "An ethical breeder usually costs a little more up front — and saves you far more in vet bills, heartbreak and regret over the years that follow. If you'd like to see how that reflects in real numbers, our German Shepherd price guide for Kenya breaks it down, and our guide to avoiding puppy scams covers the outright fraud to watch for. Choose the breeder first, and the right puppy follows.",
+        text: "An ethical breeder usually costs a little more up front — and saves you far more in vet bills, heartbreak and regret over the years that follow. If you'd like to see how that reflects in real numbers, our [German Shepherd price guide for Kenya](/blog/german-shepherd-price-kenya) breaks it down, and our [guide to avoiding puppy scams](/blog/avoid-puppy-scams-kenya) covers the outright fraud to watch for. Choose the breeder first, and the right puppy follows — you can [see our available puppies here](/available-puppies).",
       },
     ],
   },
@@ -613,7 +613,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "p",
-        text: "If you're weighing up the cost of each route, our German Shepherd price guide for Kenya breaks down what puppies actually sell for and why. And whichever stage you choose, the buyer's fundamentals never change: verify the parents, verify the health records, and never let a single word do the work that a visit should.",
+        text: "If you're weighing up the cost of each route, our [German Shepherd price guide for Kenya](/blog/german-shepherd-price-kenya) breaks down what puppies actually sell for and why. And whichever stage you choose, the buyer's fundamentals never change: verify the parents, verify the health records, and never let a single word do the work that a visit should. When you're ready, [see the puppies we have available](/available-puppies).",
       },
     ],
   },
@@ -880,7 +880,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "How Citadel K9s prices its puppies" },
       {
         type: "p",
-        text: "We breed a small number of planned long-coat German Shepherd litters in Ruaka, Kiambu County (on the edge of Nairobi), raised inside our household. Every puppy leaves with a vet check, complete vaccination and deworming records, and a direct WhatsApp line to the breeder for the life of the dog. You visit by appointment, meet the parents, and judge our standards in person before committing a shilling.",
+        text: "We breed a small number of planned long-coat German Shepherd litters in Ruaka, Kiambu County (on the edge of Nairobi), raised inside our household. Every puppy leaves with a vet check, complete vaccination and deworming records, and a direct WhatsApp line to the breeder for the life of the dog. You visit by appointment, [meet the parents](/our-dogs), and judge our standards in person before committing a shilling.",
       },
       {
         type: "p",

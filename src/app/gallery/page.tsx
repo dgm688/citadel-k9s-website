@@ -4,6 +4,8 @@ import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/sections/PageHero";
 import { CTASection } from "@/components/sections/CTASection";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
+import { GALLERY } from "@/lib/data/gallery";
+import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta({
   title: "Gallery",
@@ -12,14 +14,31 @@ export const metadata: Metadata = pageMeta({
   path: "/gallery",
 });
 
+// VideoObject markup for our real gallery videos — makes them eligible for
+// Google video results. Date reflects when the media was published to the site.
+const videoJsonLd = GALLERY.filter(
+  (g) => g.type === "video" && g.videoSrc && g.media.src,
+).map((g) => ({
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: g.media.alt,
+  description: `${g.media.alt} — Citadel K9s, an EAKC-registered German Shepherd breeder in Kenya.`,
+  thumbnailUrl: `${SITE.url}${g.media.src}`,
+  contentUrl: `${SITE.url}${g.videoSrc}`,
+  uploadDate: "2026-07-14",
+}));
+
 export default function GalleryPage() {
   return (
     <>
       <JsonLd
-        data={breadcrumbJsonLd([
-          { name: "Home", path: "/" },
-          { name: "Gallery", path: "/gallery" },
-        ])}
+        data={[
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Gallery", path: "/gallery" },
+          ]),
+          ...videoJsonLd,
+        ]}
       />
       <PageHero
         eyebrow="The Collection"

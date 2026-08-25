@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { BLOG_POSTS, getPost } from "@/lib/data/blog";
@@ -12,6 +13,47 @@ import { CTASection } from "@/components/sections/CTASection";
 import { ButtonLink } from "@/components/ui/Button";
 import { ArrowRight } from "@/components/ui/Icons";
 import { formatDate } from "@/lib/format";
+
+/**
+ * Render inline `[text](/path)` links inside blog paragraphs so posts can
+ * link into topic clusters and funnel authority to the money pages.
+ * Internal paths use next/link; external URLs open in a new tab.
+ */
+function renderRich(text: string): ReactNode {
+  const nodes: ReactNode[] = [];
+  const re = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let last = 0;
+  let k = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    const [, label, href] = m;
+    nodes.push(
+      href.startsWith("/") ? (
+        <Link
+          key={k++}
+          href={href}
+          className="text-gold underline decoration-gold/30 underline-offset-2 transition-colors hover:decoration-gold"
+        >
+          {label}
+        </Link>
+      ) : (
+        <a
+          key={k++}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gold underline decoration-gold/30 underline-offset-2 hover:decoration-gold"
+        >
+          {label}
+        </a>
+      ),
+    );
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes.length > 0 ? nodes : text;
+}
 
 // Any slug not returned below yields a real 404 (not a soft 200).
 export const dynamicParams = false;
@@ -136,7 +178,7 @@ export default async function BlogPostPage({
                     key={i}
                     className="border-l-2 border-gold/40 pl-4 text-sm italic leading-relaxed text-bone-faint"
                   >
-                    {block.text}
+                    {renderRich(block.text)}
                   </p>
                 );
               }
@@ -184,7 +226,7 @@ export default async function BlogPostPage({
               }
               return (
                 <p key={i} className="text-base leading-relaxed text-bone-muted">
-                  {block.text}
+                  {renderRich(block.text)}
                 </p>
               );
             })}

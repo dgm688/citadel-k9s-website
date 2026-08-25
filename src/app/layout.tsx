@@ -71,7 +71,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${display.variable} ${sans.variable}`}>
+    <html lang="en-KE" className={`${display.variable} ${sans.variable}`}>
       <body className="min-h-screen overflow-x-hidden">
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         <ScrollProgress />
