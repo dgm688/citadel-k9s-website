@@ -25,7 +25,9 @@ const videoJsonLd = GALLERY.filter(
   description: `${g.media.alt} — Citadel K9s, an EAKC-registered German Shepherd breeder in Kenya.`,
   thumbnailUrl: `${SITE.url}${g.media.src}`,
   contentUrl: `${SITE.url}${g.videoSrc}`,
-  uploadDate: "2026-07-14",
+  // Full ISO 8601 with Kenya's time zone (EAT, +03:00) — Google requires a
+  // time zone on VideoObject uploadDate.
+  uploadDate: "2026-07-14T09:00:00+03:00",
 }));
 
 export default function GalleryPage() {
