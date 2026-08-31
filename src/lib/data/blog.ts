@@ -7,6 +7,113 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "solid-black-german-shepherd-kenya",
+    title: "Solid Black German Shepherds in Kenya: The Complete Buyer's Guide",
+    metaTitle: "Solid Black German Shepherd in Kenya (Price & Buyer's Guide)",
+    excerpt:
+      "The solid black German Shepherd is the rarest and most striking colour in the breed — and demand in Kenya is rising fast. Here's the genetics behind it, what it should cost, the scams to avoid, and how to find a genuine one.",
+    category: "Buyer's Guide",
+    date: "2026-08-31",
+    readingTime: "9 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-portrait-1.jpg",
+      alt: "A dark long-coat German Shepherd at Citadel K9s in Kenya",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "Few dogs turn heads like a solid black German Shepherd. All-black, from nose to tail, with the same noble build and intelligent eyes as any Shepherd — it is the rarest colour the breed comes in, and in Kenya it has quietly become one of the most sought-after dogs a family can own. If you have been searching for an all-black German Shepherd and want to buy one without being misled, this guide covers everything that matters: what actually makes a Shepherd solid black, whether they are purebred, what they should cost in Kenya, the specific scams to watch for, and how to find a genuine one from lines you can trust.",
+      },
+      { type: "h2", text: "What makes a German Shepherd solid black?" },
+      {
+        type: "p",
+        text: "Colour in German Shepherds is controlled by genetics, and solid black is caused by a recessive gene. Because it is recessive, a puppy is only born solid black when it inherits the black gene from both parents — which means both the sire and the dam must carry it. That is the whole reason solid blacks are uncommon: two black-and-tan parents can carry the gene invisibly and only occasionally produce a black pup, while most litters never do. A true solid black has no tan, red or saddle markings at all — black coat, black nose, black pads, and dark eyes. A small white spot on the chest can occur and is not a fault. This is different from a bi-colour, which is mostly black but carries faint tan on the feet, under the tail or above the eyes.",
+      },
+      { type: "h2", text: "Are solid black German Shepherds purebred?" },
+      {
+        type: "p",
+        text: "Yes — completely. Solid black is a recognised, standard colour of the German Shepherd Dog; it is written into the breed standard alongside black-and-tan and sable. A solid black Shepherd is not a cross, not a separate breed, and not a mix with a black Labrador or Belgian Malinois. It is simply a German Shepherd that happens to be black. Be cautious of any seller who markets a black Shepherd as a “rare breed” or a “special bloodline” to justify a wild price — the colour is special, but the dog is the same breed. What raises real value is health testing and a genuine pedigree, not the colour label alone. If you want to understand what a proper pedigree looks like, read our guide on [how to choose an ethical German Shepherd breeder in Kenya](/blog/how-to-choose-an-ethical-german-shepherd-breeder-kenya).",
+      },
+      { type: "h2", text: "Are black German Shepherds really rare?" },
+      {
+        type: "p",
+        text: "Genuinely, yes. Because both parents must carry the recessive black gene for a black puppy to appear, solid blacks make up a small fraction of Shepherds worldwide — and an even smaller fraction in Kenya, where most German Shepherds are black-and-tan or sable. That scarcity is exactly why solid black pups are in high demand here and tend to be reserved before they are even born. If you find one available, it usually will not stay available for long.",
+      },
+      { type: "h2", text: "Solid black vs bi-colour vs black-and-tan vs sable" },
+      {
+        type: "p",
+        text: "Knowing the difference protects you from paying a solid-black premium for a dog that is not one. Here is how the four common patterns compare at a glance.",
+      },
+      {
+        type: "table",
+        headers: ["Colour", "What it looks like", "Rarity"],
+        rows: [
+          [
+            "Solid black",
+            "Entirely black — coat, nose and pads. No tan or saddle anywhere (a small white chest spot is allowed).",
+            "Rarest",
+          ],
+          [
+            "Bi-colour",
+            "Looks almost black, but with faint tan on the feet, under the tail or as small pips above the eyes.",
+            "Uncommon",
+          ],
+          [
+            "Black & tan / saddle",
+            "The classic Shepherd look — black saddle over a tan or red body.",
+            "Most common",
+          ],
+          [
+            "Sable",
+            "Each hair banded with black and tan, giving a wolf-grey or golden overlay.",
+            "Common",
+          ],
+        ],
+      },
+      { type: "h2", text: "Do black German Shepherds have a different temperament?" },
+      {
+        type: "p",
+        text: "No — and this is worth saying plainly, because it is one of the most common myths. Coat colour has nothing to do with temperament, intelligence, trainability or aggression. A solid black German Shepherd is not fiercer, calmer or smarter than a black-and-tan one. Temperament comes from bloodlines, from how the parents are bred and selected, and from how the puppy is raised and socialised in its first weeks — never from colour. A well-bred black Shepherd is the same loyal, confident, family-and-home-loving dog the breed is famous for. If you are weighing whether the breed suits your home, see [are German Shepherds good for Kenyan homes](/blog/are-german-shepherds-good-for-kenyan-homes).",
+      },
+      { type: "h2", text: "Are solid black Shepherds more prone to health problems?" },
+      {
+        type: "p",
+        text: "There are no health problems linked to the black colour itself. A solid black Shepherd faces the same health considerations as any German Shepherd — and the most important of those is the hips. Hip dysplasia is the condition the breed is most known for, and it is influenced by genetics, not coat colour. This is why you should care far more about whether the parents are hip-scored than about the shade of the coat. Our full explainer, [hip dysplasia in German Shepherds](/blog/hip-dysplasia-in-german-shepherds-kenya), covers what a hip score means and why it matters before you buy.",
+      },
+      { type: "h2", text: "Solid black can be stock coat or long coat" },
+      {
+        type: "p",
+        text: "Solid black comes in both coat lengths. A stock-coat black is sleek and low-maintenance; a long-coat solid black — jet black with a flowing, feathered coat — is arguably the most dramatic-looking dog in the breed, and rarer still. Neither is better; it is a matter of the look you want and the grooming you are willing to do. Our guide to [long coat vs stock coat German Shepherds](/blog/long-coat-vs-stock-coat-german-shepherds) breaks down the practical differences for the Kenyan climate.",
+      },
+      { type: "h2", text: "How much does a solid black German Shepherd cost in Kenya?" },
+      {
+        type: "p",
+        text: "Because they are rare, solid black German Shepherds usually sit at the upper end of the price range for the breed in Kenya. But colour alone should never be the whole reason for a price — what you are really paying for is health-tested parents, a verifiable pedigree, vaccinations, deworming and the breeder's support for the life of the dog. A solid black pup with none of that behind it is not a bargain; it is a gamble. For a full breakdown of what German Shepherd puppies actually cost here and what should be included, read our [German Shepherd price guide for Kenya](/blog/german-shepherd-price-kenya).",
+      },
+      { type: "h2", text: "The solid-black scams to watch for" },
+      {
+        type: "p",
+        text: "The rarity and price of solid blacks attract dishonest sellers, so go in with your eyes open. Three tricks are common. First, dark newborns sold as “guaranteed solid black”: many black-and-tan puppies are born very dark and lighten as they mature, so a dark two-week-old pup is not proof of anything. Second, the “rare breed” markup, where an ordinary black Shepherd is priced as though it were a different, superior animal. Third, the classic no-pedigree sale, where you are shown a lovely black pup but never the parents or any papers. Protect yourself the same way you would with any pup: insist on seeing both parents, ask for the pedigree and registration in writing, and buy from a registered breeder you can actually visit. Our guide on [how to avoid puppy scams in Kenya](/blog/avoid-puppy-scams-kenya) walks through every red flag.",
+      },
+      { type: "h2", text: "Will my black puppy stay black?" },
+      {
+        type: "p",
+        text: "A genuinely solid black puppy — one that inherited the recessive black gene from both parents — will stay black for life. The confusion comes from black-and-tan puppies, which are often born nearly black and then lighten over their first months as the tan comes through. This is exactly why the parents matter so much: a breeder who knows the genetics of their own dogs can tell you honestly whether a pup is truly solid black or a dark youngster that will change. If a seller cannot explain the parents' colours and genetics, treat any “it will stay black” promise with caution.",
+      },
+      { type: "h2", text: "Solid black German Shepherds at Citadel K9s" },
+      {
+        type: "p",
+        text: "Citadel K9s is one of the few breeders in Kenya producing solid black German Shepherds from health-tested, EAKC-registered lines. Our breeding dogs are hip-scored under the EAKC / KESCAVA scheme, microchipped and registered with full pedigree, and our puppies are raised in-home, vet-checked and vaccinated before they leave. Because solid blacks are so rare, availability is very limited and they are usually reserved quickly — so the best way to secure one is to join our waiting list early and tell us the colour and coat you are hoping for. You can meet the parents behind our puppies on our [Our Dogs](/our-dogs) page, including [our dam, Desouza Wren](/our-dogs/desouza-wren), and see who is currently available on our [available puppies](/available-puppies) page.",
+      },
+      {
+        type: "note",
+        text: "One honest word to finish on: colour is the last thing that should decide your choice, not the first. A solid black coat is beautiful, but a good black German Shepherd is a good German Shepherd first — sound hips, a stable temperament and a real pedigree matter far more than the shade. Choose the breeder and the lines, and let the colour be the bonus. If you would like to be considered for a solid black puppy, [join our waiting list](/contact) and we will be honest with you about what we have and when.",
+      },
+    ],
+  },
+  {
     slug: "german-shepherd-puppy-vaccination-deworming-schedule-kenya",
     title: "German Shepherd Puppy Vaccination & Deworming Schedule (Kenya)",
     metaTitle: "Puppy Vaccination & Deworming Schedule in Kenya",
@@ -644,7 +751,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Prioritise temperament over colour" },
       {
         type: "p",
-        text: "Coat colour is the easiest thing to fall in love with and the least important. What matters is a confident, curious puppy that recovers quickly from new experiences. Nervousness and extreme shyness in a young puppy rarely improve on their own.",
+        text: "Coat colour is the easiest thing to fall in love with and the least important. What matters is a confident, curious puppy that recovers quickly from new experiences. Nervousness and extreme shyness in a young puppy rarely improve on their own. If a rare colour like the [solid black German Shepherd](/blog/solid-black-german-shepherd-kenya) has caught your eye, treat it as a bonus on top of a sound, well-tempered puppy — never as the reason to buy.",
       },
       { type: "h2", text: "Look for early socialisation" },
       {
@@ -827,7 +934,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "note",
-        text: "Ranges are indicative of the open market in mid-2026, based on what we see as breeders in and around Nairobi. Individual dogs vary with coat, sex and demand — long coats and rare pigmentation command more.",
+        text: "Ranges are indicative of the open market in mid-2026, based on what we see as breeders in and around Nairobi. Individual dogs vary with coat, sex and demand — long coats and rare pigmentation command more, and the rarest of all, the [solid black German Shepherd](/blog/solid-black-german-shepherd-kenya), sits right at the top end.",
       },
       {
         type: "p",
