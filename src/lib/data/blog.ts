@@ -7,6 +7,93 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "dog-breeders-in-kenya",
+    title: "Dog Breeders in Kenya: How to Find a Good, Registered One",
+    metaTitle: "Dog Breeders in Kenya: How to Find a Good One (2026 Guide)",
+    excerpt:
+      "Kenya has excellent dog breeders — and a lot of backyard operations and brokers you should avoid. Here's how to tell them apart, what 'registered' really means, the questions to ask, and how to buy your next dog safely.",
+    category: "Buyer's Guide",
+    date: "2026-08-31",
+    readingTime: "8 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-portrait-3.jpg",
+      alt: "A well-bred German Shepherd from a registered breeder in Kenya",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "Searching for dog breeders in Kenya is already a smart move — it means you are looking for a dog with a known background rather than gambling on an anonymous advert. But the word “breeder” covers a huge range in Kenya, from dedicated people who health-test their dogs and register every litter, to backyard operations churning out puppies for quick cash, to brokers who never bred the dog at all. This guide shows you how to tell a genuinely good breeder from the rest, what registration actually means here, the exact questions to ask, and how to buy your next dog without being scammed or landed with an unhealthy pup.",
+      },
+      { type: "h2", text: "What makes a good dog breeder — in any breed" },
+      {
+        type: "p",
+        text: "The best breeders, whatever the breed, share the same habits. They health-test their breeding dogs rather than just assuming they are sound. They register their litters with a recognised kennel club and can show you the pedigree. They breed a small number of carefully planned litters, not a constant supply. They raise puppies inside the home, handled and socialised from birth, not in a bare kennel out back. They ask you questions too — a breeder who cares where their puppies end up is a good sign. And they stand behind their dogs for life, happy to advise long after you have paid. If a seller does none of these things, they are selling puppies, not breeding dogs.",
+      },
+      { type: "h2", text: "What “registered” actually means in Kenya" },
+      {
+        type: "p",
+        text: "In Kenya, the recognised body for pedigree dogs is the East African Kennel Club (EAKC). A registered breeder records their litters with the club, which means each puppy can be traced through a documented pedigree rather than simply being called “pure breed” with nothing to back it. When a breeder tells you a dog is registered, ask to actually see the paperwork — the registration and the pedigree — and check the parents' details match. Registration on its own is not a guarantee that a breeder is ethical, but it is a baseline of accountability and traceability that backyard sellers cannot offer. Treat it as a necessary starting point, not the whole story.",
+      },
+      { type: "h2", text: "Registered breeder vs backyard breeder vs broker" },
+      {
+        type: "p",
+        text: "Knowing which of these you are dealing with tells you almost everything about the risk you are taking.",
+      },
+      {
+        type: "table",
+        headers: ["Type", "What they are", "The risk to you"],
+        rows: [
+          [
+            "Registered breeder",
+            "Breeds a specific breed with health-tested parents and kennel-club-registered litters; raises pups in-home.",
+            "Lowest — traceable pedigree, known health, real support.",
+          ],
+          [
+            "Backyard breeder",
+            "Breeds for quick income, usually no health testing, no registration, pups raised with little socialisation.",
+            "High — unknown health and temperament, no recourse if things go wrong.",
+          ],
+          [
+            "Broker / reseller",
+            "Never bred the dog; buys pups cheaply and resells them, often transported far too young.",
+            "Very high — you cannot see the parents or origin, and sick, stressed pups are common.",
+          ],
+        ],
+      },
+      { type: "h2", text: "Where dog breeders advertise in Kenya — and what to watch for" },
+      {
+        type: "p",
+        text: "Most people start on marketplaces like Jiji or PigiaMe, or in Facebook and Instagram groups. These platforms host genuine breeders and outright scammers side by side, so the platform tells you nothing — the seller's behaviour does. Safer signals include a dedicated breeder website, a verifiable physical location you can visit, a Google Business Profile with real reviews, and consistent photos of the same dogs over time. The biggest rule, wherever you find them: never send a deposit by mobile money to someone you have not verified and whose dogs you have not seen. Scammers rely on deposits for puppies that do not exist. Our guide on [how to avoid puppy scams in Kenya](/blog/avoid-puppy-scams-kenya) breaks down every trick in detail.",
+      },
+      { type: "h2", text: "Questions to ask any breeder before you buy" },
+      {
+        type: "p",
+        text: "A good breeder will welcome these questions; a bad one will get defensive. Ask: Can I visit and see where the puppies are raised? Can I meet the mother, and the father if he's yours? Are the parents health-tested, and can I see the results? Is the litter registered, and can I see the pedigree? What vaccinations and deworming has the puppy had, and can I have the records? What support do you offer after I take the puppy home? And simply — why did you breed this litter? The confidence and honesty of the answers will tell you more than any advert.",
+      },
+      { type: "h2", text: "Red flags that mean walk away" },
+      {
+        type: "p",
+        text: "Some warning signs should end the conversation. A seller who won't let you visit, or keeps changing the meeting place. One who can't or won't show you the parents or any papers. Prices that are far below everyone else — a bargain that exists to hook you. Pressure to pay a deposit fast, before you've seen anything. And a “breeder” who always has puppies of many different breeds available at once, which is the signature of a broker, not a breeder. Any one of these is a reason to keep looking. Choosing well matters as much for your wallet as your heart — a healthy, well-bred dog costs far less over its life than a cheap one with hidden problems. Our [German Shepherd price guide for Kenya](/blog/german-shepherd-price-kenya) explains why.",
+      },
+      { type: "h2", text: "Match the breeder to the breed" },
+      {
+        type: "p",
+        text: "The best breeders usually specialise. A breeder devoted to one breed tends to know their bloodlines, health risks and temperament far better than someone offering five different breeds. So once you've chosen a breed, look for a breeder who lives and breathes it. If you're set on a German Shepherd, our detailed guide on [how to choose an ethical German Shepherd breeder in Kenya](/blog/how-to-choose-an-ethical-german-shepherd-breeder-kenya) goes deeper — and if you want a Shepherd specifically for protection, see our guide to [security and guard dogs in Kenya](/blog/security-dogs-for-sale-kenya).",
+      },
+      { type: "h2", text: "About Citadel K9s" },
+      {
+        type: "p",
+        text: "Citadel K9s is a registered German Shepherd breeder based in Ruaka, Kiambu, just outside Nairobi. We specialise in one breed on purpose: our breeding dogs are EAKC-registered and hip-scored under the EAKC / KESCAVA scheme, our puppies are raised in-home and vet-checked, and every one leaves with its records and our ongoing support. We welcome serious buyers to visit and meet our dogs in person — the surest way to know a breeder is real. You can meet the parents behind our puppies on our [Our Dogs](/our-dogs) page and see who is currently available on our [available puppies](/available-puppies) page.",
+      },
+      {
+        type: "note",
+        text: "The right breeder is the best insurance you will ever buy for a dog. Health, temperament and a lifetime of easier ownership all trace back to that first decision, so take your time, ask the hard questions, and never let urgency or a low price rush you. If you'd like honest guidance — even about a breed we don't breed — feel free to [get in touch](/contact).",
+      },
+    ],
+  },
+  {
     slug: "security-dogs-for-sale-kenya",
     title: "Security & Guard Dogs for Sale in Kenya: A German Shepherd Buyer's Guide",
     metaTitle: "Security & Guard Dogs for Sale in Kenya (Guard Dog Guide)",
@@ -643,7 +730,7 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "The word “breeder” does a lot of hiding in Kenya. It covers people who have devoted years to the German Shepherd — its health, its structure, its temperament — and it covers backyard operations breeding whatever they can, as often as they can, for a quick sale. They can look identical in a WhatsApp advert. The difference only shows up later, in your dog's hips, its nerves and its lifespan. Choosing an ethical breeder is not about being sentimental; it is the single most practical decision you will make.",
+        text: "The word “breeder” does a lot of hiding in Kenya. It covers people who have devoted years to the German Shepherd — its health, its structure, its temperament — and it covers backyard operations breeding whatever they can, as often as they can, for a quick sale. They can look identical in a WhatsApp advert. The difference only shows up later, in your dog's hips, its nerves and its lifespan. Choosing an ethical breeder is not about being sentimental; it is the single most practical decision you will make. For the wider view across all breeds — including what registration means in Kenya — see our guide to [finding a good dog breeder in Kenya](/blog/dog-breeders-in-kenya).",
       },
       { type: "h2", text: "Why “ethical” is not just a feel-good word" },
       {
@@ -939,7 +1026,7 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "Puppy scams thrive because buyers fall in love before they verify. The scammer's toolkit is always the same: beautiful stolen photos, a price slightly too good to refuse, a reason you can't visit, and pressure to pay a deposit today. Every protection below costs you nothing.",
+        text: "Puppy scams thrive because buyers fall in love before they verify. The scammer's toolkit is always the same: beautiful stolen photos, a price slightly too good to refuse, a reason you can't visit, and pressure to pay a deposit today. The best defence of all is starting with a genuine, [registered dog breeder in Kenya](/blog/dog-breeders-in-kenya) — but every protection below costs you nothing.",
       },
       { type: "h2", text: "Insist on a live video call" },
       {
