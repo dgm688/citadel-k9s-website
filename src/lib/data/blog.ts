@@ -7,6 +7,92 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "security-dogs-for-sale-kenya",
+    title: "Security & Guard Dogs for Sale in Kenya: A German Shepherd Buyer's Guide",
+    metaTitle: "Security & Guard Dogs for Sale in Kenya (Guard Dog Guide)",
+    excerpt:
+      "In Kenya, a good guard dog is one of the best security investments a home or business can make — and the German Shepherd is the breed of choice. Here's what actually makes a reliable security dog, puppy vs trained, price, and how to buy one safely.",
+    category: "Buyer's Guide",
+    date: "2026-08-31",
+    readingTime: "9 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-handler.jpg",
+      alt: "A strong, alert German Shepherd with its handler at a Kenyan home — a natural security and guard dog",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "For many Kenyan families and businesses, a dog is not only a companion — it is security. A capable guard dog deters intruders before anything happens, alerts you the moment something is wrong, and gives your household a level of peace of mind no alarm can match. When people search for security or guard dogs for sale in Kenya, one breed comes up again and again: the German Shepherd. This guide explains why, what genuinely makes a dog a reliable protector, the difference between a puppy and a trained dog, what you should expect to pay, and how to buy one without being sold a dangerous or unhealthy animal.",
+      },
+      { type: "h2", text: "Why the German Shepherd is Kenya's top security dog" },
+      {
+        type: "p",
+        text: "The German Shepherd earned its reputation for a reason. It is one of the most intelligent and trainable breeds in the world, which is exactly why police and military forces everywhere use them. It bonds deeply and loyally with its family, is naturally alert and territorial, and its size and presence alone are a powerful deterrent — most intruders will not test a home with a Shepherd at the gate. Crucially, a well-bred Shepherd is also a wonderful family dog: gentle and patient with the people it protects, while switched-on to anything out of place. That combination of family companion and serious deterrent is what makes it the default choice for security-minded homes across Kenya. If you want the fuller picture of living with the breed here, see [are German Shepherds good for Kenyan homes](/blog/are-german-shepherds-good-for-kenyan-homes).",
+      },
+      { type: "h2", text: "Guard dog vs trained protection dog — know the difference" },
+      {
+        type: "p",
+        text: "“Security dog” means different things to different buyers, and getting this clear will save you money and disappointment. At one end is the natural guard dog: a confident, alert dog that patrols its territory, barks at strangers and deters trouble simply by being there. Most Kenyan homes need exactly this — a stable dog that raises the alarm and looks the part. At the other end is a formally protection-trained dog, taught on command to guard, hold and, if needed, engage — a specialist animal that costs far more and needs an experienced, committed owner. Between the two sits the “started” dog: a young adult with obedience and confidence already established, ready to settle into a guarding role. Deciding which you actually need is the first real step.",
+      },
+      { type: "h2", text: "The most important thing in a security dog: temperament" },
+      {
+        type: "p",
+        text: "Here is the truth that dishonest sellers hope you never learn: aggression is not the same as protection. A good guard dog is stable, confident and clear-headed — it assesses a situation and responds appropriately. A fearful, nervous or uncontrollably aggressive dog is not a better guard; it is a liability that may bite a child, a visitor or the meter reader, and it will crumble under real pressure. Sound temperament comes from two things: breeding — stable, well-selected parents — and early socialisation in the first weeks of life. This is the single biggest reason to buy a security dog from a registered breeder who health-tests and raises pups properly, rather than an anonymous “guard dog for sale” advert. Our guide on [how to choose an ethical German Shepherd breeder in Kenya](/blog/how-to-choose-an-ethical-german-shepherd-breeder-kenya) shows what to look for.",
+      },
+      { type: "h2", text: "Puppy, started, or trained — which should you buy?" },
+      {
+        type: "p",
+        text: "There is no single right answer — it depends on your budget, your timeline and how much you want to be involved in shaping the dog. Here is how the three options compare.",
+      },
+      {
+        type: "table",
+        headers: ["Option", "What it is", "Best for"],
+        rows: [
+          [
+            "Puppy",
+            "An 8-week pup from proven, stable lines, raised into a guardian by you with proper socialisation and training.",
+            "Owners who want to bond from the start and are happy to invest the time; the most affordable route.",
+          ],
+          [
+            "Started / young adult",
+            "An older pup or young adult with obedience and confidence already underway, ready to grow into the role.",
+            "Buyers who want a faster path and less early-puppy work.",
+          ],
+          [
+            "Trained / protection-started",
+            "A dog with formal obedience and guarding foundation already in place.",
+            "Homes or businesses needing security sooner, with an owner ready to handle a trained dog.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        text: "If you are leaning towards an older or trained dog, our article on [buying a trained German Shepherd in Kenya](/blog/buying-a-trained-german-shepherd-kenya) explains exactly what “trained” should and shouldn't mean — and the questions to ask before you pay.",
+      },
+      { type: "h2", text: "How much do security dogs cost in Kenya?" },
+      {
+        type: "p",
+        text: "A well-bred German Shepherd puppy from health-tested, registered parents is the starting point, and started or trained dogs cost progressively more because of the time and skill invested in them. Be very wary of a cheap “trained guard dog” — genuine training takes months of professional work and is never a bargain, so a rock-bottom price usually means no real training, no health testing, or an unstable dog being offloaded. For a full breakdown of German Shepherd prices here and what should be included, see our [German Shepherd price guide for Kenya](/blog/german-shepherd-price-kenya).",
+      },
+      { type: "h2", text: "Buying safely: guard-dog red flags to avoid" },
+      {
+        type: "p",
+        text: "The security-dog market attracts opportunists, so protect yourself. Walk away from sellers who cannot show you the parents, have no health testing or pedigree, or who market fear and aggression as “good guarding instinct.” Be suspicious of prices that seem too good for a trained dog, and of anyone who won't let you visit. A real breeder welcomes a visit, shows you the environment the dogs are raised in, and is honest about temperament. Our guide on [how to avoid puppy scams in Kenya](/blog/avoid-puppy-scams-kenya) covers every warning sign — it applies just as much to guard dogs as to family pets.",
+      },
+      { type: "h2", text: "Security dogs at Citadel K9s" },
+      {
+        type: "p",
+        text: "At Citadel K9s we breed German Shepherds for exactly the qualities a good security dog needs: stable nerves, confidence and a clear head — never nervous or indiscriminate aggression. Our breeding dogs are EAKC-registered and hip-scored under the EAKC / KESCAVA scheme, and our puppies are raised in-home and carefully socialised, which is the real foundation of a dependable adult guardian. We offer well-bred puppies for owners who want to raise their own protector, and we can also arrange started or trained dogs for buyers who need security sooner — get in touch and tell us your situation so we can advise honestly. You can meet the parents behind our dogs on our [Our Dogs](/our-dogs) page and see current availability on our [available puppies](/available-puppies) page.",
+      },
+      {
+        type: "note",
+        text: "A serious point to end on: a security dog must be stable first and a deterrent second. Never buy a dog for aggression alone — it is dangerous to your own family and rarely reliable when it matters. The best guard dog is a well-bred, well-socialised, well-trained German Shepherd that loves its family and watches over them naturally. If you'd like help choosing the right dog for your home or business, [talk to us](/contact) and we'll point you the right way.",
+      },
+    ],
+  },
+  {
     slug: "solid-black-german-shepherd-kenya",
     title: "Solid Black German Shepherds in Kenya: The Complete Buyer's Guide",
     metaTitle: "Solid Black German Shepherd in Kenya (Price & Buyer's Guide)",
@@ -702,7 +788,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Option 3: A fully trained adult" },
       {
         type: "p",
-        text: "A properly trained adult — solid obedience, or genuine protection work — is a real and valuable thing. It also costs substantially more than a puppy, because you are paying for months of skilled professional work. If that is genuinely what you need, it can be money well spent. But this is exactly the category where the word “trained” is most abused, so verify everything: who did the training and how, watch a live demonstration rather than a video, and get the dog's full temperament and health history in writing.",
+        text: "A properly trained adult — solid obedience, or genuine protection work — is a real and valuable thing. It also costs substantially more than a puppy, because you are paying for months of skilled professional work. If that is genuinely what you need, it can be money well spent, especially for a [security or guard dog](/blog/security-dogs-for-sale-kenya). But this is exactly the category where the word “trained” is most abused, so verify everything: who did the training and how, watch a live demonstration rather than a video, and get the dog's full temperament and health history in writing.",
       },
       { type: "h2", text: "The catch: “trained” is also a sales word" },
       {
@@ -1113,7 +1199,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Security and family life are not a trade-off" },
       {
         type: "p",
-        text: "Many Kenyan families want a dog that is gentle indoors and serious about the gate. A well-bred German Shepherd is exactly that: naturally watchful and territorial without being unstable. A sound one does not need to be made aggressive — and a dog made aggressive through mistreatment is a liability, not protection. Temperament comes from breeding and rearing, not from chaining a dog up.",
+        text: "Many Kenyan families want a dog that is gentle indoors and serious about the gate. A well-bred German Shepherd is exactly that: naturally watchful and territorial without being unstable. A sound one does not need to be made aggressive — and a dog made aggressive through mistreatment is a liability, not protection. Temperament comes from breeding and rearing, not from chaining a dog up. If security is your main reason for wanting a dog, our guide to [security and guard dogs in Kenya](/blog/security-dogs-for-sale-kenya) goes deeper into choosing one wisely.",
       },
       { type: "h2", text: "When a German Shepherd is NOT for you" },
       {
