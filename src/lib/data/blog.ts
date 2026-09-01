@@ -34,12 +34,12 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Where we are — Ruaka, on Nairobi's doorstep" },
       {
         type: "p",
-        text: "Citadel K9s is in Ruaka, Kiambu County, just off the northern edge of Nairobi. It is an easy drive from Westlands, Runda, Gigiri, Karen, Kiambu Road and the Thika Road corridor, and straightforward to reach from most of the city. We welcome serious buyers to visit by appointment, meet our dogs, and take their time — appointments simply protect young litters from infection and stress.",
+        text: "Citadel K9s is in Ruaka, Kiambu County, just off the northern edge of Nairobi — close to the city, yet out where the dogs have room. We welcome serious buyers to visit by appointment, meet our dogs, and take their time. Appointments simply protect young litters from infection and stress.",
       },
-      { type: "h2", text: "Areas we serve across the Nairobi metro" },
+      { type: "h2", text: "Visiting us — and transport if you're further away" },
       {
         type: "p",
-        text: "Families come to us from across Nairobi and Kiambu — including Nairobi city, Westlands, Karen, Runda, Muthaiga, Kiambu town, Kikuyu, Ruiru, Thika, Limuru and the surrounding areas. Wherever in the metro you are, you are welcome to visit us in Ruaka; for a puppy that has been reserved and is old enough to travel, we can also help arrange safe local collection within the Nairobi area.",
+        text: "Wherever you are in Nairobi or Kiambu, you are welcome to visit us in Ruaka and meet our dogs in person. If you are further afield, or would simply prefer not to travel with a young puppy, we can arrange safe ground transport within Kenya, planned around the puppy's wellbeing, with the full document pack travelling with the puppy — just talk to us about your location and we'll give you honest options and costs.",
       },
       { type: "h2", text: "What you get from a local, registered breeder" },
       {
