@@ -39,7 +39,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Visiting us — and transport if you're further away" },
       {
         type: "p",
-        text: "Wherever you are in Nairobi or Kiambu, you are welcome to visit us in Ruaka and meet our dogs in person. If you are further afield, or would simply prefer not to travel with a young puppy, we can arrange safe ground transport within Kenya, planned around the puppy's wellbeing, with the full document pack travelling with the puppy — just talk to us about your location and we'll give you honest options and costs.",
+        text: "Wherever you are in Nairobi or Kiambu, you are welcome to visit us in Ruaka and meet our dogs in person. Our puppies have gone to families across Kenya and into Tanzania, so distance is rarely the obstacle it seems — if you are further afield, or would simply prefer not to travel with a young puppy, we can arrange safe transport, planned around the puppy's wellbeing, with the full document pack travelling with the puppy. Just talk to us about your location and we'll give you honest options and costs.",
       },
       { type: "h2", text: "What you get from a local, registered breeder" },
       {
