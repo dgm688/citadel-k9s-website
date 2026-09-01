@@ -34,7 +34,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "How it works if you're outside Kenya" },
       {
         type: "p",
-        text: "It is simpler than most people expect. Start with a WhatsApp conversation and, if you like, a live video call so you can see the puppy and its mother before committing to anything. Buyers from Tanzania and elsewhere then travel to us in Ruaka to meet and collect their puppy in person — the safest way to buy, and the surest way to know exactly what you are getting. Every puppy leaves with its full East African Kennel Club registration paperwork, microchip details and health records. You handle your own country's travel and import requirements; we make sure the complete document pack travels with the puppy and give you honest guidance for the journey.",
+        text: "It is simpler than most people expect. Start with a WhatsApp conversation and, if you like, a live video call so you can see the puppy and its mother before committing to anything. From there you have two options: travel to us in Ruaka to meet and collect your puppy in person — the surest way to know exactly what you are getting — or let us help arrange a trusted transporter who handles the journey and assists with the cross-border paperwork. Either way, every puppy leaves with its full East African Kennel Club registration, microchip details and health records, and we'll talk you through your country's requirements and the likely costs honestly before anything is agreed.",
       },
       { type: "h2", text: "What to verify before buying across borders" },
       {
