@@ -80,6 +80,56 @@ export const FAQS: Faq[] = [
     answer:
       "Contact us first, always. We will help rehome any Citadel K9s dog responsibly rather than see it end up in the wrong hands. That commitment doesn't expire.",
   },
+
+  // ── About the breed — the questions buyers Google before enquiring ──
+  {
+    category: "About the Breed",
+    question: "How much is a German Shepherd puppy in Kenya?",
+    answer:
+      "A healthy, purebred German Shepherd puppy from a documented breeder typically costs between KSh 40,000 and KSh 150,000 in 2026, depending on pedigree, health testing, coat and lineage. Puppies advertised below KSh 15,000 are usually unpapered, with no verifiable health or pedigree — which is where most buyers get burned.",
+  },
+  {
+    category: "About the Breed",
+    question: "Are German Shepherds good guard dogs?",
+    answer:
+      "Yes — the German Shepherd is one of the best guard dogs in the world, which is why police and military use them. A well-bred one is naturally alert and protective while still gentle with its family. Good guarding comes from stable temperament and training, never from aggression, so the breeding and rearing matter far more than the colour or size.",
+  },
+  {
+    category: "About the Breed",
+    question: "Do German Shepherds cope well with the Kenyan climate?",
+    answer:
+      "Yes. German Shepherds do very well in Kenya's climate, including the warmer lowland areas, as long as they have shade, fresh water and are not exercised in the midday heat. Both stock-coat and long-coat Shepherds thrive here; the coat insulates against heat as well as cold. Regular grooming and tick-and-flea control are the main practical needs.",
+  },
+  {
+    category: "About the Breed",
+    question: "How big do German Shepherds get?",
+    answer:
+      "Adult males typically stand 60–65 cm at the shoulder and weigh around 30–40 kg; females are a little smaller at 55–60 cm and roughly 22–32 kg. They reach close to full height by about a year old but keep filling out in muscle and chest until two to three years of age.",
+  },
+  {
+    category: "About the Breed",
+    question: "How long do German Shepherds live?",
+    answer:
+      "A German Shepherd typically lives 9 to 13 years. Good genetics — especially hip-scored parents — together with correct feeding, healthy weight, exercise and routine veterinary care all help a dog reach the upper end of that range. This is one more reason buying from a health-testing breeder pays off over the life of the dog.",
+  },
+  {
+    category: "About the Breed",
+    question: "What is the difference between a long-coat and stock-coat German Shepherd?",
+    answer:
+      "A stock coat is the classic medium-length double coat; a long coat is longer, softer and feathered on the ears, legs and tail. Both are purebred German Shepherds with the same temperament — the difference is looks and grooming, with long coats needing a little more brushing. Coat length does not affect health or trainability.",
+  },
+  {
+    category: "About the Breed",
+    question: "Should I get a male or female German Shepherd?",
+    answer:
+      "Both make excellent companions, and temperament depends far more on breeding and raising than on sex. In general, males are larger and can be more territorial, while females are often a little smaller and mature slightly earlier. We'll talk through your home and what you want the dog for, and help you choose the right individual rather than just a sex.",
+  },
+  {
+    category: "About the Breed",
+    question: "Are solid black German Shepherds purebred?",
+    answer:
+      "Yes. Solid black is a recognised, standard colour of the German Shepherd, caused by a recessive gene that both parents must carry — which is why it is rare. A solid black Shepherd is not a different or mixed breed; it is a purebred German Shepherd that happens to be black. Be wary of anyone charging a 'rare breed' premium for the colour alone.",
+  },
 ];
 
 export const FAQ_CATEGORIES = Array.from(new Set(FAQS.map((f) => f.category)));

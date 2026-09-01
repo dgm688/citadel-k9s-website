@@ -7,6 +7,108 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "german-shepherd-puppies-nairobi",
+    title: "German Shepherd Puppies in Nairobi & Kiambu: Where to Buy Near You",
+    metaTitle: "German Shepherd Puppies in Nairobi (Local Breeder)",
+    excerpt:
+      "Looking for a German Shepherd puppy near Nairobi? Buying locally lets you meet the parents, skip risky transport, and know your breeder is real. Here's how — and where we are, minutes from the city.",
+    category: "Buyer's Guide",
+    date: "2026-08-31",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-handler.jpg",
+      alt: "A German Shepherd with its handler at a home near Nairobi, Kenya",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "If you are searching for a German Shepherd puppy in Nairobi, buying from a breeder near you is one of the smartest decisions you can make. You can visit in person, meet the puppy's parents, see the environment it was raised in, and avoid the stress and risk of transporting a young pup long distances. Citadel K9s is based in Ruaka, Kiambu County — right on the edge of Nairobi, minutes from the city — which means families across the Nairobi metro can come and see exactly what they are buying before they commit to anything.",
+      },
+      { type: "h2", text: "Why buy your German Shepherd near Nairobi?" },
+      {
+        type: "p",
+        text: "Three reasons stand out. First, you can visit and meet the parents — the single best way to judge the temperament and health your puppy is likely to inherit, and something no photo or advert can replace. Second, you avoid long-distance transport, which is stressful and genuinely risky for a young puppy; a short local collection is far kinder. Third, buying nearby means real, ongoing support — a breeder you can actually reach, who knows your dog. It is also your best protection against scams, which almost always fall apart the moment you ask to visit in person. Our guide on [how to avoid puppy scams in Kenya](/blog/avoid-puppy-scams-kenya) explains why.",
+      },
+      { type: "h2", text: "Where we are — Ruaka, on Nairobi's doorstep" },
+      {
+        type: "p",
+        text: "Citadel K9s is in Ruaka, Kiambu County, just off the northern edge of Nairobi. It is an easy drive from Westlands, Runda, Gigiri, Karen, Kiambu Road and the Thika Road corridor, and straightforward to reach from most of the city. We welcome serious buyers to visit by appointment, meet our dogs, and take their time — appointments simply protect young litters from infection and stress.",
+      },
+      { type: "h2", text: "Areas we serve across the Nairobi metro" },
+      {
+        type: "p",
+        text: "Families come to us from across Nairobi and Kiambu — including Nairobi city, Westlands, Karen, Runda, Muthaiga, Kiambu town, Kikuyu, Ruiru, Thika, Limuru and the surrounding areas. Wherever in the metro you are, you are welcome to visit us in Ruaka; for a puppy that has been reserved and is old enough to travel, we can also help arrange safe local collection within the Nairobi area.",
+      },
+      { type: "h2", text: "What you get from a local, registered breeder" },
+      {
+        type: "p",
+        text: "We are an EAKC-registered German Shepherd breeder. Our breeding dogs are hip-scored under the EAKC / KESCAVA scheme and microchipped, our puppies are raised in-home and vet-checked, and every puppy leaves with its registration paperwork, microchip details and full health records. You can meet the parents behind our puppies on our [Our Dogs](/our-dogs) page and see who is currently available on our [available puppies](/available-puppies) page. If you want a Shepherd specifically for protection, see our guide to [security and guard dogs in Kenya](/blog/security-dogs-for-sale-kenya).",
+      },
+      { type: "h2", text: "Visiting and collection" },
+      {
+        type: "p",
+        text: "The best next step is simple: message us on WhatsApp, tell us what you are looking for, and we will arrange a visit or a live video call. Seeing the puppy and its mother in person — or on a live call — before any payment is exactly how a genuine purchase should work. No pressure, no rushed deposits.",
+      },
+      {
+        type: "note",
+        text: "A local breeder you can visit is worth far more than the cheapest advert you can find online. If you are in Nairobi or Kiambu and want a healthy, well-raised German Shepherd from parents you can meet, [get in touch](/contact) and come and see us.",
+      },
+    ],
+  },
+  {
+    slug: "sable-german-shepherd-kenya",
+    title: "Sable German Shepherds in Kenya: Colour, Genetics & What to Know",
+    metaTitle: "Sable German Shepherd in Kenya (Colour Guide)",
+    excerpt:
+      "The sable German Shepherd — the classic wolf-like colour of the original working dogs — is drawing growing interest in Kenya. Here's what sable actually is, the genetics, the types, and what it means for temperament and price.",
+    category: "Buyer's Guide",
+    date: "2026-08-31",
+    readingTime: "7 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-stack.jpg",
+      alt: "A German Shepherd standing in profile in Kenya",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "Of all the German Shepherd colours, sable is the one that looks most like the breed's wild ancestor — a wolf-grey or golden coat where the colour seems to shift as the dog moves. It is the oldest colour in the breed (the very first registered German Shepherd was a sable), it dominates the working lines, and interest in it is growing among Kenyan buyers who want that classic, rugged look. This guide explains what sable really is, the genetics behind it, the different types you'll see, and what it means — and doesn't mean — for temperament and price.",
+      },
+      { type: "h2", text: "What is a sable German Shepherd?" },
+      {
+        type: "p",
+        text: "Sable is not a single flat colour but a pattern. Each individual hair is banded — pale at the base, then black at the tip — so the coat reads as a rich wolf-grey, golden or reddish overlay that changes with the light. It is produced by the agouti gene, and unlike solid black (which is recessive), sable is dominant: a dog needs only one sable parent to be sable, which is part of why the colour is so common in working lines. If you want to compare it with the rare opposite end of the spectrum, see our guide to the [solid black German Shepherd](/blog/solid-black-german-shepherd-kenya).",
+      },
+      { type: "h2", text: "The types of sable you'll see" },
+      {
+        type: "p",
+        text: "Sable comes in a range of shades: grey or silver sable, red or golden sable, and dark sable that can look almost black over the back. One thing surprises many first-time buyers — sable puppies often look quite different at birth from the adults they become, usually born darker and developing their full banded pattern over the first months. A breeder who knows their lines can tell you how a sable pup is likely to mature.",
+      },
+      { type: "h2", text: "Are sable German Shepherds working dogs?" },
+      {
+        type: "p",
+        text: "Sable is strongly associated with working and protection lines, so many sable Shepherds do come from high-drive, working-bred stock. But it is worth being clear: the colour does not create the temperament — the bloodline does. A sable from calm, family-bred parents will be a calm family dog; a sable from intense working lines will have working drive. Judge the parents and the lines, not the coat. If you're weighing the breed for your home, see [are German Shepherds good for Kenyan homes](/blog/are-german-shepherds-good-for-kenyan-homes), and for the coat-length choice, our [long coat vs stock coat guide](/blog/long-coat-vs-stock-coat-german-shepherds).",
+      },
+      { type: "h2", text: "Do sable German Shepherds cost more in Kenya?" },
+      {
+        type: "p",
+        text: "Colour is a minor factor in price compared with what really matters — health-tested parents, a verifiable pedigree, and how the puppy is raised. A sable from documented, hip-scored lines is worth far more than a cheaper sable with no papers, whatever the shade. For the full picture of what German Shepherds cost here and why, read our [German Shepherd price guide for Kenya](/blog/german-shepherd-price-kenya).",
+      },
+      { type: "h2", text: "Buying a sable German Shepherd in Kenya" },
+      {
+        type: "p",
+        text: "Buy a sable the same careful way you'd buy any Shepherd: insist on seeing the parents, ask for the pedigree and health testing, get the records in writing, and choose a registered breeder you can visit. Our guide on [how to choose an ethical German Shepherd breeder in Kenya](/blog/how-to-choose-an-ethical-german-shepherd-breeder-kenya) covers exactly what to look for.",
+      },
+      {
+        type: "note",
+        text: "Whatever colour draws your eye — sable, black-and-tan or solid black — remember that health, temperament and pedigree matter far more than the coat. At Citadel K9s we breed from health-tested, EAKC-registered lines and are always honest about what we have; tell us the look you're hoping for and [talk to us](/contact) about the right puppy for your home.",
+      },
+    ],
+  },
+  {
     slug: "dog-breeders-in-kenya",
     title: "Dog Breeders in Kenya: How to Find a Good, Registered One",
     metaTitle: "Dog Breeders in Kenya: How to Find a Good One (2026 Guide)",
@@ -1078,7 +1180,11 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "p",
         text: "This guide explains what German Shepherds actually cost in Kenya in 2026, why the range is so wide, and how to work out what a fair price is for the dog in front of you. We're a breeder, so we have a perspective — but everything here is something you can verify yourself.",
       },
-      { type: "h2", text: "The short answer: 2026 price ranges" },
+      { type: "h2", text: "How much is a German Shepherd puppy in Kenya?" },
+      {
+        type: "p",
+        text: "A healthy, purebred German Shepherd puppy from a documented breeder typically costs between KSh 40,000 and KSh 150,000 in Kenya in 2026, depending on pedigree, health testing, coat type and lineage. Puppies advertised below KSh 15,000 are usually unpapered, with no verifiable health records or pedigree — which is where most buyers get burned.",
+      },
       {
         type: "table",
         headers: ["What you're buying", "Typical price (KSh)", "What you're really getting"],
