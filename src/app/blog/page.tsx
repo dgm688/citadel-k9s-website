@@ -8,7 +8,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { BLOG_POSTS } from "@/lib/data/blog";
 
 export const metadata: Metadata = pageMeta({
-  title: "Blog",
+  title: "German Shepherd Blog — Care, Training & Buying",
   description:
     "Expert guidance on German Shepherds from Citadel K9s — choosing a puppy, care, nutrition, training and life with the breed.",
   path: "/blog",

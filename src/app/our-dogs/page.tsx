@@ -13,7 +13,7 @@ import { WhatsApp, Check } from "@/components/ui/Icons";
 
 export const metadata: Metadata = pageMeta({
   title: HAS_DOGS
-    ? "Our German Shepherd Dogs"
+    ? "Our German Shepherds — Long-Coat & Health-Tested"
     : "Our German Shepherd Dogs — Profiles in Preparation",
   description: HAS_DOGS
     ? "Meet the German Shepherd sires and dams behind Citadel K9s in Kenya — long-coat black and red lines bred for structure, health and temperament. Visit by appointment."

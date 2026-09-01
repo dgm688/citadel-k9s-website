@@ -10,7 +10,7 @@ import { BRAND_PILLARS, SITE } from "@/lib/site";
 import { Check } from "@/components/ui/Icons";
 
 export const metadata: Metadata = pageMeta({
-  title: "About",
+  title: "EAKC-Registered German Shepherd Breeder in Kenya",
   description:
     "The story, mission and standards behind Citadel K9s — a premium German Shepherd kennel in Kenya breeding for structure, health and temperament.",
   path: "/about",

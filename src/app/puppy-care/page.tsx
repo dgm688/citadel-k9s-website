@@ -9,7 +9,7 @@ import { ImageFrame } from "@/components/ui/ImageFrame";
 import { Paw, ShieldCheck, Heart, Check, Sparkle } from "@/components/ui/Icons";
 
 export const metadata: Metadata = pageMeta({
-  title: "Puppy Care",
+  title: "German Shepherd Puppy Care Guide — Kenya",
   description:
     "Essential care guidance for your Citadel K9s German Shepherd puppy — nutrition, health, socialisation, training and settling in.",
   path: "/puppy-care",

@@ -7,7 +7,7 @@ import { FaqExplorer } from "@/components/faq/FaqExplorer";
 import { FAQS } from "@/lib/data/faq";
 
 export const metadata: Metadata = pageMeta({
-  title: "FAQ",
+  title: "German Shepherd FAQ — Buying & Care in Kenya",
   description:
     "Frequently asked questions about Citadel K9s — reserving a puppy, health guarantees, registration, temperament, shipping and visiting.",
   path: "/faq",

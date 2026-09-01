@@ -10,7 +10,7 @@ import { whatsappLink } from "@/lib/site";
 import { WhatsApp, ShieldCheck } from "@/components/ui/Icons";
 
 export const metadata: Metadata = pageMeta({
-  title: "Testimonials",
+  title: "German Shepherd Breeder Reviews — Kenya",
   description:
     "Verified reviews from Citadel K9s families. We publish only genuine testimonials — ask us for direct references any time.",
   path: "/testimonials",

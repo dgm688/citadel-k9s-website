@@ -8,7 +8,7 @@ import { GALLERY } from "@/lib/data/gallery";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta({
-  title: "Gallery",
+  title: "German Shepherd Photos & Videos — Kenya",
   description:
     "A gallery of Citadel K9s German Shepherds — adults, puppies, working moments and candid life at the kennel in Kenya.",
   path: "/gallery",
