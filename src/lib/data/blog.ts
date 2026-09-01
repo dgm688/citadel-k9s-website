@@ -7,6 +7,52 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "german-shepherd-puppies-east-africa",
+    title: "German Shepherd Puppies in East Africa: Buying from a Registered Kenyan Breeder",
+    metaTitle: "German Shepherd Puppies in East Africa (Kenya Breeder)",
+    excerpt:
+      "A genuinely health-tested, registered German Shepherd can be hard to find across much of East Africa. Here's why serious buyers look to established Kenyan breeders — and how buying works if you're outside Kenya.",
+    category: "Buyer's Guide",
+    date: "2026-08-31",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/young-front.jpg",
+      alt: "A registered German Shepherd puppy from a Kenyan breeder serving East Africa",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "Across much of East Africa, finding a German Shepherd that is genuinely health-tested, registered and raised properly is harder than it should be. That is why a growing number of serious buyers look to established breeders in Kenya, where kennel-club registration and health screening are more firmly established. Citadel K9s is based in Ruaka, just outside Nairobi, and welcomes serious buyers from across the region — buyers already travel to us from within Kenya and from Tanzania to collect their puppies in person. This guide explains why, and how buying works if you are outside Kenya.",
+      },
+      { type: "h2", text: "Why buyers across East Africa look to Kenya" },
+      {
+        type: "p",
+        text: "The reason is straightforward: standards and documentation. A well-run Kenyan kennel can offer parents registered with the East African Kennel Club, hip scoring under a recognised scheme, and a full pack of health and vaccination records — the things that separate a sound, traceable dog from a gamble. Nairobi is also a regional hub that is reasonably accessible from neighbouring countries. For a buyer who wants a genuinely documented German Shepherd rather than an unpapered puppy of unknown background, the trip is often worth it.",
+      },
+      { type: "h2", text: "How it works if you're outside Kenya" },
+      {
+        type: "p",
+        text: "It is simpler than most people expect. Start with a WhatsApp conversation and, if you like, a live video call so you can see the puppy and its mother before committing to anything. Buyers from Tanzania and elsewhere then travel to us in Ruaka to meet and collect their puppy in person — the safest way to buy, and the surest way to know exactly what you are getting. Every puppy leaves with its full East African Kennel Club registration paperwork, microchip details and health records. You handle your own country's travel and import requirements; we make sure the complete document pack travels with the puppy and give you honest guidance for the journey.",
+      },
+      { type: "h2", text: "What to verify before buying across borders" },
+      {
+        type: "p",
+        text: "Buying from another country raises the stakes, so verify carefully. Confirm the breeder is genuinely registered and health-tests their dogs, insist on seeing the parents in person or on a live video call, and get the pedigree and health records in writing. Make sure vaccinations are complete and documented for travel, and never send a deposit to a seller you have not properly verified. Our guides on [how to choose an ethical German Shepherd breeder in Kenya](/blog/how-to-choose-an-ethical-german-shepherd-breeder-kenya) and [how to avoid puppy scams in Kenya](/blog/avoid-puppy-scams-kenya) apply doubly when distance is involved.",
+      },
+      { type: "h2", text: "About Citadel K9s" },
+      {
+        type: "p",
+        text: "Citadel K9s is an EAKC-registered German Shepherd breeder in Ruaka, Kiambu County, just outside Nairobi. Our breeding dogs are hip-scored and microchipped, our puppies are raised in-home and vet-checked, and every puppy leaves fully documented. We welcome serious buyers from across East Africa — you're always encouraged to visit and meet our dogs before deciding. Meet the parents on our [Our Dogs](/our-dogs) page, see current availability on our [available puppies](/available-puppies) page, and read our [German Shepherd price guide for Kenya](/blog/german-shepherd-price-kenya) to understand fair pricing before you buy.",
+      },
+      {
+        type: "note",
+        text: "Distance should never tempt you to skip the checks — if anything, buy even more carefully across borders. A registered, health-tested puppy from parents you have seen is worth the journey; an unverified one shipped sight-unseen is exactly how people get hurt. If you're anywhere in East Africa and want a German Shepherd done properly, [talk to us](/contact) and we'll be honest about what we have.",
+      },
+    ],
+  },
+  {
     slug: "german-shepherd-puppies-nairobi",
     title: "German Shepherd Puppies in Nairobi & Kiambu: Where to Buy Near You",
     metaTitle: "German Shepherd Puppies in Nairobi (Local Breeder)",
@@ -39,7 +85,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Visiting us — and transport if you're further away" },
       {
         type: "p",
-        text: "Wherever you are in Nairobi or Kiambu, you are welcome to visit us in Ruaka and meet our dogs in person. Our puppies have gone to families across Kenya and into Tanzania, so distance is rarely the obstacle it seems — if you are further afield, or would simply prefer not to travel with a young puppy, we can arrange safe transport, planned around the puppy's wellbeing, with the full document pack travelling with the puppy. Just talk to us about your location and we'll give you honest options and costs.",
+        text: "Wherever you are in Nairobi or Kiambu, you are welcome to visit us in Ruaka and meet our dogs in person. Our puppies have gone to families across Kenya, and buyers travel to us from as far as Tanzania — so distance is rarely the obstacle it seems. If you are elsewhere in Kenya and would prefer not to travel with a young puppy yourself, we can arrange safe ground transport within Kenya, planned around the puppy's wellbeing, with the full document pack travelling with the puppy. Buyers coming from Tanzania are warmly welcome to visit and collect in person. Just talk to us about your location and we'll give you honest options. If you're outside Kenya, our [East Africa buyer's guide](/blog/german-shepherd-puppies-east-africa) explains exactly how it works.",
       },
       { type: "h2", text: "What you get from a local, registered breeder" },
       {

@@ -90,7 +90,9 @@ export function organizationJsonLd() {
     },
     areaServed: [
       { "@type": "Country", name: "Kenya" },
+      { "@type": "Country", name: "Tanzania" },
       { "@type": "City", name: "Nairobi" },
+      { "@type": "Place", name: "East Africa" },
     ],
     sameAs: [CONTACT.instagram],
     hasMap: CONTACT.maps,
