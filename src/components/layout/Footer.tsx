@@ -4,6 +4,7 @@ import {
   CONTACT,
   NAV_ALL,
   LEGAL_NAV,
+  COMMERCIAL_PAGES,
   whatsappLink,
 } from "@/lib/site";
 import { Logo } from "@/components/ui/Logo";
@@ -77,6 +78,22 @@ export function Footer() {
           </h3>
           <ul className="mt-5 grid grid-cols-2 gap-x-6 gap-y-3 text-sm">
             {NAV_ALL.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className="text-bone-muted transition-colors hover:text-gold"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <h3 className="mt-8 text-xs uppercase tracking-luxe text-bone-faint">
+            Popular searches
+          </h3>
+          <ul className="mt-5 grid gap-y-3 text-sm">
+            {COMMERCIAL_PAGES.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}

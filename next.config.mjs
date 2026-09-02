@@ -33,6 +33,13 @@ const nextConfig = {
         destination: `https://${canonicalHost}/:path*`,
         permanent: true,
       },
+      // Consolidated the Nairobi blog post into the dedicated commercial
+      // landing page (one canonical page per query — avoids cannibalisation).
+      {
+        source: "/blog/german-shepherd-puppies-nairobi",
+        destination: "/german-shepherd-puppies-nairobi",
+        permanent: true,
+      },
     ];
   },
   images: {

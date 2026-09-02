@@ -141,6 +141,22 @@ export function websiteJsonLd() {
   };
 }
 
+/**
+ * FAQPage structured data. Only use where the same questions/answers are
+ * genuinely visible on the page (Google's requirement) — never for hidden text.
+ */
+export function faqJsonLd(items: { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+}
+
 export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
   return {
     "@context": "https://schema.org",

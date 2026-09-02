@@ -95,6 +95,17 @@ export const NAV_RESOURCES: { label: string; href: string }[] = [
 /** Flat list used by the footer, sitemap and 404 quick links. */
 export const NAV_ALL = [...NAV_PRIMARY, ...NAV_RESOURCES];
 
+/**
+ * Dedicated commercial landing pages targeting high-intent buyer searches.
+ * Kept out of the primary nav (which stays small) but linked from the footer
+ * and sitemap so they're crawlable and pass internal link equity.
+ */
+export const COMMERCIAL_PAGES: { label: string; href: string }[] = [
+  { label: "GSD Puppies in Kenya", href: "/german-shepherd-puppies-kenya" },
+  { label: "GSD Breeder in Kenya", href: "/german-shepherd-breeder-kenya" },
+  { label: "GSD Puppies in Nairobi", href: "/german-shepherd-puppies-nairobi" },
+];
+
 export const LEGAL_NAV: { label: string; href: string }[] = [
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms & Conditions", href: "/terms" },

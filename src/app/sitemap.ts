@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE, NAV_ALL, LEGAL_NAV } from "@/lib/site";
+import { SITE, NAV_ALL, LEGAL_NAV, COMMERCIAL_PAGES } from "@/lib/site";
 import { BLOG_POSTS } from "@/lib/data/blog";
 import { PUBLISHED_DOGS } from "@/lib/data/dogs";
 import { PUPPIES } from "@/lib/data/puppies";
@@ -15,6 +15,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: new URL(item.href, SITE.url).toString(),
     changeFrequency: "monthly" as const,
     priority: item.href === "/" ? 1 : 0.7,
+  }));
+
+  // Dedicated commercial landing pages — high priority (money pages).
+  const commercialPages = COMMERCIAL_PAGES.map((item) => ({
+    url: new URL(item.href, SITE.url).toString(),
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
   }));
 
   const dogPages = PUBLISHED_DOGS.map((d) => ({
@@ -36,5 +43,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...staticPages, ...dogPages, ...puppyPages, ...blogPages];
+  return [
+    ...staticPages,
+    ...commercialPages,
+    ...dogPages,
+    ...puppyPages,
+    ...blogPages,
+  ];
 }

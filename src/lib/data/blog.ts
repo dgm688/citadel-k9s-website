@@ -53,57 +53,6 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
   {
-    slug: "german-shepherd-puppies-nairobi",
-    title: "German Shepherd Puppies in Nairobi & Kiambu: Where to Buy Near You",
-    metaTitle: "German Shepherd Puppies in Nairobi (Local Breeder)",
-    excerpt:
-      "Looking for a German Shepherd puppy near Nairobi? Buying locally lets you meet the parents, skip risky transport, and know your breeder is real. Here's how — and where we are, minutes from the city.",
-    category: "Buyer's Guide",
-    date: "2026-08-31",
-    readingTime: "6 min read",
-    author: "Citadel K9s",
-    cover: {
-      src: "/images/gallery/adult-handler.jpg",
-      alt: "A German Shepherd with its handler at a home near Nairobi, Kenya",
-      label: "Buyer's Guide",
-    },
-    body: [
-      {
-        type: "p",
-        text: "If you are searching for a German Shepherd puppy in Nairobi, buying from a breeder near you is one of the smartest decisions you can make. You can visit in person, meet the puppy's parents, see the environment it was raised in, and avoid the stress and risk of transporting a young pup long distances. Citadel K9s is based in Ruaka, Kiambu County — right on the edge of Nairobi, minutes from the city — which means families across the Nairobi metro can come and see exactly what they are buying before they commit to anything.",
-      },
-      { type: "h2", text: "Why buy your German Shepherd near Nairobi?" },
-      {
-        type: "p",
-        text: "Three reasons stand out. First, you can visit and meet the parents — the single best way to judge the temperament and health your puppy is likely to inherit, and something no photo or advert can replace. Second, you avoid long-distance transport, which is stressful and genuinely risky for a young puppy; a short local collection is far kinder. Third, buying nearby means real, ongoing support — a breeder you can actually reach, who knows your dog. It is also your best protection against scams, which almost always fall apart the moment you ask to visit in person. Our guide on [how to avoid puppy scams in Kenya](/blog/avoid-puppy-scams-kenya) explains why.",
-      },
-      { type: "h2", text: "Where we are — Ruaka, on Nairobi's doorstep" },
-      {
-        type: "p",
-        text: "Citadel K9s is in Ruaka, Kiambu County, just off the northern edge of Nairobi — close to the city, yet out where the dogs have room. We welcome serious buyers to visit by appointment, meet our dogs, and take their time. Appointments simply protect young litters from infection and stress.",
-      },
-      { type: "h2", text: "Visiting us — and transport if you're further away" },
-      {
-        type: "p",
-        text: "Wherever you are in Nairobi or Kiambu, you are welcome to visit us in Ruaka and meet our dogs in person. Our puppies have gone to families across Kenya, and buyers travel to us from as far as Tanzania — so distance is rarely the obstacle it seems. If you are elsewhere in Kenya and would prefer not to travel with a young puppy yourself, we can arrange safe ground transport within Kenya, planned around the puppy's wellbeing, with the full document pack travelling with the puppy. Buyers coming from Tanzania are warmly welcome to visit and collect in person. Just talk to us about your location and we'll give you honest options. If you're outside Kenya, our [East Africa buyer's guide](/blog/german-shepherd-puppies-east-africa) explains exactly how it works.",
-      },
-      { type: "h2", text: "What you get from a local, registered breeder" },
-      {
-        type: "p",
-        text: "We are an EAKC-registered German Shepherd breeder. Our breeding dogs are hip-scored under the EAKC / KESCAVA scheme and microchipped, our puppies are raised in-home and vet-checked, and every puppy leaves with its registration paperwork, microchip details and full health records. You can meet the parents behind our puppies on our [Our Dogs](/our-dogs) page and see who is currently available on our [available puppies](/available-puppies) page. If you want a Shepherd specifically for protection, see our guide to [security and guard dogs in Kenya](/blog/security-dogs-for-sale-kenya).",
-      },
-      { type: "h2", text: "Visiting and collection" },
-      {
-        type: "p",
-        text: "The best next step is simple: message us on WhatsApp, tell us what you are looking for, and we will arrange a visit or a live video call. Seeing the puppy and its mother in person — or on a live call — before any payment is exactly how a genuine purchase should work. No pressure, no rushed deposits.",
-      },
-      {
-        type: "note",
-        text: "A local breeder you can visit is worth far more than the cheapest advert you can find online. If you are in Nairobi or Kiambu and want a healthy, well-raised German Shepherd from parents you can meet, [get in touch](/contact) and come and see us.",
-      },
-    ],
-  },
-  {
     slug: "sable-german-shepherd-kenya",
     title: "Sable German Shepherds in Kenya: Colour, Genetics & What to Know",
     metaTitle: "Sable German Shepherd in Kenya (Colour Guide)",
