@@ -452,7 +452,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Fleas and ticks are a separate job — important in Kenya, since ticks carry serious diseases — so ask your vet about a suitable tick-and-flea prevention alongside the worming plan.",
+        text: "Fleas and ticks are a separate job — important in Kenya, since ticks carry serious diseases — so ask your vet about a suitable tick-and-flea prevention alongside the worming plan. Our guide to [German Shepherd coat care in Kenya — ticks, heat and shedding](/blog/german-shepherd-coat-care-kenya-ticks-heat-shedding) covers this in practical detail.",
       },
       { type: "h2", text: "Rabies — the legal one" },
       {
@@ -1347,7 +1347,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Long coat" },
       {
         type: "p",
-        text: "Undeniably striking, and often slightly softer in look. Expect several grooming sessions a week and more attention after rain and mud. In most of Kenya's climate a long coat is perfectly manageable with routine care.",
+        text: "Undeniably striking, and often slightly softer in look. Expect several grooming sessions a week and more attention after rain and mud. In most of Kenya's climate a long coat is perfectly manageable with routine care — see our [coat care guide for Kenya](/blog/german-shepherd-coat-care-kenya-ticks-heat-shedding) for the practical routine on shedding, heat and ticks.",
       },
       { type: "h2", text: "What coat doesn't change" },
       {
