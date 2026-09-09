@@ -401,6 +401,10 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
+        text: "German Shepherd puppies in Kenya should get their first core vaccination at 6–8 weeks, a booster at 10–12 weeks, and a third dose plus the first rabies shot at 14–16 weeks, then annual boosters for life. Deworming starts at 2 weeks and repeats every 2 weeks until 12 weeks, then monthly to 6 months. Always confirm the exact plan with your own vet.",
+      },
+      {
+        type: "p",
         text: "Nothing you do in a puppy's first few months matters more for its health than staying on top of vaccinations and deworming. In Kenya, parvovirus and distemper are common, and they kill unvaccinated puppies — quickly and painfully. Rabies is both a legal requirement and fatal, to dogs and people alike. The reassuring part is that protecting your puppy is simple and affordable when you follow a clear schedule. Here's a typical one, along with the reasons behind it — but treat it as a guide, and always follow the exact plan your own vet sets, since products and timing can vary.",
       },
       { type: "h2", text: "Why it matters so much in Kenya" },
@@ -498,6 +502,10 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
+        text: "Hip dysplasia in German Shepherds is a common inherited condition where the hip joint develops loosely or shallowly, so it wears over time and can lead to arthritis, stiffness and pain. It is influenced by genetics and growth — and the single most effective way to lower the risk is to buy a puppy from parents that have been hip-scored.",
+      },
+      {
+        type: "p",
         text: "If you ask people what health problem German Shepherds are known for, most will say the same two words: hip dysplasia. It's the condition the breed is most associated with, and understandably the one that worries buyers most. The good news is that it is far better understood — and far more preventable — than the rumours suggest. This guide explains what hip dysplasia actually is, why German Shepherds are prone to it, and the concrete steps that lower the risk, most of which happen before you ever collect a puppy.",
       },
       { type: "h2", text: "What is hip dysplasia?" },
@@ -587,6 +595,10 @@ export const BLOG_POSTS: BlogPost[] = [
       label: "Puppy Care",
     },
     body: [
+      {
+        type: "p",
+        text: "How big do German Shepherds get? Adult male German Shepherds typically stand 60–65 cm at the shoulder and weigh 30–40 kg; females are smaller, at 55–60 cm and 22–32 kg. Most reach close to full height by about 12 months and keep filling out in muscle and chest until two to three years of age.",
+      },
       {
         type: "p",
         text: "“How big will my German Shepherd get?” is one of the first questions new owners ask — usually meaning two things at once: how large will my dog be as an adult, and is my puppy growing the way it should right now? Both are fair questions, and both have clear answers. German Shepherds are a large, powerful breed, and knowing what to expect helps you feed, exercise and plan for your dog properly.",
