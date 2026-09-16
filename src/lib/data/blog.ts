@@ -7,6 +7,201 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "german-shepherd-feeding-guide-kenya",
+    title: "German Shepherd Feeding Guide for Kenya: What to Feed and How Much",
+    metaTitle: "German Shepherd Feeding Guide (Kenya)",
+    excerpt:
+      "What should you feed a German Shepherd in Kenya, and how much? A practical, age-by-age guide — commercial vs home-cooked, portion sizes, the foods to never feed, and tips for our climate.",
+    category: "Puppy Care",
+    date: "2026-09-16",
+    readingTime: "7 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/young-sit-1.jpg",
+      alt: "A healthy, well-fed young German Shepherd in Kenya",
+      label: "Puppy Care",
+    },
+    body: [
+      {
+        type: "p",
+        text: "What should you feed a German Shepherd in Kenya? A complete, age-appropriate diet built around good-quality protein — whether a reputable commercial dog food or a properly balanced home-cooked diet — fed in measured portions: three to four meals a day for young puppies, easing to two meals a day for adults. Keep fresh water available at all times, make any diet change gradually, and confirm exact amounts with your vet.",
+      },
+      {
+        type: "p",
+        text: "Feeding is one of the biggest levers you have over your German Shepherd's health, energy and lifespan — and it's also where well-meaning owners most often go wrong, usually by overfeeding or by rushing a puppy's growth. This guide covers the practical questions Kenyan owners actually ask: how much to feed, whether to buy commercial food or cook at home, what never to feed, and how to manage food and water in our climate.",
+      },
+      { type: "h2", text: "How much should a German Shepherd eat?" },
+      {
+        type: "p",
+        text: "There's no single number — the right amount depends on age, weight, activity and the food itself, so feed to body condition rather than to a fixed cup. A German Shepherd in good condition has ribs you can feel easily (but not see), a visible waist from above, and a tucked-up belly from the side. If the waist disappears, cut back; if ribs and hips start to show, feed more. As a rough starting point, follow the guide on your food's packaging for your dog's weight, then adjust to condition.",
+      },
+      {
+        type: "table",
+        headers: ["Age", "Meals per day", "Notes"],
+        rows: [
+          ["8 – 12 weeks", "4", "Small, frequent meals suit a tiny stomach and steady energy."],
+          ["3 – 6 months", "3", "Growing fast — feed a quality puppy diet, but don't overfeed."],
+          ["6 – 12 months", "2 – 3", "Transitioning towards adult feeding."],
+          ["Adult (12 months+)", "2", "Two measured meals a day; avoid one big meal (bloat risk)."],
+        ],
+      },
+      {
+        type: "p",
+        text: "One warning that matters more for this breed than most: don't push a puppy to grow as fast or as big as possible. Rapid growth and excess weight put strain on developing joints and can worsen the risk of problems like hip dysplasia. Steady, lean growth builds a sounder adult. Our guide to [feeding a growing German Shepherd](/blog/nutrition-for-a-growing-shepherd) goes deeper on the puppy years, and [hip dysplasia in German Shepherds](/blog/hip-dysplasia-in-german-shepherds-kenya) explains why joints and weight are linked.",
+      },
+      { type: "h2", text: "Commercial food or home-cooked in Kenya?" },
+      {
+        type: "p",
+        text: "Both can raise a healthy dog — what matters is that the diet is complete and balanced. A reputable commercial dog food is the convenient route: it's formulated to be nutritionally complete, so you don't have to balance it yourself. A home-cooked diet can work well too and is common in Kenya, but it has to be done properly — a bowl of plain ugali and scraps is not a balanced diet. A good home diet needs a solid protein base (meat and some offal), sensible carbohydrates, and the right vitamins and minerals, ideally planned with a vet's input. Whichever you choose, be consistent, and change foods gradually over about a week to avoid stomach upset.",
+      },
+      { type: "h2", text: "Foods you should never feed" },
+      {
+        type: "p",
+        text: "Some everyday human foods are genuinely dangerous to dogs. Never feed onions or garlic, grapes or raisins, chocolate, anything containing xylitol (a sweetener), or large amounts of very salty or fatty food. Never give cooked bones — they splinter — and avoid heavily spiced leftovers. If your dog eats something on this list, call your vet promptly. When in doubt, leave it out.",
+      },
+      { type: "h2", text: "Practical feeding tips for the Kenyan climate" },
+      {
+        type: "p",
+        text: "A few local realities are worth planning for. Store dry food somewhere cool, dry and sealed — humidity and weevils ruin kibble quickly, and spoiled food causes stomach trouble. Keep fresh, clean water available and topped up, especially in the heat; a well-exercised Shepherd drinks a lot. Feed on a routine at the cooler parts of the day, and avoid heavy meals right before or after hard exercise. If your dog's appetite drops in very hot weather, feeding the larger meal in the cool of the evening often helps.",
+      },
+      {
+        type: "note",
+        text: "This is general guidance, not veterinary advice. Nutritional needs vary with age, health and activity, so let a licensed vet fine-tune your dog's diet — especially for puppies, seniors, or any dog with a health condition. If a breeder can't tell you what their puppies are fed, treat that as a small warning sign.",
+      },
+      {
+        type: "p",
+        text: "At Citadel K9s, our puppies are raised on a proper, age-appropriate diet and go home with clear feeding guidance so you can carry the routine forward without guesswork. See who's currently available on our [available puppies](/available-puppies) page.",
+      },
+    ],
+  },
+  {
+    slug: "german-shepherd-lifespan-kenya",
+    title: "How Long Do German Shepherds Live? Lifespan & Healthy Ageing in Kenya",
+    metaTitle: "How Long Do German Shepherds Live? (Kenya)",
+    excerpt:
+      "How long do German Shepherds live, and how do you help yours reach a long, healthy life? Here's the typical lifespan, what shortens or extends it, and the care that makes the difference — for Kenyan owners.",
+    category: "Health",
+    date: "2026-09-16",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-indoor.jpg",
+      alt: "A healthy adult German Shepherd resting at home in Kenya",
+      label: "Health",
+    },
+    body: [
+      {
+        type: "p",
+        text: "How long do German Shepherds live? A German Shepherd typically lives 9 to 13 years. Good genetics — especially hip-scored parents — together with a healthy lean weight, a quality diet, regular exercise and routine veterinary care all help a dog reach the upper end of that range, while obesity and untreated health problems pull it down.",
+      },
+      {
+        type: "p",
+        text: "A German Shepherd is a decade-long commitment, and how those years go is shaped by decisions you start making before you even collect your puppy. Here's what actually determines a Shepherd's lifespan, the common issues to be aware of, and the practical things that help your dog live a long, comfortable life.",
+      },
+      { type: "h2", text: "What affects a German Shepherd's lifespan?" },
+      {
+        type: "p",
+        text: "Five things matter most. Genetics come first — a puppy from health-tested, [hip-scored parents](/blog/hip-dysplasia-in-german-shepherds-kenya) starts with a real advantage. Weight is second and hugely underrated: a lean dog lives longer and moves more comfortably than an overweight one. Then comes diet, sensible exercise, and routine veterinary care — vaccinations, parasite control and check-ups that catch problems early. None of these are complicated, but together they add years.",
+      },
+      { type: "h2", text: "Common health issues to be aware of" },
+      {
+        type: "p",
+        text: "Like any breed, German Shepherds have conditions they're more prone to. The best known is hip and elbow dysplasia, which is why health testing of the parents matters so much. Bloat (a sudden, life-threatening twisting of the stomach) is a risk in deep-chested breeds — feeding two smaller meals rather than one large one, and avoiding hard exercise right around mealtimes, helps reduce it. Older Shepherds can also develop joint and mobility issues. This isn't a diagnostic list, and it's not a reason to worry — it's a reason to buy well, keep your dog lean, and see your vet routinely rather than only in a crisis.",
+      },
+      { type: "h2", text: "How to help your German Shepherd live longer" },
+      {
+        type: "p",
+        text: "The practical checklist is refreshingly simple: start with a puppy from health-tested lines; keep your dog lean for life; feed a complete, quality diet in measured portions; give regular, appropriate exercise without over-exercising a young pup; stay on top of vaccinations and parasite control; look after teeth; keep the mind busy with training and interaction; and see your vet for routine checks, not just emergencies. Our [feeding guide for Kenya](/blog/german-shepherd-feeding-guide-kenya) covers the diet side in detail.",
+      },
+      { type: "h2", text: "The senior years" },
+      {
+        type: "p",
+        text: "German Shepherds are usually considered seniors from around seven to eight years old. Ageing dogs slow down, may put on weight more easily, and can develop stiffness — so adjust exercise to gentler, regular activity, watch the waistline, keep them comfortable and warm, and let your vet screen for age-related issues. Many Shepherds enjoy happy, active senior years with a little extra care.",
+      },
+      {
+        type: "note",
+        text: "This is general information, not veterinary advice — always let a licensed vet guide your dog's health care. And remember the single biggest lever on lifespan is one you pull at the very start: choosing a puppy from healthy, health-tested parents.",
+      },
+      {
+        type: "p",
+        text: "That's exactly where a responsible breeder earns their place. At Citadel K9s we breed from hip-scored, EAKC-registered parents to give every puppy the soundest possible start — read more about our approach as a [German Shepherd breeder in Kenya](/german-shepherd-breeder-kenya), or see our [available puppies](/available-puppies).",
+      },
+    ],
+  },
+  {
+    slug: "german-shepherd-vs-boerboel-kenya",
+    title: "German Shepherd vs Boerboel in Kenya: Which Guard Dog Is Right for You?",
+    metaTitle: "German Shepherd vs Boerboel (Kenya Guide)",
+    excerpt:
+      "German Shepherd or Boerboel? Both are popular guard dogs in Kenya, but they suit very different owners. Here's an honest comparison of size, temperament, trainability and family life to help you choose.",
+    category: "Buyer's Guide",
+    date: "2026-09-16",
+    readingTime: "7 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-stack.jpg",
+      alt: "A German Shepherd standing alert — compared with the Boerboel for Kenyan homes",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "German Shepherd or Boerboel? Both are excellent guard dogs and both are popular in Kenya, but they suit different owners. The German Shepherd is more agile, highly trainable and versatile — a family companion and guardian in one dog. The Boerboel is a larger, heavier mastiff-type guardian with a calmer, more independent nature and an imposing deterrent presence. The right choice comes down to trainability and versatility versus sheer size and guarding instinct — and to how experienced a handler you are.",
+      },
+      {
+        type: "p",
+        text: "We breed German Shepherds, so treat our view with the appropriate scepticism — but we have no interest in selling you the wrong dog. Both are fine breeds in the right home, and the honest comparison below is meant to help you choose well, whichever way you land.",
+      },
+      { type: "h2", text: "The German Shepherd at a glance" },
+      {
+        type: "p",
+        text: "The German Shepherd is one of the most intelligent and trainable breeds in the world — the reason police and military forces everywhere rely on them. A well-bred one is loyal, alert and protective, yet gentle and biddable with its family. It's an active dog that wants a job and daily engagement, and it thrives when it's part of family life rather than left alone in a yard.",
+      },
+      { type: "h2", text: "The Boerboel at a glance" },
+      {
+        type: "p",
+        text: "The Boerboel is a South African mastiff-type breed — big, powerful and territorial, bred to guard the homestead. It tends to be calmer and more independent than a Shepherd, deeply devoted to its family, and naturally wary of strangers. Its size and presence alone are a serious deterrent. That power comes with responsibility: a Boerboel needs an experienced, confident owner, firm early training and thorough socialisation, and enough space.",
+      },
+      { type: "h2", text: "Side by side" },
+      {
+        type: "table",
+        headers: ["Trait", "German Shepherd", "Boerboel"],
+        rows: [
+          ["Size", "Large (30–40 kg)", "Very large / giant (50–90 kg)"],
+          ["Temperament", "Alert, active, biddable", "Calm, territorial, independent"],
+          ["Trainability", "Very high", "Moderate — needs an experienced handler"],
+          ["Exercise needs", "High — daily activity and a job", "Moderate — needs space more than distance"],
+          ["With family & children", "Excellent when well-raised", "Devoted, but supervise around its size"],
+          ["Guarding style", "Alert, agile, versatile deterrent", "Imposing size and territorial presence"],
+          ["Best for", "Active families wanting a trainable all-rounder", "Experienced owners wanting a large guardian"],
+        ],
+      },
+      { type: "h2", text: "Which is easier to train?" },
+      {
+        type: "p",
+        text: "The German Shepherd, clearly. It's one of the most trainable breeds there is, which makes it far more forgiving for first-time or less experienced owners and much easier to shape into a well-mannered family dog. A Boerboel is intelligent but more strong-willed and independent, and its size means mistakes carry more consequence — so it really needs an owner who can train and lead a powerful dog with consistency.",
+      },
+      { type: "h2", text: "Which is the better guard dog?" },
+      {
+        type: "p",
+        text: "Both deter intruders, but differently. The Boerboel relies on sheer size and territorial presence — few people will test a homestead with one at the gate. The German Shepherd deters through alertness, agility and versatility; it patrols, raises the alarm early, and can be trained to a much higher level of control, which is why it dominates professional security and police work. For most Kenyan family homes that want a capable, controllable deterrent that's also a companion, the Shepherd is the more flexible answer. Our guide to [security and guard dogs in Kenya](/blog/security-dogs-for-sale-kenya) goes deeper.",
+      },
+      { type: "h2", text: "Which suits Kenyan homes and families?" },
+      {
+        type: "p",
+        text: "Both can be wonderful family dogs when they come from good breeding and are properly socialised. The German Shepherd tends to be the more adaptable all-rounder — active, trainable and happy in family life, which is why we think it suits most Kenyan homes so well; see [are German Shepherds good for Kenyan homes](/blog/are-german-shepherds-good-for-kenyan-homes). The Boerboel can be a superb guardian and gentle with its own family, but its size, strength and independence mean it's best matched with an experienced owner who has space and will commit to early training. If you're also weighing the Shepherd against another popular guard breed, see our [German Shepherd vs Rottweiler comparison](/blog/german-shepherd-vs-rottweiler-kenya).",
+      },
+      {
+        type: "note",
+        text: "No breed is simply “better” — the right dog depends on your experience, your home and what you need. Whichever you choose, the things that matter most are the same: buy from a responsible breeder, insist on health-tested parents, and pick a well-socialised puppy with a stable temperament over one chosen for size or colour alone.",
+      },
+      {
+        type: "p",
+        text: "If a trainable, versatile companion-and-guardian is what you're after, that's exactly what we breed. See our [German Shepherd puppies in Kenya](/german-shepherd-puppies-kenya), or [get in touch](/contact) and we'll help you decide honestly — even if that means a different breed.",
+      },
+    ],
+  },
+  {
     slug: "german-shepherd-puppies-east-africa",
     title: "German Shepherd Puppies in East Africa: Buying from a Registered Kenyan Breeder",
     metaTitle: "German Shepherd Puppies in East Africa (Kenya Breeder)",
@@ -1114,7 +1309,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Keep transitions gradual" },
       {
         type: "p",
-        text: "When changing foods, do so over seven to ten days to protect digestion. We provide each family with a feeding guide tailored to their puppy's stage of growth.",
+        text: "When changing foods, do so over seven to ten days to protect digestion. We provide each family with a feeding guide tailored to their puppy's stage of growth. For the wider picture — adult portions, commercial vs home-cooked, and foods to avoid — see our full [German Shepherd feeding guide for Kenya](/blog/german-shepherd-feeding-guide-kenya).",
       },
     ],
   },
@@ -1448,7 +1643,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "The thing that matters more than the breed" },
       {
         type: "p",
-        text: "A badly bred, badly raised dog of either breed is a problem — often a dangerous one. A well-bred, well-socialised dog of either breed is a joy. Spend your energy choosing the breeder and committing to the training, not agonising over the breed. That decision matters ten times more.",
+        text: "A badly bred, badly raised dog of either breed is a problem — often a dangerous one. A well-bred, well-socialised dog of either breed is a joy. Spend your energy choosing the breeder and committing to the training, not agonising over the breed. That decision matters ten times more. And if you're weighing the Shepherd against a larger guardian instead, see our [German Shepherd vs Boerboel comparison](/blog/german-shepherd-vs-boerboel-kenya).",
       },
     ],
   },
