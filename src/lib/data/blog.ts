@@ -7,6 +7,119 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "white-german-shepherd-kenya",
+    title: "White German Shepherds in Kenya: The Rare Colour, Explained",
+    metaTitle: "White German Shepherd in Kenya (Colour Guide)",
+    excerpt:
+      "The all-white German Shepherd is one of the breed's rarest and most striking looks. Here's what it actually is, whether it's purebred, how it differs from the White Swiss Shepherd, and what to know before buying one in Kenya.",
+    category: "Buyer's Guide",
+    date: "2026-09-16",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/young-sit-2.jpg",
+      alt: "A German Shepherd puppy in Kenya — colour and coat guide",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "The white German Shepherd is a striking, all-white version of the breed. It is a purebred German Shepherd — the white colour is caused by a recessive gene that masks the normal coat colour, and it does not affect temperament, intelligence or trainability. Importantly, a white Shepherd is not albino: it has normal dark eyes, nose and skin pigment. In Kenya the colour is rare, which makes a genuine, health-tested white German Shepherd both hard to find and highly sought after.",
+      },
+      {
+        type: "p",
+        text: "Interest in white Shepherds is growing among Kenyan buyers drawn to that clean, wolf-like white coat. But rarity attracts both premiums and misinformation, so it's worth understanding exactly what you're looking at before you buy. This guide covers whether they're purebred, how they differ from the White Swiss Shepherd, and how to buy one safely.",
+      },
+      { type: "h2", text: "Is a white German Shepherd purebred?" },
+      {
+        type: "p",
+        text: "Yes. A white German Shepherd is a purebred German Shepherd whose coat colour is produced by a recessive gene — both parents must carry it for a white puppy to appear, which is why the colour is uncommon. The one caveat is showing: under the German (FCI) breed standard, white is a disqualifying colour in the conformation show ring, so a white Shepherd generally can't be shown as a standard GSD. That is a show-ring rule about colour, not a statement that the dog is any less purebred, healthy or capable.",
+      },
+      { type: "h2", text: "White German Shepherd vs White Swiss Shepherd" },
+      {
+        type: "p",
+        text: "These two are related but not the same, and the terms get mixed up. A white German Shepherd is a German Shepherd that happens to be white. The White Swiss Shepherd (Berger Blanc Suisse) is a separate, FCI-recognised breed that descended from white German Shepherds and was developed into its own distinct line. If a seller uses the names interchangeably, ask exactly what the dog is and to see the pedigree.",
+      },
+      { type: "h2", text: "Do white German Shepherds have different temperament or health?" },
+      {
+        type: "p",
+        text: "No. Coat colour has nothing to do with temperament or trainability — a white Shepherd is the same loyal, intelligent, protective dog as any other German Shepherd. Because they are not albino, they don't carry the health issues linked to true albinism. They do share the same breed health considerations as any Shepherd, the most important being the hips — so, exactly as with any colour, what matters is buying from health-tested parents, not the shade of the coat. See our guide to [hip dysplasia in German Shepherds](/blog/hip-dysplasia-in-german-shepherds-kenya).",
+      },
+      { type: "h2", text: "Buying a white German Shepherd safely in Kenya" },
+      {
+        type: "p",
+        text: "Buy a white Shepherd the same careful way you'd buy any: insist on seeing both parents, ask for the pedigree and health testing in writing, and choose a registered breeder you can visit. Be especially wary of a steep “rare colour” markup with no health testing or papers behind it — rarity is not a substitute for soundness. Our guides on [choosing an ethical breeder](/blog/how-to-choose-an-ethical-german-shepherd-breeder-kenya) and [avoiding puppy scams in Kenya](/blog/avoid-puppy-scams-kenya) apply doubly to rare colours, and our [price guide](/blog/german-shepherd-price-kenya) explains what actually drives a fair price.",
+      },
+      {
+        type: "note",
+        text: "As with the [solid black](/blog/solid-black-german-shepherd-kenya) and [sable](/blog/sable-german-shepherd-kenya) Shepherds, colour should be the bonus, not the reason. A good white German Shepherd is a good German Shepherd first — sound hips, a stable temperament and a real pedigree matter far more than the coat.",
+      },
+      {
+        type: "p",
+        text: "At Citadel K9s we breed from health-tested, EAKC-registered lines and are always honest about what we have. Tell us the colour and coat you're hoping for and we'll be straight with you — [get in touch](/contact), or meet the parents behind our puppies on our [Our Dogs](/our-dogs) page.",
+      },
+    ],
+  },
+  {
+    slug: "are-german-shepherds-aggressive-kenya",
+    title: "Are German Shepherds Aggressive? An Honest Answer for Kenyan Owners",
+    metaTitle: "Are German Shepherds Aggressive? (Kenya)",
+    excerpt:
+      "German Shepherds have a fierce reputation — but are they actually aggressive? Here's the honest answer, what really causes aggression, whether they're safe with children, and how to raise a stable, trustworthy dog.",
+    category: "Buyer's Guide",
+    date: "2026-09-16",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-handler.jpg",
+      alt: "A calm, well-handled German Shepherd with its owner in Kenya",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "Are German Shepherds aggressive? No — a well-bred, well-socialised German Shepherd is not naturally aggressive. The breed is confident, alert and protective, but stable and trustworthy with its family. Aggression is not a breed trait; it comes from poor breeding, fear, a lack of socialisation, or mistreatment — which is exactly why how a dog is bred and raised matters far more than the breed on the label.",
+      },
+      {
+        type: "p",
+        text: "It's a fair question, and an important one — especially in Kenya, where the German Shepherd is such a popular guard dog. Let's separate the reputation from the reality: why the myth exists, what actually causes aggression, whether Shepherds are safe with children, and how to make sure the dog you raise is a stable, dependable one.",
+      },
+      { type: "h2", text: "Why German Shepherds have a fierce reputation" },
+      {
+        type: "p",
+        text: "The reputation comes from capability, not cruelty. German Shepherds are strong, intelligent and highly trainable, which is why police and military forces use them — and that same image makes people assume they're aggressive by nature. Add a handful of badly bred or badly treated dogs, and the myth sticks. But capability is not the same as aggression: a Ferrari is fast, yet it doesn't drive dangerously on its own. The dog's behaviour comes down to breeding and handling.",
+      },
+      { type: "h2", text: "Protective is not the same as aggressive" },
+      {
+        type: "p",
+        text: "This distinction matters enormously. A good German Shepherd is protective — alert, watchful, and a natural deterrent — but discerning and under control. A dog that is fearful, reactive or indiscriminately aggressive is not a better guard; it's a liability that might bite a child, a visitor or the meter reader, and it tends to fall apart under real pressure. Genuine guarding ability rests on a stable temperament, not on aggression. Our guide to [security and guard dogs in Kenya](/blog/security-dogs-for-sale-kenya) explains the difference in full.",
+      },
+      { type: "h2", text: "What actually causes aggression in dogs?" },
+      {
+        type: "p",
+        text: "Aggression almost always has a cause, and most causes are preventable. The main ones are: poor breeding from nervy or unstable lines; a lack of early socialisation, so the dog fears the unfamiliar; fear and insecurity; mistreatment, neglect or being chained up and isolated; no training, boundaries or leadership; and, sometimes, pain or illness. Notice how many of these are about how a dog is bred and raised — not about being a German Shepherd.",
+      },
+      { type: "h2", text: "Are German Shepherds safe with children?" },
+      {
+        type: "p",
+        text: "A well-bred, well-socialised German Shepherd is an excellent family dog — patient, gentle and devoted to its own children, and naturally watchful over them. As with any dog of any breed, young children should be supervised, taught to treat the dog respectfully, and never left unsupervised with any dog. Raised properly, Shepherds are among the most trustworthy family companions there are. For more on living with the breed here, see [are German Shepherds good for Kenyan homes](/blog/are-german-shepherds-good-for-kenyan-homes).",
+      },
+      { type: "h2", text: "How to raise a stable, non-aggressive German Shepherd" },
+      {
+        type: "p",
+        text: "It starts before you even choose a puppy. Buy from a breeder who selects for stable temperament and lets you meet the parents; socialise your puppy widely and positively in its first months; train with kindness, consistency and clear boundaries; give plenty of exercise and mental stimulation; never encourage or reward aggression; and see your vet if behaviour changes suddenly, since pain can be a hidden cause. Our guides on [choosing an ethical breeder](/blog/how-to-choose-an-ethical-german-shepherd-breeder-kenya) and [training a German Shepherd puppy in Kenya](/blog/how-to-train-a-german-shepherd-puppy-kenya) cover the how.",
+      },
+      {
+        type: "note",
+        text: "Aggression is almost always made, not born. Never buy a dog for aggression — it's dangerous to your own family and rarely reliable when it matters. If a dog is showing concerning aggression, work with your vet and a qualified trainer rather than punishing it, since fear-based aggression gets worse when met with force.",
+      },
+      {
+        type: "p",
+        text: "At Citadel K9s, stable temperament is the first thing we breed and raise for — not the last. It's the difference between a dog that protects your family and one that worries you. Come and meet our dogs and see it for yourself: view our [German Shepherd puppies in Kenya](/german-shepherd-puppies-kenya) or [get in touch](/contact).",
+      },
+    ],
+  },
+  {
     slug: "german-shepherd-feeding-guide-kenya",
     title: "German Shepherd Feeding Guide for Kenya: What to Feed and How Much",
     metaTitle: "German Shepherd Feeding Guide (Kenya)",
@@ -270,7 +383,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "What is a sable German Shepherd?" },
       {
         type: "p",
-        text: "Sable is not a single flat colour but a pattern. Each individual hair is banded — pale at the base, then black at the tip — so the coat reads as a rich wolf-grey, golden or reddish overlay that changes with the light. It is produced by the agouti gene, and unlike solid black (which is recessive), sable is dominant: a dog needs only one sable parent to be sable, which is part of why the colour is so common in working lines. If you want to compare it with the rare opposite end of the spectrum, see our guide to the [solid black German Shepherd](/blog/solid-black-german-shepherd-kenya).",
+        text: "Sable is not a single flat colour but a pattern. Each individual hair is banded — pale at the base, then black at the tip — so the coat reads as a rich wolf-grey, golden or reddish overlay that changes with the light. It is produced by the agouti gene, and unlike solid black (which is recessive), sable is dominant: a dog needs only one sable parent to be sable, which is part of why the colour is so common in working lines. If you want to compare it with the rarer colours, see our guides to the [solid black German Shepherd](/blog/solid-black-german-shepherd-kenya) and the [white German Shepherd](/blog/white-german-shepherd-kenya).",
       },
       { type: "h2", text: "The types of sable you'll see" },
       {
@@ -418,7 +531,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "The most important thing in a security dog: temperament" },
       {
         type: "p",
-        text: "Here is the truth that dishonest sellers hope you never learn: aggression is not the same as protection. A good guard dog is stable, confident and clear-headed — it assesses a situation and responds appropriately. A fearful, nervous or uncontrollably aggressive dog is not a better guard; it is a liability that may bite a child, a visitor or the meter reader, and it will crumble under real pressure. Sound temperament comes from two things: breeding — stable, well-selected parents — and early socialisation in the first weeks of life. This is the single biggest reason to buy a security dog from a registered breeder who health-tests and raises pups properly, rather than an anonymous “guard dog for sale” advert. Our guide on [how to choose an ethical German Shepherd breeder in Kenya](/blog/how-to-choose-an-ethical-german-shepherd-breeder-kenya) shows what to look for.",
+        text: "Here is the truth that dishonest sellers hope you never learn: aggression is not the same as protection. A good guard dog is stable, confident and clear-headed — it assesses a situation and responds appropriately. A fearful, nervous or uncontrollably aggressive dog is not a better guard; it is a liability that may bite a child, a visitor or the meter reader, and it will crumble under real pressure. Sound temperament comes from two things: breeding — stable, well-selected parents — and early socialisation in the first weeks of life. This is the single biggest reason to buy a security dog from a registered breeder who health-tests and raises pups properly, rather than an anonymous “guard dog for sale” advert. Our guide on [how to choose an ethical German Shepherd breeder in Kenya](/blog/how-to-choose-an-ethical-german-shepherd-breeder-kenya) shows what to look for — and if you're worried the breed is aggressive by nature, our honest take on [whether German Shepherds are aggressive](/blog/are-german-shepherds-aggressive-kenya) is worth a read.",
       },
       { type: "h2", text: "Puppy, started, or trained — which should you buy?" },
       {
