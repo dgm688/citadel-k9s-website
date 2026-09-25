@@ -3,8 +3,9 @@ import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { BLOG_POSTS, getPost } from "@/lib/data/blog";
+import type { BlogPost } from "@/lib/types";
 import { SITE } from "@/lib/site";
-import { pageMeta, breadcrumbJsonLd } from "@/lib/seo";
+import { pageMeta, breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { ImageFrame } from "@/components/ui/ImageFrame";
 import { BlogCard } from "@/components/cards/BlogCard";
@@ -55,6 +56,31 @@ function renderRich(text: string): ReactNode {
   return nodes.length > 0 ? nodes : text;
 }
 
+/** Strip inline `[label](url)` markdown to plain text for structured data. */
+function toPlainText(text: string): string {
+  return text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+}
+
+/**
+ * Derive FAQ pairs from a post body: any H2 phrased as a question (ends with
+ * "?") immediately followed by a paragraph becomes a Q&A pair. This guarantees
+ * the FAQPage schema only ever describes content genuinely visible on the page
+ * — never invented — which is exactly what Google requires.
+ */
+function deriveFaqs(
+  body: BlogPost["body"],
+): { question: string; answer: string }[] {
+  const faqs: { question: string; answer: string }[] = [];
+  for (let i = 0; i < body.length - 1; i++) {
+    const block = body[i];
+    const next = body[i + 1];
+    if (block.type === "h2" && block.text.trim().endsWith("?") && next.type === "p") {
+      faqs.push({ question: block.text.trim(), answer: toPlainText(next.text) });
+    }
+  }
+  return faqs;
+}
+
 // Any slug not returned below yields a real 404 (not a soft 200).
 export const dynamicParams = false;
 
@@ -87,6 +113,11 @@ export default async function BlogPostPage({
   if (!post) notFound();
 
   const related = BLOG_POSTS.filter((p) => p.slug !== post.slug).slice(0, 3);
+
+  // Emit FAQPage schema only when the post genuinely reads as a set of
+  // questions (2+ answered on the page) — reinforces AI Overviews / rich
+  // results for our answer-first content without ever marking up hidden text.
+  const faqs = deriveFaqs(post.body);
 
   const articleLd = {
     "@context": "https://schema.org",
@@ -122,6 +153,7 @@ export default async function BlogPostPage({
             { name: "Blog", path: "/blog" },
             { name: post.title, path: `/blog/${post.slug}` },
           ]),
+          ...(faqs.length >= 2 ? [faqJsonLd(faqs)] : []),
         ]}
       />
 
