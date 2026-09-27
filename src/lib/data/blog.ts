@@ -7,6 +7,143 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "german-shepherd-vs-belgian-malinois-kenya",
+    title: "German Shepherd vs Belgian Malinois in Kenya: Which Should You Choose?",
+    metaTitle: "German Shepherd vs Belgian Malinois (Kenya)",
+    excerpt:
+      "German Shepherd or Belgian Malinois? Both are elite working and protection breeds, but they suit very different owners. Here's an honest comparison of drive, trainability, family life and which is right for a Kenyan home.",
+    category: "Buyer's Guide",
+    date: "2026-09-27",
+    readingTime: "7 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-stack.jpg",
+      alt: "A German Shepherd standing alert — compared with the Belgian Malinois",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "German Shepherd or Belgian Malinois? Both are elite working and protection breeds, but they suit very different owners. The German Shepherd is the versatile all-rounder — a steady family companion and capable guardian in one dog. The Belgian Malinois is lighter, faster and far more intense, with relentless drive and energy that demands an experienced, genuinely active owner. For most Kenyan homes and families, the German Shepherd is the more manageable choice; the Malinois is a specialist's dog.",
+      },
+      {
+        type: "p",
+        text: "We breed German Shepherds, so weigh our view with that in mind — but we have no interest in seeing the wrong dog go to the wrong home. The Malinois is a magnificent animal in the right hands, and a common regret in the wrong ones. Here's the honest comparison.",
+      },
+      { type: "h2", text: "The German Shepherd at a glance" },
+      {
+        type: "p",
+        text: "The German Shepherd is one of the most intelligent, trainable and versatile breeds in the world — loyal, protective and alert, yet gentle and biddable with its family. Crucially, a well-bred Shepherd has an “off-switch”: it can work hard and then settle calmly in the home. That balance of ability and steadiness is why it's the default choice for families who want one dog to be both companion and guardian.",
+      },
+      { type: "h2", text: "The Belgian Malinois at a glance" },
+      {
+        type: "p",
+        text: "The Belgian Malinois is a lighter, more athletic herding breed — the dog of choice for elite military and police units worldwide because of its extreme drive, speed and work ethic. That same intensity is the catch: a Malinois needs a serious daily job and hours of physical and mental work, and without it, it can become anxious, destructive and hard to live with. It is not a beginner's dog, and it is rarely a relaxed family pet in the way a Shepherd can be.",
+      },
+      { type: "h2", text: "Side by side" },
+      {
+        type: "table",
+        headers: ["Trait", "German Shepherd", "Belgian Malinois"],
+        rows: [
+          ["Size", "Large (30–40 kg)", "Medium (25–30 kg), lighter and leaner"],
+          ["Energy & drive", "High", "Extreme — relentless"],
+          ["“Off-switch” at home", "Yes, when well-bred", "Limited — wants to work constantly"],
+          ["Trainability", "Very high", "Very high, but needs an outlet"],
+          ["First-time owners", "Manageable", "Not recommended"],
+          ["Family & children", "Excellent all-rounder", "Better for active, experienced homes"],
+          ["Exercise needs", "1–2 hours a day", "Much more — plus a real job"],
+        ],
+      },
+      { type: "h2", text: "Which is easier to live with?" },
+      {
+        type: "p",
+        text: "For almost everyone, the German Shepherd. It has the intelligence and drive to do serious work, but also the temperament to switch off and be a calm member of the household. A Malinois rarely switches off on its own — it needs structured work every single day, and an under-exercised Malinois is one of the most common reasons the breed ends up rehomed. Be honest about how much time and energy you truly have; see our guide to a [German Shepherd's exercise needs](/blog/german-shepherd-exercise-needs-kenya).",
+      },
+      { type: "h2", text: "Which is the better guard or protection dog?" },
+      {
+        type: "p",
+        text: "Both are exceptional — they're the two breeds that dominate professional protection work. The Malinois is faster and more intense, which suits sport and specialist military roles. The German Shepherd is the more rounded home guardian: an imposing, alert deterrent that's also safe and steady around your family day to day. For a Kenyan home or business that wants genuine security in a dog it can also live with, the Shepherd is usually the better fit. Our guide to [security and guard dogs in Kenya](/blog/security-dogs-for-sale-kenya) goes deeper.",
+      },
+      { type: "h2", text: "Which suits Kenyan families?" },
+      {
+        type: "p",
+        text: "The German Shepherd, for the large majority of homes — it's adaptable, trainable and happy in family life. The Belgian Malinois can be a superb dog, but only for a very active, experienced owner who will commit to giving it a job and hours of work daily; in an ordinary family home it is often too much dog. If you're weighing the Shepherd against other popular guard breeds, see our comparisons with the [Rottweiler](/blog/german-shepherd-vs-rottweiler-kenya) and the [Boerboel](/blog/german-shepherd-vs-boerboel-kenya), and our overview of whether [German Shepherds suit Kenyan homes](/blog/are-german-shepherds-good-for-kenyan-homes).",
+      },
+      {
+        type: "note",
+        text: "No breed is simply “better” — the right dog depends on your experience, time and lifestyle. The Malinois's intensity is the single most underestimated thing in this comparison, so choose honestly. And whichever you pick, the fundamentals are the same: buy from a responsible breeder, insist on health-tested parents, and choose a stable, well-socialised puppy.",
+      },
+      {
+        type: "p",
+        text: "If a trainable, versatile companion-and-guardian is what you want, that's exactly what we breed. See our [German Shepherd puppies in Kenya](/german-shepherd-puppies-kenya), or [get in touch](/contact) and we'll help you decide honestly.",
+      },
+    ],
+  },
+  {
+    slug: "german-shepherd-exercise-needs-kenya",
+    title: "How Much Exercise Does a German Shepherd Need? A Kenya Guide",
+    metaTitle: "German Shepherd Exercise Needs (Kenya)",
+    excerpt:
+      "How much exercise does a German Shepherd actually need — and how do you do it safely in the Kenyan heat? Here's the guide for adults and puppies, why mental exercise matters as much, and the signs your dog needs more.",
+    category: "Puppy Care",
+    date: "2026-09-27",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/young-front.jpg",
+      alt: "A young German Shepherd ready for exercise in Kenya",
+      label: "Puppy Care",
+    },
+    body: [
+      {
+        type: "p",
+        text: "How much exercise does a German Shepherd need? An adult German Shepherd needs roughly 1 to 2 hours of exercise a day — a mix of walks, off-lead running or play, and training that works the mind. Puppies need far less structured exercise (a rough guide is about 5 minutes per month of age, up to twice a day) to protect their growing joints. In Kenya, always exercise in the cool of the morning and evening, never in the midday heat.",
+      },
+      {
+        type: "p",
+        text: "The German Shepherd is a working breed, and exercise isn't optional — it's the difference between a calm, well-mannered dog and a bored, destructive one. But more is not always better, especially for puppies and in our climate. Here's how to get it right.",
+      },
+      { type: "h2", text: "How much exercise does an adult German Shepherd need?" },
+      {
+        type: "p",
+        text: "Plan for one to two hours a day, split across the cooler parts of the day. That should combine steady walking, some free running or play where it's safe, and — just as importantly — mental work like training. A Shepherd that gets enough of the right exercise is relaxed and easy in the home; one that doesn't will often find its own “job,” usually chewing, digging or barking.",
+      },
+      { type: "h2", text: "How much exercise does a German Shepherd puppy need?" },
+      {
+        type: "p",
+        text: "Far less than people expect — and this matters a lot for a large breed. A common guideline is about five minutes of formal exercise per month of age, once or twice a day (so a four-month-old puppy gets roughly 20 minutes at a time). Over-exercising a growing puppy — long runs, forced jogging, repeated jumping or stairs — puts strain on developing joints and can worsen the risk of problems like [hip dysplasia](/blog/hip-dysplasia-in-german-shepherds-kenya). Free play in the garden at the puppy's own pace is ideal; let the growing do the rest. Our guide to [how big German Shepherds get](/blog/how-big-do-german-shepherds-get-kenya) explains the growth timeline.",
+      },
+      { type: "h2", text: "Mental exercise matters as much as physical" },
+      {
+        type: "p",
+        text: "This is the part most owners miss. German Shepherds are highly intelligent and need their minds worked, not just their legs. Short training sessions, scent and search games, food-puzzle toys and simple “jobs” tire a Shepherd far more effectively than distance alone. A tired mind makes a calm dog — often ten minutes of training does more good than an extra half-hour of walking.",
+      },
+      { type: "h2", text: "How do you exercise a German Shepherd in the Kenyan heat?" },
+      {
+        type: "p",
+        text: "Work with the climate, not against it. Exercise in the early morning and late evening, and go easy in the midday sun — thick-coated dogs overheat quickly. Always carry or provide fresh water, use shade, and watch for signs of overheating: heavy, frantic panting, drooling, weakness or reluctance to move. If you see them, stop, cool the dog with water and rest in shade. Our [coat care guide](/blog/german-shepherd-coat-care-kenya-ticks-heat-shedding) has more on managing the coat and heat.",
+      },
+      { type: "h2", text: "Signs your German Shepherd needs more exercise" },
+      {
+        type: "p",
+        text: "A dog will tell you when it's under-exercised. Watch for destructive chewing, digging, excessive barking, restlessness or pacing, jumping up, and gradual weight gain. These are almost never “bad behaviour” for its own sake — they're usually a fit, intelligent dog with unspent energy. More structured activity and mental work fixes most of it.",
+      },
+      { type: "h2", text: "Can you over-exercise a German Shepherd?" },
+      {
+        type: "p",
+        text: "Yes — particularly puppies, whose joints are still forming, and any dog worked hard in the heat. Balance is everything: enough to satisfy the body and mind, not so much that you damage growing joints or risk heatstroke. When in doubt with a young or older dog, or one with any joint or health concern, ask your vet what's appropriate.",
+      },
+      {
+        type: "note",
+        text: "This is general guidance, not veterinary advice — exercise needs vary with age, health and individual dog, so check with your vet for puppies, seniors, or any dog with a joint or health condition.",
+      },
+      {
+        type: "p",
+        text: "A well-exercised German Shepherd is a happy, well-behaved one — and it starts with the right dog and the right guidance. We help every family with a settling-in and routine plan; see our [available puppies](/available-puppies), or read our guide to [training a German Shepherd puppy in Kenya](/blog/how-to-train-a-german-shepherd-puppy-kenya).",
+      },
+    ],
+  },
+  {
     slug: "white-german-shepherd-kenya",
     title: "White German Shepherds in Kenya: The Rare Colour, Explained",
     metaTitle: "White German Shepherd in Kenya (Colour Guide)",
@@ -224,7 +361,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "How to help your German Shepherd live longer" },
       {
         type: "p",
-        text: "The practical checklist is refreshingly simple: start with a puppy from health-tested lines; keep your dog lean for life; feed a complete, quality diet in measured portions; give regular, appropriate exercise without over-exercising a young pup; stay on top of vaccinations and parasite control; look after teeth; keep the mind busy with training and interaction; and see your vet for routine checks, not just emergencies. Our [feeding guide for Kenya](/blog/german-shepherd-feeding-guide-kenya) covers the diet side in detail.",
+        text: "The practical checklist is refreshingly simple: start with a puppy from health-tested lines; keep your dog lean for life; feed a complete, quality diet in measured portions; give regular, appropriate exercise without over-exercising a young pup; stay on top of vaccinations and parasite control; look after teeth; keep the mind busy with training and interaction; and see your vet for routine checks, not just emergencies. Our [feeding guide for Kenya](/blog/german-shepherd-feeding-guide-kenya) covers the diet side, and our guide to [how much exercise a German Shepherd needs](/blog/german-shepherd-exercise-needs-kenya) covers the rest.",
       },
       { type: "h2", text: "The senior years" },
       {
@@ -302,7 +439,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Which suits Kenyan homes and families?" },
       {
         type: "p",
-        text: "Both can be wonderful family dogs when they come from good breeding and are properly socialised. The German Shepherd tends to be the more adaptable all-rounder — active, trainable and happy in family life, which is why we think it suits most Kenyan homes so well; see [are German Shepherds good for Kenyan homes](/blog/are-german-shepherds-good-for-kenyan-homes). The Boerboel can be a superb guardian and gentle with its own family, but its size, strength and independence mean it's best matched with an experienced owner who has space and will commit to early training. If you're also weighing the Shepherd against another popular guard breed, see our [German Shepherd vs Rottweiler comparison](/blog/german-shepherd-vs-rottweiler-kenya).",
+        text: "Both can be wonderful family dogs when they come from good breeding and are properly socialised. The German Shepherd tends to be the more adaptable all-rounder — active, trainable and happy in family life, which is why we think it suits most Kenyan homes so well; see [are German Shepherds good for Kenyan homes](/blog/are-german-shepherds-good-for-kenyan-homes). The Boerboel can be a superb guardian and gentle with its own family, but its size, strength and independence mean it's best matched with an experienced owner who has space and will commit to early training. If you're also weighing the Shepherd against another popular guard breed, see our comparisons with the [Rottweiler](/blog/german-shepherd-vs-rottweiler-kenya) and the high-drive [Belgian Malinois](/blog/german-shepherd-vs-belgian-malinois-kenya).",
       },
       {
         type: "note",
