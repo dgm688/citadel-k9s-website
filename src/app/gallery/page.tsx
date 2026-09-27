@@ -16,6 +16,15 @@ export const metadata: Metadata = pageMeta({
 
 // VideoObject markup for our real gallery videos — makes them eligible for
 // Google video results. Date reflects when the media was published to the site.
+// Real clip durations (ISO 8601), measured from the source files — a
+// recommended VideoObject property that improves eligibility for video results.
+const VIDEO_DURATIONS: Record<string, string> = {
+  "/videos/reel.mp4": "PT29S",
+  "/videos/puppy-portrait.mp4": "PT14S",
+  "/videos/puppy-garden.mp4": "PT14S",
+  "/videos/adult-stack.mp4": "PT9S",
+};
+
 const videoJsonLd = GALLERY.filter(
   (g) => g.type === "video" && g.videoSrc && g.media.src,
 ).map((g) => ({
@@ -28,6 +37,9 @@ const videoJsonLd = GALLERY.filter(
   // Full ISO 8601 with Kenya's time zone (EAT, +03:00) — Google requires a
   // time zone on VideoObject uploadDate.
   uploadDate: "2026-07-14T09:00:00+03:00",
+  ...(g.videoSrc && VIDEO_DURATIONS[g.videoSrc]
+    ? { duration: VIDEO_DURATIONS[g.videoSrc] }
+    : {}),
 }));
 
 export default function GalleryPage() {

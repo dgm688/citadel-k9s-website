@@ -32,8 +32,9 @@ export const SITE = {
    * (Ruaka, Kiambu County) — matches the verified GBP for NAP/geo consistency.
    */
   geo: { lat: -1.206475, lng: 36.766951 },
-  /** Default social/preview image (a real photo). */
-  ogImage: "/images/gallery/adult-stack.jpg",
+  /** Default social/preview image — a lean, correctly-sized 1200x630 crop
+   *  (159KB vs the 727KB source) so link previews load fast. */
+  ogImage: "/images/og/citadel-og.jpg",
 } as const;
 
 /**

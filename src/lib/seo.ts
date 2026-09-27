@@ -38,8 +38,8 @@ export function pageMeta({
             images: [
               {
                 url: image,
-                width: 1920,
-                height: 1080,
+                width: 1200,
+                height: 630,
                 alt: "A Citadel K9s long-coat German Shepherd",
               },
             ],
