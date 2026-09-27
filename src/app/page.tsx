@@ -14,12 +14,17 @@ import { TestimonialsPreview } from "@/components/home/TestimonialsPreview";
 import { InstagramPreview } from "@/components/home/InstagramPreview";
 import { CTASection } from "@/components/sections/CTASection";
 
-export const metadata: Metadata = pageMeta({
-  title: "German Shepherd Puppies for Sale in Kenya",
-  description:
-    "German Shepherd breeder in Kenya raising long-coat shepherds for structure, health and temperament. Visit us, meet the parents, judge our standards in person.",
-  path: "/",
-});
+export const metadata: Metadata = {
+  ...pageMeta({
+    title: "German Shepherd Puppies for Sale in Kenya",
+    description:
+      "German Shepherd breeder in Kenya raising long-coat shepherds for structure, health and temperament. Visit us, meet the parents, judge our standards in person.",
+    path: "/",
+  }),
+  // The root page shares the layout's segment, so the "%s · Citadel K9s" title
+  // template doesn't apply here — set the branded title explicitly.
+  title: { absolute: "German Shepherd Puppies for Sale in Kenya · Citadel K9s" },
+};
 
 export default function HomePage() {
   return (

@@ -44,6 +44,10 @@ const nextConfig = {
   },
   images: {
     formats: ["image/avif", "image/webp"],
+    // Cache OPTIMIZED images for 30 days. /public files aren't fingerprinted and
+    // were serving `max-age=0` (re-downloaded on every visit) — costly for
+    // repeat visits and for mobile data in our market, and a Core Web Vitals drag.
+    minimumCacheTTL: 2592000,
     // Local images only. If a remote CDN is introduced later, allowlist its
     // exact host here rather than opening the optimizer to every host.
     remotePatterns: [],
@@ -60,6 +64,27 @@ const nextConfig = {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=()",
           },
+        ],
+      },
+      // Long-lived caching for static media (raw files were serving max-age=0).
+      // Photos/videos: 30 days with revalidation. Brand assets never change: 1yr immutable.
+      {
+        source: "/images/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=2592000, stale-while-revalidate=86400",
+          },
+        ],
+      },
+      {
+        source: "/videos/:path*",
+        headers: [{ key: "Cache-Control", value: "public, max-age=2592000" }],
+      },
+      {
+        source: "/brand/:path*",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],
       },
     ];

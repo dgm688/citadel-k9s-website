@@ -22,7 +22,7 @@ export const metadata: Metadata = pageMeta({
     : "German Shepherd Puppy Waiting List — Kenya",
   description: puppiesAvailable
     ? "German Shepherd puppies available now in Kenya — vet-checked, vaccinated and documented, raised near Nairobi by Citadel K9s. See this litter or join the waiting list."
-    : "No puppies are available right now. Join the Citadel K9s waiting list to be first to hear when our next German Shepherd litter is planned — raised near Nairobi, Kenya.",
+    : "Join the Citadel K9s waiting list for our next German Shepherd litter in Kenya — health-tested, EAKC-registered puppies raised near Nairobi. Be first to hear when a puppy is available.",
   path: "/available-puppies",
 });
 
