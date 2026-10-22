@@ -7,6 +7,139 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "cheap-german-shepherd-puppies-kenya",
+    title: "Cheap German Shepherd Puppies in Kenya: Why the Lowest Price Is the Biggest Risk",
+    metaTitle: "Cheap German Shepherd Puppies in Kenya (Buyer Warning)",
+    excerpt:
+      "Tempted by a cheap German Shepherd puppy in Kenya? The lowest price is almost always the most expensive mistake. Here's what you're really not paying for, the hidden costs, and how to find genuine value instead.",
+    category: "Buyer's Guide",
+    date: "2026-10-22",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/young-sit-2.jpg",
+      alt: "A healthy German Shepherd puppy — worth more than a cheap one in Kenya",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "Are cheap German Shepherd puppies in Kenya a bargain? Almost never. A puppy priced far below the market — often the KSh 2,500 to 15,000 you see on classifieds — usually means no health testing, no proper vaccinations, unknown or mixed parentage, and no breeder support. The low price is the bait; the real cost shows up later in vet bills, behaviour problems and heartbreak, and a dog that often isn't what you were promised.",
+      },
+      {
+        type: "p",
+        text: "We understand the instinct — a German Shepherd is a big commitment and saving money feels sensible. But this is the one purchase where the cheapest option is reliably the worst value. Here's exactly why, and how to spend your money wisely instead.",
+      },
+      { type: "h2", text: "Why are some German Shepherd puppies so cheap?" },
+      {
+        type: "p",
+        text: "A rock-bottom price is a signal, not a saving. It usually means one of a few things: a backyard or volume breeder cutting every corner — no health testing, no vet care, puppies weaned and sold too young; an unregistered mixed-breed sold as a “pure” German Shepherd; a sick or poorly socialised litter being offloaded quickly before problems show; or an outright scammer taking a deposit for a puppy that doesn't exist. Nobody who has invested properly in a litter can afford to sell it for next to nothing.",
+      },
+      { type: "h2", text: "What you're really not paying for" },
+      {
+        type: "p",
+        text: "The difference between a cheap puppy and a fairly priced one is everything you can't see on the day: hip-scored, health-tested parents; a full course of deworming and vaccinations; a veterinary health check; weeks of in-home socialisation that shapes temperament; a verifiable pedigree and registration; and a breeder who stands behind the dog for life. Strip those out and the price drops — but so does everything that makes a German Shepherd healthy, stable and safe.",
+      },
+      { type: "h2", text: "The hidden costs of a cheap puppy" },
+      {
+        type: "p",
+        text: "This is where the maths turns. An unvaccinated puppy that catches parvovirus or distemper can cost tens of thousands of shillings to treat, with no guarantee it survives. A pup from un-scored parents carries a higher risk of [hip dysplasia](/blog/hip-dysplasia-in-german-shepherds-kenya), which can mean lifelong discomfort or surgery. Poor early socialisation shows up as fear, reactivity or aggression that is expensive and difficult to fix. A cheap puppy very often costs far more over its life than a well-bred one — and the worst costs aren't financial. Make sure vaccinations are done and documented; our [vaccination and deworming guide](/blog/german-shepherd-puppy-vaccination-deworming-schedule-kenya) shows what should be in place.",
+      },
+      { type: "h2", text: "How much should you actually pay?" },
+      {
+        type: "p",
+        text: "A healthy, documented purebred German Shepherd puppy from a registered breeder typically costs between KSh 40,000 and KSh 150,000, depending on pedigree, health testing and coat. That's not an arbitrary premium — it's what proper breeding actually costs. Our full [German Shepherd price guide for Kenya](/blog/german-shepherd-price-kenya) breaks down every price band and exactly what should be included at each.",
+      },
+      { type: "h2", text: "How do you spot a cheap-puppy trap?" },
+      {
+        type: "p",
+        text: "The warning signs are consistent: a price far below everyone else; no sight of the parents; no pedigree, registration or health records; pressure to pay a deposit fast; a seller who always seems to have puppies; and “breeders” offering several different breeds at once. Any one of these should make you pause. Our guides on [how to avoid puppy scams in Kenya](/blog/avoid-puppy-scams-kenya) and [choosing an ethical breeder](/blog/how-to-choose-an-ethical-german-shepherd-breeder-kenya) walk through every red flag.",
+      },
+      { type: "h2", text: "Is there a safe way to buy affordably?" },
+      {
+        type: "p",
+        text: "Yes — just not by chasing the cheapest advert. Buy from a registered breeder, ask honestly about pet-quality puppies or a waiting list, and judge value by what's included rather than the sticker price alone. A fairly priced, health-tested puppy from parents you've met is the genuine bargain; the KSh 3,000 “bargain” rarely is. Spend a little more at the start and you usually spend far less — in money and in worry — for the next decade.",
+      },
+      {
+        type: "note",
+        text: "We're a breeder, so weigh this with that in mind — but the arithmetic is real and independent of us: a healthy, well-bred German Shepherd is cheaper over its life than a cheap, poorly-bred one. Prioritise health and temperament over the lowest price, every time.",
+      },
+      {
+        type: "p",
+        text: "At Citadel K9s every puppy comes from health-tested, EAKC-registered parents, fully documented and backed by our support for life. See our [available puppies](/available-puppies), or [talk to us](/contact) about joining the waiting list.",
+      },
+    ],
+  },
+  {
+    slug: "best-guard-dogs-in-kenya",
+    title: "The Best Guard Dogs in Kenya: Top Breeds for Home Security",
+    metaTitle: "Best Guard Dogs in Kenya (2026 Guide)",
+    excerpt:
+      "Looking for the best guard dog for your Kenyan home? Here are the top breeds — German Shepherd, Rottweiler, Boerboel, Belgian Malinois and Bullmastiff — and an honest guide to which suits your family, space and experience.",
+    category: "Buyer's Guide",
+    date: "2026-10-22",
+    readingTime: "8 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-handler.jpg",
+      alt: "A German Shepherd guard dog with its handler at a home in Kenya",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "What are the best guard dogs in Kenya? The top choices are the German Shepherd, Rottweiler, Boerboel, Belgian Malinois and Bullmastiff — all capable protectors, but each suited to a different home. The German Shepherd is the most popular and versatile: intelligent, highly trainable and an imposing deterrent, yet steady enough to be a family dog too. The right breed for you depends on your experience, your space, and whether you want a companion as well as a guardian.",
+      },
+      {
+        type: "p",
+        text: "Security is a real reason many Kenyan families get a dog, and the breed you choose matters. We breed German Shepherds, so take our view with the appropriate pinch of salt — but the honest rundown below is meant to help you choose the right dog for your situation, whichever that turns out to be.",
+      },
+      { type: "h2", text: "What makes a good guard dog?" },
+      {
+        type: "p",
+        text: "Here's the most important thing, and the thing cheap “guard dog” sellers hope you never learn: a good guard dog is stable, not aggressive. The best protectors are confident and alert, with a strong deterrent presence and the trainability to be controlled — not fearful, reactive dogs that are a danger to your own household. A fear-biter is a liability, not security. Sound temperament comes from breeding and socialisation, which is why the breeder matters as much as the breed. Our guide on [whether German Shepherds are aggressive](/blog/are-german-shepherds-aggressive-kenya) explains the difference, and our [security and guard dog guide](/blog/security-dogs-for-sale-kenya) goes deeper on protection specifically.",
+      },
+      { type: "h2", text: "1. German Shepherd — the all-rounder" },
+      {
+        type: "p",
+        text: "The German Shepherd is the default choice for good reason. It is one of the most intelligent and trainable breeds in the world — the reason police and security forces everywhere use it — and it combines an alert, imposing presence with a temperament stable enough to be a devoted family dog. For most Kenyan homes that want genuine security in a dog they can also live with, it is the best balance of ability and manageability. See our [German Shepherd puppies in Kenya](/german-shepherd-puppies-kenya).",
+      },
+      { type: "h2", text: "2. Rottweiler — powerful and confident" },
+      {
+        type: "p",
+        text: "The Rottweiler is a strong, confident and naturally protective breed with a serious deterrent build. Well-bred and well-trained, it is calm and devoted to its family; it needs an owner who will provide firm, consistent training and early socialisation. See our full [German Shepherd vs Rottweiler comparison](/blog/german-shepherd-vs-rottweiler-kenya).",
+      },
+      { type: "h2", text: "3. Boerboel — the giant guardian" },
+      {
+        type: "p",
+        text: "The Boerboel is a South African mastiff bred to guard the homestead — large, powerful and territorial, with size alone that deters most intruders. It is calmer and more independent than a Shepherd, but its sheer strength means it needs an experienced owner, space, and committed early training. See our [German Shepherd vs Boerboel comparison](/blog/german-shepherd-vs-boerboel-kenya).",
+      },
+      { type: "h2", text: "4. Belgian Malinois — the intense specialist" },
+      {
+        type: "p",
+        text: "The Belgian Malinois is the elite working dog of military and police units worldwide — lighter and faster than a Shepherd, with extreme drive. That intensity makes it a superb protection dog but a demanding pet: it needs a very active, experienced owner and a real job, or it becomes difficult to live with. See our [German Shepherd vs Belgian Malinois comparison](/blog/german-shepherd-vs-belgian-malinois-kenya).",
+      },
+      { type: "h2", text: "5. Bullmastiff — the quiet deterrent" },
+      {
+        type: "p",
+        text: "The Bullmastiff is a large, powerful and surprisingly calm breed, originally bred to corner intruders. It tends to be quieter and lower-energy than the others, devoted to its family and naturally wary of strangers — an imposing presence that doesn't need to be loud. Its size and strength still call for early training and socialisation.",
+      },
+      { type: "h2", text: "Which guard dog is right for a Kenyan home?" },
+      {
+        type: "p",
+        text: "Match the dog to your life. For most families who want one dog to be both companion and guardian, the German Shepherd is the most versatile and manageable. If you have the experience and space for a large, independent guardian, a Boerboel or Bullmastiff can be excellent. If you're a very active, experienced owner wanting a high-drive protection specialist, the Malinois excels. The Rottweiler sits between — powerful and loyal for an owner ready to train it. For more on living with the breed we know best, see [are German Shepherds good for Kenyan homes](/blog/are-german-shepherds-good-for-kenyan-homes).",
+      },
+      {
+        type: "note",
+        text: "No breed is simply “the best” — the right guard dog depends on your home, and on buying a well-bred, well-socialised puppy with a stable temperament. Never choose a dog for aggression or size alone; a sound temperament from a responsible breeder matters more than any breed ranking.",
+      },
+      {
+        type: "p",
+        text: "If a trainable, versatile protector that's also a family companion sounds right, that's exactly what we breed. Explore our [German Shepherd puppies in Kenya](/german-shepherd-puppies-kenya), or [get in touch](/contact) and we'll help you choose honestly.",
+      },
+    ],
+  },
+  {
     slug: "german-shepherd-vs-belgian-malinois-kenya",
     title: "German Shepherd vs Belgian Malinois in Kenya: Which Should You Choose?",
     metaTitle: "German Shepherd vs Belgian Malinois (Kenya)",
@@ -658,7 +791,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Why the German Shepherd is Kenya's top security dog" },
       {
         type: "p",
-        text: "The German Shepherd earned its reputation for a reason. It is one of the most intelligent and trainable breeds in the world, which is exactly why police and military forces everywhere use them. It bonds deeply and loyally with its family, is naturally alert and territorial, and its size and presence alone are a powerful deterrent — most intruders will not test a home with a Shepherd at the gate. Crucially, a well-bred Shepherd is also a wonderful family dog: gentle and patient with the people it protects, while switched-on to anything out of place. That combination of family companion and serious deterrent is what makes it the default choice for security-minded homes across Kenya. If you want the fuller picture of living with the breed here, see [are German Shepherds good for Kenyan homes](/blog/are-german-shepherds-good-for-kenyan-homes).",
+        text: "The German Shepherd earned its reputation for a reason. It is one of the most intelligent and trainable breeds in the world, which is exactly why police and military forces everywhere use them. It bonds deeply and loyally with its family, is naturally alert and territorial, and its size and presence alone are a powerful deterrent — most intruders will not test a home with a Shepherd at the gate. Crucially, a well-bred Shepherd is also a wonderful family dog: gentle and patient with the people it protects, while switched-on to anything out of place. That combination of family companion and serious deterrent is what makes it the default choice for security-minded homes across Kenya. If you want the fuller picture of living with the breed here, see [are German Shepherds good for Kenyan homes](/blog/are-german-shepherds-good-for-kenyan-homes), and for how it stacks up against other protectors, our roundup of the [best guard dogs in Kenya](/blog/best-guard-dogs-in-kenya).",
       },
       { type: "h2", text: "Guard dog vs trained protection dog — know the difference" },
       {
@@ -1626,7 +1759,7 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "If you've searched for a German Shepherd in Kenya, you've seen prices from KSh 2,500 on classifieds sites to KSh 150,000 and beyond from established kennels. That gap confuses buyers — and it's exactly where people get burned.",
+        text: "If you've searched for a German Shepherd in Kenya, you've seen prices from KSh 2,500 on classifieds sites to KSh 150,000 and beyond from established kennels. That gap confuses buyers — and it's exactly where people get burned. If a rock-bottom price has caught your eye, read first why [cheap German Shepherd puppies are usually the biggest risk](/blog/cheap-german-shepherd-puppies-kenya).",
       },
       {
         type: "p",
