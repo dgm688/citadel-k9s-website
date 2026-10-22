@@ -1744,9 +1744,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "german-shepherd-price-kenya",
     title: "German Shepherd Price in Kenya (2026): What You'll Actually Pay — and Why",
-    metaTitle: "German Shepherd Price in Kenya (2026 Guide)",
+    metaTitle: "German Shepherd Puppy Price in Kenya (2026 Guide)",
     excerpt:
-      "How much does a German Shepherd cost in Kenya? Honest 2026 price ranges, what drives the gap, and how to avoid paying cheap for an undocumented dog.",
+      "How much is a German Shepherd puppy in Kenya? Prices typically run KSh 40,000–150,000 in 2026. Here's the full breakdown by type, what you should actually pay, and how to avoid cheap, undocumented dogs.",
     category: "Buyer's Guide",
     date: "2026-07-19",
     readingTime: "7 min read",
