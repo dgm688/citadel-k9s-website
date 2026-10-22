@@ -1929,7 +1929,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "How much is a good German Shepherd puppy in Kenya?" },
       {
         type: "p",
-        text: "A good German Shepherd puppy — vet-checked, vaccinated, dewormed and with its records handed over — starts at around KSh 40,000. For a pedigree puppy from EAKC-registered, health-tested (hip-scored) parents, expect KSh 90,000–150,000 or more. Citadel K9s puppies come from exactly that pedigree, health-tested tier, and start from around KSh 80,000 with everything included and no surprise add-ons.",
+        text: "A good German Shepherd puppy — vet-checked, vaccinated, dewormed and with its records handed over — starts at around KSh 40,000. For a pedigree puppy from EAKC-registered, health-tested (hip-scored) parents, expect KSh 90,000–150,000 or more. Citadel K9s puppies come from exactly that pedigree, health-tested tier, and start from around KSh 80,000 with everything included and no surprise add-ons. See our [German Shepherd puppies in Kenya](/german-shepherd-puppies-kenya) for how we breed and what's included, meet [our dogs](/our-dogs), or view the [puppies available now](/available-puppies).",
       },
     ],
   },
