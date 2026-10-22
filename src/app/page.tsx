@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ...pageMeta({
     title: "German Shepherd Puppies for Sale in Kenya",
     description:
-      "German Shepherd breeder in Kenya raising long-coat shepherds for structure, health and temperament. Visit us, meet the parents, judge our standards in person.",
+      "Health-tested German Shepherd puppies in Kenya from Citadel K9s — EAKC-registered, hip-scored parents, raised in-home near Nairobi. Visit and meet the parents, or join the waiting list on WhatsApp.",
     path: "/",
   }),
   // The root page shares the layout's segment, so the "%s · Citadel K9s" title
