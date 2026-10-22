@@ -7,6 +7,155 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "german-shepherd-colours-kenya",
+    title: "German Shepherd Colours Explained: Every Coat Colour in the Breed",
+    metaTitle: "German Shepherd Colours Explained (Kenya Guide)",
+    excerpt:
+      "German Shepherds come in far more colours than most people realise — from the classic black-and-tan to rare sable, solid black, grey and white. Here's every coat colour explained, and why colour is the last thing that should decide your choice.",
+    category: "Buyer's Guide",
+    date: "2026-10-22",
+    readingTime: "7 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-portrait-1.jpg",
+      alt: "A German Shepherd showing the classic black-and-tan colour, in Kenya",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "German Shepherds come in more colours than most people realise. The recognised coat colours are black-and-tan (and black-and-red), sable, and solid black, with rarer variations including bi-colour, grey (silver or wolf-grey), liver and blue. White German Shepherds also occur, though they sit outside the standard show ring. Crucially, colour is almost entirely cosmetic — in a well-bred dog it has no effect on health, temperament, intelligence or trainability.",
+      },
+      {
+        type: "p",
+        text: "Because some colours are rare, they attract attention and higher prices — and, unfortunately, the occasional dishonest seller. Here's a clear, honest guide to every German Shepherd colour, so you know exactly what you're looking at before you buy.",
+      },
+      { type: "h2", text: "The common German Shepherd colours" },
+      {
+        type: "p",
+        text: "Most German Shepherds fall into three colour groups. Black-and-tan (and the richer black-and-red) is the classic look — a black “saddle” over a tan or red body, and by far the most common. Sable is the wolf-like pattern where each hair is banded, giving a grey or golden overlay that shifts in the light — the oldest colour in the breed and common in working lines; see our [sable German Shepherd guide](/blog/sable-german-shepherd-kenya). Solid black is an entirely black dog, caused by a recessive gene and genuinely rare; see our [solid black German Shepherd guide](/blog/solid-black-german-shepherd-kenya).",
+      },
+      { type: "h2", text: "The rarer German Shepherd colours" },
+      {
+        type: "p",
+        text: "Beyond the common three are several uncommon colours. Bi-colour looks almost fully black with only faint tan on the feet and under the tail. Grey (also called silver or wolf-grey) is an agouti colour that reads as a uniform grey. Liver replaces the black pigment with brown, giving a chocolate-toned dog with a brown nose. Blue is a dilution that turns the black to a steely grey-blue. White is a recessive colour producing an all-white (but not albino) dog — see our [white German Shepherd guide](/blog/white-german-shepherd-kenya). Liver, blue and white are not accepted in the standard show ring, but they are still purebred German Shepherds.",
+      },
+      {
+        type: "table",
+        headers: ["Colour", "What it looks like", "Rarity"],
+        rows: [
+          ["Black & tan / red", "Classic black saddle over a tan or red body", "Most common"],
+          ["Sable", "Banded hairs — grey, golden or dark wolf-like overlay", "Common"],
+          ["Solid black", "Entirely black, no tan anywhere", "Rare"],
+          ["Bi-colour", "Almost all black, faint tan on feet and under tail", "Uncommon"],
+          ["Grey / silver", "Uniform wolf-grey (agouti)", "Uncommon"],
+          ["Liver", "Brown pigment instead of black, brown nose", "Rare"],
+          ["Blue", "Diluted steely grey-blue", "Rare"],
+          ["White", "All-white coat, dark eyes and nose (not albino)", "Rare"],
+        ],
+      },
+      { type: "h2", text: "Does colour affect a German Shepherd's price?" },
+      {
+        type: "p",
+        text: "Rarer colours like solid black, white, liver or blue often command a premium simply because fewer are available — but colour should never be the main reason for a price. What you are really paying for is health-tested parents, a verifiable pedigree and a properly raised puppy. A rare colour with none of that behind it is not worth more; it's a bigger gamble. Our [German Shepherd price guide for Kenya](/blog/german-shepherd-price-kenya) explains what actually drives a fair price.",
+      },
+      { type: "h2", text: "Does colour affect health or temperament?" },
+      {
+        type: "p",
+        text: "No. Coat colour has nothing to do with a German Shepherd's temperament, intelligence or trainability — those come from bloodlines and how a puppy is raised, never from the shade of its coat. White Shepherds are not albino and carry no colour-linked health problems. The one thing that genuinely matters for health is the same in every colour: buy from hip-scored, health-tested parents. See our guide to [hip dysplasia in German Shepherds](/blog/hip-dysplasia-in-german-shepherds-kenya).",
+      },
+      { type: "h2", text: "Which German Shepherd colour should you choose?" },
+      {
+        type: "p",
+        text: "Whichever you find most beautiful — as long as it's the bonus, not the reason. Choose the breeder and the lines first, judge the puppy's health and temperament, and let the colour be the happy extra on top. A sound, stable, well-bred German Shepherd is a wonderful dog in every colour the breed comes in.",
+      },
+      {
+        type: "note",
+        text: "Be wary of any seller marketing a colour as a “rare breed” or a different, superior type of dog to justify a steep price — every colour here is the same breed, the German Shepherd. Prioritise health, temperament and pedigree over the coat, every time.",
+      },
+      {
+        type: "p",
+        text: "At Citadel K9s we breed health-tested, EAKC-registered German Shepherds. Tell us the colour and coat you're hoping for and we'll be honest about what we have — see our [German Shepherd puppies in Kenya](/german-shepherd-puppies-kenya) or [get in touch](/contact).",
+      },
+    ],
+  },
+  {
+    slug: "german-shepherd-ears-standing-up-kenya",
+    title: "When Do German Shepherd Ears Stand Up? A Kenyan Owner's Guide",
+    metaTitle: "When Do German Shepherd Ears Stand Up? (Kenya)",
+    excerpt:
+      "Worried about your German Shepherd puppy's floppy ears? It's almost always normal. Here's when German Shepherd ears stand up, why they go up and down, and what to do (and not do) if they're slow.",
+    category: "Puppy Care",
+    date: "2026-10-22",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/young-front.jpg",
+      alt: "A German Shepherd puppy whose ears are starting to stand up, in Kenya",
+      label: "Puppy Care",
+    },
+    body: [
+      {
+        type: "p",
+        text: "When do German Shepherd ears stand up? Most German Shepherd puppies' ears stand up permanently between 4 and 6 months of age, usually around the time they finish teething. Before that it is completely normal for the ears to go up and down — one up and one down, or both flopping. Most ears are firmly erect by about 5 months; if they are still not up by around 7 to 8 months, it's worth mentioning to your vet.",
+      },
+      {
+        type: "p",
+        text: "Few things worry new German Shepherd owners more than floppy ears — but in the vast majority of puppies, there is nothing to fix. Here's exactly what's happening, the normal timeline, and the things that genuinely help (and the things that can do harm).",
+      },
+      { type: "h2", text: "Why do German Shepherd puppies have floppy ears?" },
+      {
+        type: "p",
+        text: "A German Shepherd's ears are large and heavy relative to the soft, still-developing cartilage of a young puppy, so at first the cartilage simply isn't strong enough to hold them up. As the puppy grows, that cartilage strengthens and the ears lift. Teething plays a big role too: while a puppy is teething, its body directs calcium and resources to the mouth, which is why ears often wobble up and down most during the teething months.",
+      },
+      { type: "h2", text: "At what age do German Shepherd ears stand up?" },
+      {
+        type: "table",
+        headers: ["Puppy's age", "What's typical with the ears"],
+        rows: [
+          ["Birth – 8 weeks", "Soft and floppy — completely normal"],
+          ["2 – 4 months", "Ears start to lift, often going up and down"],
+          ["3 – 5 months (teething)", "The wobbliest stage — one up, one down is normal"],
+          ["4 – 6 months", "Most ears become permanently erect"],
+          ["7 – 8 months+", "If still fully down, have a word with your vet"],
+        ],
+      },
+      { type: "h2", text: "Is it normal for the ears to go up and down?" },
+      {
+        type: "p",
+        text: "Yes — entirely normal, and the single most common thing owners panic about unnecessarily. During teething especially, you may see one ear up and one down, both up one day and both down the next, or ears that stand and then collapse again. This back-and-forth is a normal part of development and usually resolves on its own once teething finishes.",
+      },
+      { type: "h2", text: "What if my German Shepherd's ears don't stand up?" },
+      {
+        type: "p",
+        text: "If the ears are still fully floppy by around seven to eight months, once teething is well finished, it's worth asking your vet. Sometimes it's genetics (large or heavy ears, or soft cartilage in the lines), sometimes an ear was damaged by rough handling, and occasionally one or both ears simply never stand fully. A German Shepherd with a soft or semi-erect ear is still a completely healthy, wonderful dog — ear carriage is cosmetic and affects nothing that matters.",
+      },
+      { type: "h2", text: "Should you tape a German Shepherd's ears?" },
+      {
+        type: "p",
+        text: "Not on your own, and not early. The overwhelming majority of German Shepherd ears stand up by themselves with no intervention, and taping a young puppy's ears unnecessarily can do more harm than good. If the ears are genuinely slow well past teething, taping should only be done on the advice and guidance of a vet who has examined the dog — never as a DIY fix on a three-month-old whose ears are simply still developing.",
+      },
+      { type: "h2", text: "Do long-coat German Shepherds' ears stand up?" },
+      {
+        type: "p",
+        text: "Usually yes, though long-coat German Shepherds can be a little slower, and a few keep a slightly softer or semi-erect ear because of the heavier coat and ear furnishings. It's cosmetic and perfectly healthy. Our guide to [long coat vs stock coat German Shepherds](/blog/long-coat-vs-stock-coat-german-shepherds) covers the differences.",
+      },
+      { type: "h2", text: "How to support healthy ear development" },
+      {
+        type: "p",
+        text: "The best thing you can do is mostly leave the ears alone and raise the puppy well. Feed a complete, balanced diet so the cartilage develops properly — but don't over-supplement calcium, which can do harm rather than good; see our [feeding guide for Kenya](/blog/german-shepherd-feeding-guide-kenya). Give safe chew toys to support healthy teething, avoid folding, massaging or playing roughly with the ears, and let the natural process run its course. Patience is almost always the right answer.",
+      },
+      {
+        type: "note",
+        text: "Try not to worry about floppy ears — they are normal in a growing German Shepherd puppy, and ear carriage has no bearing on health, temperament or how good a dog yours will be. If you're genuinely concerned after teething is over, your vet is the right person to ask.",
+      },
+      {
+        type: "p",
+        text: "At Citadel K9s we raise our puppies on proper nutrition and send every family home with guidance on what to expect as their puppy grows — ears and all. See our [available puppies](/available-puppies) or read more [puppy care guidance](/puppy-care).",
+      },
+    ],
+  },
+  {
     slug: "alsatian-vs-german-shepherd-kenya",
     title: "Alsatian vs German Shepherd: Are They the Same Dog? (Kenya Guide)",
     metaTitle: "Alsatian vs German Shepherd in Kenya — Same Dog?",
@@ -376,7 +525,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "note",
-        text: "As with the [solid black](/blog/solid-black-german-shepherd-kenya) and [sable](/blog/sable-german-shepherd-kenya) Shepherds, colour should be the bonus, not the reason. A good white German Shepherd is a good German Shepherd first — sound hips, a stable temperament and a real pedigree matter far more than the coat.",
+        text: "As with the [solid black](/blog/solid-black-german-shepherd-kenya) and [sable](/blog/sable-german-shepherd-kenya) Shepherds, colour should be the bonus, not the reason. A good white German Shepherd is a good German Shepherd first — sound hips, a stable temperament and a real pedigree matter far more than the coat. For the full picture, see our guide to every [German Shepherd colour explained](/blog/german-shepherd-colours-kenya).",
       },
       {
         type: "p",
@@ -941,7 +1090,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Are black German Shepherds really rare?" },
       {
         type: "p",
-        text: "Genuinely, yes. Because both parents must carry the recessive black gene for a black puppy to appear, solid blacks make up a small fraction of Shepherds worldwide — and an even smaller fraction in Kenya, where most German Shepherds are black-and-tan or sable. That scarcity is exactly why solid black pups are in high demand here and tend to be reserved before they are even born. If you find one available, it usually will not stay available for long.",
+        text: "Genuinely, yes. Because both parents must carry the recessive black gene for a black puppy to appear, solid blacks make up a small fraction of Shepherds worldwide — and an even smaller fraction in Kenya, where most German Shepherds are black-and-tan or sable. That scarcity is exactly why solid black pups are in high demand here and tend to be reserved before they are even born. If you find one available, it usually will not stay available for long. To see how it compares with every other shade, read our guide to [German Shepherd colours explained](/blog/german-shepherd-colours-kenya).",
       },
       { type: "h2", text: "Solid black vs bi-colour vs black-and-tan vs sable" },
       {
@@ -1986,7 +2135,7 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "German Shepherds come in two recognised coat types: the classic stock coat (short, dense, weather-resistant) and the long coat, with feathering on the ears, legs and tail. Both shed. Both are the same dog underneath.",
+        text: "German Shepherds come in two recognised coat types: the classic stock coat (short, dense, weather-resistant) and the long coat, with feathering on the ears, legs and tail. Both shed. Both are the same dog underneath. (If you're wondering about puppy ears, see our guide to [when German Shepherd ears stand up](/blog/german-shepherd-ears-standing-up-kenya).)",
       },
       { type: "h2", text: "Stock coat" },
       {
