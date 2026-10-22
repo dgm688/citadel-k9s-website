@@ -7,6 +7,60 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "alsatian-vs-german-shepherd-kenya",
+    title: "Alsatian vs German Shepherd: Are They the Same Dog? (Kenya Guide)",
+    metaTitle: "Alsatian vs German Shepherd in Kenya — Same Dog?",
+    excerpt:
+      "Is an Alsatian the same as a German Shepherd? Yes — it's the same breed, just an older name still common in Kenya. Here's why, whether there's any difference, and what an Alsatian puppy costs.",
+    category: "Buyer's Guide",
+    date: "2026-10-22",
+    readingTime: "5 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-portrait-3.jpg",
+      alt: "An Alsatian, better known today as the German Shepherd, in Kenya",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "Is an Alsatian the same as a German Shepherd? Yes — the Alsatian and the German Shepherd are exactly the same breed. “Alsatian” is simply an older name for the German Shepherd Dog, still widely used in Kenya and across the Commonwealth. There is no difference in breed, temperament, size or price between an “Alsatian” and a “German Shepherd” — only in the name people happen to use.",
+      },
+      {
+        type: "p",
+        text: "If you've been searching for an “Alsatian puppy” in Kenya and wondering whether it's a different or rarer dog from a German Shepherd, this clears it up — and saves you from anyone who tries to use the two names to confuse or overcharge you.",
+      },
+      { type: "h2", text: "Why are German Shepherds called Alsatians?" },
+      {
+        type: "p",
+        text: "It's a story from history, not biology. After the First World War, British kennel clubs dropped the word “German” from the breed's name because of anti-German feeling, renaming it the “Alsatian” after the Alsace region. The name spread across the Commonwealth — including Kenya — and stuck. The breed was officially restored to “German Shepherd Dog” decades later, but in everyday Kenyan use many people still say “Alsatian.” Same dog, two names.",
+      },
+      { type: "h2", text: "Is there any difference between an Alsatian and a German Shepherd?" },
+      {
+        type: "p",
+        text: "None at all. They are one breed, with one breed standard. An “Alsatian” is not bigger, calmer, rarer or more “pure” than a German Shepherd — they are the same animal. If a seller tells you an Alsatian is a different or superior breed to a German Shepherd (or vice versa) to justify a price, they are either confused or being dishonest. Judge the dog on its health testing, temperament and pedigree, never on which of the two names is used.",
+      },
+      { type: "h2", text: "How much is an Alsatian puppy in Kenya?" },
+      {
+        type: "p",
+        text: "Exactly the same as a German Shepherd puppy — because they are the same breed. A healthy, documented purebred typically costs between KSh 40,000 and KSh 150,000, depending on pedigree, health testing and coat. A very cheap “Alsatian” is subject to the same warnings as a very cheap German Shepherd. Our [German Shepherd price guide for Kenya](/blog/german-shepherd-price-kenya) breaks down every price band, and our guide on [cheap German Shepherd puppies](/blog/cheap-german-shepherd-puppies-kenya) explains why the lowest price is the biggest risk.",
+      },
+      { type: "h2", text: "Buying an Alsatian (German Shepherd) puppy the right way" },
+      {
+        type: "p",
+        text: "Whatever you call the breed, buy it the same careful way: insist on seeing the parents, ask for health testing and a pedigree, and choose a registered breeder you can visit. Our guides on [choosing an ethical breeder](/blog/how-to-choose-an-ethical-german-shepherd-breeder-kenya) and [avoiding puppy scams](/blog/avoid-puppy-scams-kenya) apply exactly the same to an “Alsatian” as to a “German Shepherd.”",
+      },
+      {
+        type: "note",
+        text: "Don't let the name trip you up: Alsatian and German Shepherd are the same breed. Focus on health, temperament and pedigree — not the label — and you'll choose well.",
+      },
+      {
+        type: "p",
+        text: "At Citadel K9s we breed health-tested, EAKC-registered German Shepherds — Alsatians, if you prefer the older name. See our [German Shepherd puppies in Kenya](/german-shepherd-puppies-kenya), or [get in touch](/contact) to join the waiting list.",
+      },
+    ],
+  },
+  {
     slug: "cheap-german-shepherd-puppies-kenya",
     title: "Cheap German Shepherd Puppies in Kenya: Why the Lowest Price Is the Biggest Risk",
     metaTitle: "Cheap German Shepherd Puppies in Kenya (Buyer Warning)",
@@ -1133,6 +1187,11 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "p",
         text: "Hip scoring is how responsible breeders take the guesswork out of that first, most important lever. A mature dog's hips are X-rayed and the images are formally assessed against a recognised scheme — in our region, the East African Kennel Club / KESCAVA Hip Dysplasia Scheme, which follows the same principles as the long-established British scheme. Each hip is given a score, and lower is better. A breeder then uses those results to make sensible pairings — for example, avoiding breeding two dogs that both score poorly — which lowers the risk passed on to the puppies.",
       },
+      { type: "h2", text: "What is a good hip score for a German Shepherd?" },
+      {
+        type: "p",
+        text: "On the EAKC / KESCAVA scheme (which follows the British BVA / Kennel Club system), each hip is scored separately and the two are added together for a total that ranges from 0 to 106 — and the lower the number, the better the hips. The German Shepherd breed average sits at roughly 18. A good score is below that breed average — ideally in single figures — and responsible breeders aim to breed from dogs that score at or below the breed mean, to lower the risk passed to the puppies. One headline number matters less than the overall pattern across a pedigree, so ask a breeder about the parents' actual scores rather than a vague reassurance.",
+      },
       {
         type: "p",
         text: "This is the crucial point: hip scoring is the single most meaningful thing a breeder can actually do about hip dysplasia. A breeder who scores their dogs is managing the risk deliberately. A breeder who has never heard of it, or waves the question away, is leaving it entirely to chance — and passing that chance on to you.",
@@ -1768,7 +1827,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "How much is a German Shepherd puppy in Kenya?" },
       {
         type: "p",
-        text: "A healthy, purebred German Shepherd puppy from a documented breeder typically costs between KSh 40,000 and KSh 150,000 in Kenya in 2026, depending on pedigree, health testing, coat type and lineage. Puppies advertised below KSh 15,000 are usually unpapered, with no verifiable health records or pedigree — which is where most buyers get burned.",
+        text: "A healthy, purebred German Shepherd puppy — also known as an Alsatian in Kenya — from a documented breeder typically costs between KSh 40,000 and KSh 150,000 in Kenya in 2026, depending on pedigree, health testing, coat type and lineage. Puppies advertised below KSh 15,000 are usually unpapered, with no verifiable health records or pedigree — which is where most buyers get burned.",
       },
       {
         type: "table",
