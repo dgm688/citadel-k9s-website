@@ -7,6 +7,88 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "german-shepherd-puppy-checklist-kenya",
+    title: "German Shepherd Puppy Checklist: Everything You Need Before Bringing One Home",
+    metaTitle: "German Shepherd Puppy Checklist (Kenya)",
+    excerpt:
+      "Bringing home a German Shepherd puppy? Here's the complete checklist for Kenyan owners — what to buy, how to puppy-proof your home and compound, and the preparations that matter most before day one.",
+    category: "Puppy Care",
+    date: "2026-10-23",
+    readingTime: "7 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/young-sit-1.jpg",
+      alt: "A German Shepherd puppy ready to go to its new home in Kenya",
+      label: "Puppy Care",
+    },
+    body: [
+      {
+        type: "p",
+        text: "What do you need before bringing home a German Shepherd puppy? The essentials are a bed or crate, good-quality puppy food and two bowls, a collar, lead and ID tag, safe chew toys, basic grooming tools, cleaning supplies for the inevitable accidents, and a vet lined up. Just as important as the shopping, though, are the preparations money can't buy: puppy-proofing your home and compound, and knowing your puppy's feeding and vaccination schedule so you can carry it on without missing a step.",
+      },
+      {
+        type: "p",
+        text: "A little preparation turns a stressful first week into a joyful one. Here's the complete checklist, written for Kenyan homes.",
+      },
+      { type: "h2", text: "The essential shopping checklist" },
+      {
+        type: "p",
+        text: "You don't need to spend a fortune, but a few basics should be ready before your puppy arrives.",
+      },
+      {
+        type: "table",
+        headers: ["What to get", "Why it matters"],
+        rows: [
+          ["A crate and/or bed", "A safe, cosy den of its own — and a huge help with house-training and settling at night"],
+          ["Puppy food (the same brand the breeder uses, at first)", "Keeping the food the same for the first week prevents stomach upset; change gradually after"],
+          ["Two sturdy bowls (stainless steel)", "One for food, one for fresh water that's always available — important in the heat"],
+          ["Collar, lead and an ID tag", "A soft, adjustable collar for a growing pup, and a tag with your phone number"],
+          ["Safe chew toys", "German Shepherds are heavy chewers, especially while teething — good toys save your shoes and furniture"],
+          ["A grooming brush", "Regular brushing from the start gets your puppy used to it and manages the shedding"],
+          ["Enzyme cleaner and paper towels", "For house-training accidents — an enzyme cleaner removes the smell so the spot isn't reused"],
+          ["Poop bags and a scoop", "For walks and keeping the compound clean"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Your puppy's microchip, vaccination and deworming records, and EAKC paperwork aren't things you buy — a responsible breeder hands them over with the puppy.",
+      },
+      { type: "h2", text: "Puppy-proof your home and compound" },
+      {
+        type: "p",
+        text: "German Shepherd puppies are curious, fast and surprisingly good at escaping. Before your puppy arrives, walk through your home and yard with a puppy's eye: tuck away electrical cables, move chemicals, medicines and toxic plants out of reach, and clear away anything small enough to swallow. Outside, check the fence and gate for gaps a puppy could squeeze through or dig under — a secure compound protects your pup from traffic and from wandering off. Set aside one safe, easy-to-clean space where the puppy can settle at first.",
+      },
+      { type: "h2", text: "Line up a vet before day one" },
+      {
+        type: "p",
+        text: "Register with a local vet before the puppy comes home, and find out where the nearest emergency vet is — you don't want to be searching during a crisis. Your puppy will arrive having started its vaccinations and deworming; your job is to keep that schedule going on time. Our [puppy vaccination and deworming guide for Kenya](/blog/german-shepherd-puppy-vaccination-deworming-schedule-kenya) shows exactly what should happen when.",
+      },
+      { type: "h2", text: "Know the feeding plan" },
+      {
+        type: "p",
+        text: "Feed the same food the breeder was using for at least the first week, then transition to your chosen diet gradually over seven to ten days to protect your puppy's stomach. Feed measured meals on a routine — young puppies eat little and often. Our [German Shepherd feeding guide for Kenya](/blog/german-shepherd-feeding-guide-kenya) covers how much, how often, and the foods to never give.",
+      },
+      { type: "h2", text: "Plan the first day and week" },
+      {
+        type: "p",
+        text: "Keep the first day calm — a quiet arrival, a tour of its safe space, and plenty of rest. Resist the urge to invite everyone round at once; a new puppy is overwhelmed easily. Begin a gentle routine from day one, because routine is what makes a German Shepherd feel secure. Our guide to the [first 30 days with your puppy](/blog/first-30-days-with-your-puppy) lays out a week-by-week plan.",
+      },
+      { type: "h2", text: "What a good breeder sends home with your puppy" },
+      {
+        type: "p",
+        text: "Your checklist isn't only yours — a responsible breeder completes part of it for you. Every Citadel K9s puppy goes home with its EAKC registration paperwork, microchip details, veterinary health-check record, deworming and vaccination records, and clear feeding and settling-in guidance. If a breeder can't hand these over, treat it as a warning sign.",
+      },
+      {
+        type: "note",
+        text: "The most important thing on this list isn't on any shopping receipt: time and patience. A German Shepherd puppy needs company, gentle training and routine far more than it needs expensive gadgets. Get those right and the rest is easy.",
+      },
+      {
+        type: "p",
+        text: "Getting ready for a Citadel K9s puppy? See who's [available now](/available-puppies), meet [our dogs](/our-dogs), or [get in touch](/contact) and we'll help you prepare for the big day.",
+      },
+    ],
+  },
+  {
     slug: "common-german-shepherd-health-problems-kenya",
     title: "Common German Shepherd Health Problems: What Kenyan Owners Should Know",
     metaTitle: "Common German Shepherd Health Problems (Kenya)",
@@ -1982,7 +2064,7 @@ export const BLOG_POSTS: BlogPost[] = [
     body: [
       {
         type: "p",
-        text: "The first month at home is where habits — good and bad — take root. With a little structure, you can give your puppy the confidence and routine that produce a calm, well-adjusted adult dog.",
+        text: "The first month at home is where habits — good and bad — take root. With a little structure, you can give your puppy the confidence and routine that produce a calm, well-adjusted adult dog. Before day one, run through our [German Shepherd puppy checklist](/blog/german-shepherd-puppy-checklist-kenya) so everything's ready.",
       },
       { type: "h2", text: "Week one: safety and routine" },
       {
