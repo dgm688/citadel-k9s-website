@@ -7,6 +7,84 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "german-shepherd-vs-labrador-kenya",
+    title: "German Shepherd vs Labrador in Kenya: Which Is the Better Family Dog?",
+    metaTitle: "German Shepherd vs Labrador (Kenya Guide)",
+    excerpt:
+      "German Shepherd or Labrador? Both are among Kenya's most popular family dogs, but they suit very different homes. Here's an honest comparison of temperament, guarding, trainability and family life to help you choose.",
+    category: "Buyer's Guide",
+    date: "2026-10-23",
+    readingTime: "7 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/young-front.jpg",
+      alt: "A German Shepherd puppy — compared with the Labrador for Kenyan families",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "German Shepherd or Labrador? Both are among Kenya's most popular family dogs, but they suit different homes. The Labrador is friendly, easygoing and famously good with everyone — an outstanding family pet and a great first dog, but not a guard dog. The German Shepherd is just as devoted to its family but is also naturally protective, more readily trained for work, and needs more mental engagement. In short: if you want pure, friendly companionship, the Labrador; if you want a companion that also guards your home, the German Shepherd.",
+      },
+      {
+        type: "p",
+        text: "We breed German Shepherds, so weigh our view accordingly — but both are wonderful breeds, and the honest comparison below is meant to help you pick the right one for your family, whichever that turns out to be.",
+      },
+      { type: "h2", text: "The German Shepherd at a glance" },
+      {
+        type: "p",
+        text: "The German Shepherd is intelligent, loyal and highly trainable — devoted and gentle with its family, yet naturally alert and protective. It combines the roles of family companion and capable guardian in one dog, which is exactly why it's so popular in Kenya. In return it asks for training, exercise and genuine involvement in family life. For more on the breed's character, see our guide to [German Shepherd temperament](/blog/german-shepherd-temperament-kenya).",
+      },
+      { type: "h2", text: "The Labrador at a glance" },
+      {
+        type: "p",
+        text: "The Labrador Retriever is the quintessential friendly family dog — outgoing, eager to please, endlessly patient with children, and famously food-motivated (which makes training easy and overfeeding a real risk). It's one of the best first dogs there is. The flip side is that a Labrador is not a guard dog: it's far more likely to greet an intruder with a wagging tail than to deter one. Labradors are also energetic and heavy shedders, and they need plenty of exercise to stay happy and lean.",
+      },
+      { type: "h2", text: "Side by side" },
+      {
+        type: "table",
+        headers: ["Trait", "German Shepherd", "Labrador"],
+        rows: [
+          ["Temperament", "Loyal, alert, protective, devoted", "Friendly, outgoing, easygoing"],
+          ["Guarding instinct", "Strong — a natural deterrent", "Minimal — too friendly to guard"],
+          ["Trainability", "Very high (needs mental work)", "Very high (very food-motivated)"],
+          ["With children", "Excellent when well-raised", "Excellent — famously gentle"],
+          ["First-time owners", "Manageable with commitment", "One of the easiest breeds"],
+          ["Exercise needs", "High", "High"],
+          ["Grooming / shedding", "Sheds a lot; brush regularly", "Sheds a lot; brush regularly"],
+        ],
+      },
+      { type: "h2", text: "Which is better with children and families?" },
+      {
+        type: "p",
+        text: "Both are superb family dogs. The Labrador is the more universally easygoing — gentle and patient with almost anyone, which is why it's such a classic choice for busy family homes. The German Shepherd is every bit as devoted to its own family and wonderful with its children, with the added dimension of watching over them. As with any breed, both should come from good breeding and be properly socialised, and young children supervised; see [are German Shepherds good for Kenyan homes](/blog/are-german-shepherds-good-for-kenyan-homes).",
+      },
+      { type: "h2", text: "Which is the better guard dog?" },
+      {
+        type: "p",
+        text: "The German Shepherd, without question. It is one of the world's foremost protection breeds — alert, imposing and trainable as a guardian. A Labrador, for all its wonderful qualities, has little guarding instinct and is far more likely to welcome a stranger than to warn one off. If security is any part of why you want a dog, that difference is decisive. Our guides to [security and guard dogs in Kenya](/blog/security-dogs-for-sale-kenya) and the [best guard dogs in Kenya](/blog/best-guard-dogs-in-kenya) go deeper.",
+      },
+      { type: "h2", text: "Which is easier for a first-time owner?" },
+      {
+        type: "p",
+        text: "Generally the Labrador — its easygoing, people-pleasing nature is very forgiving of a first-time owner's mistakes. A German Shepherd is also trainable and rewarding, but its intelligence, drive and protective nature need a more committed owner who will invest in training and socialisation. Neither is a dog to leave alone in a yard; both want to be part of the family.",
+      },
+      { type: "h2", text: "Which suits Kenyan homes?" },
+      {
+        type: "p",
+        text: "Both can be excellent, and the honest deciding question is simple: do you want security as well as companionship? If you want a pure, friendly family pet and nothing more, the Labrador is hard to beat. If you want a dog that is a devoted family member and a genuine deterrent at the gate, the German Shepherd is the more complete answer for a Kenyan home — which is exactly what we breed for.",
+      },
+      {
+        type: "note",
+        text: "No breed is simply “better” — the right dog depends on what you need and the home you can give it. Whichever you choose, the fundamentals are identical: buy from a responsible breeder, insist on health-tested parents, and pick a well-socialised puppy with a stable temperament.",
+      },
+      {
+        type: "p",
+        text: "If a loyal companion that also guards your home sounds right, that's what we breed. See our [German Shepherd puppies in Kenya](/german-shepherd-puppies-kenya), or [get in touch](/contact) and we'll help you decide honestly — even if a Labrador turns out to be the better fit for you.",
+      },
+    ],
+  },
+  {
     slug: "german-shepherd-puppy-checklist-kenya",
     title: "German Shepherd Puppy Checklist: Everything You Need Before Bringing One Home",
     metaTitle: "German Shepherd Puppy Checklist (Kenya)",
