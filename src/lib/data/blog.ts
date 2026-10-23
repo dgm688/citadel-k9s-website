@@ -7,6 +7,139 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "common-german-shepherd-health-problems-kenya",
+    title: "Common German Shepherd Health Problems: What Kenyan Owners Should Know",
+    metaTitle: "Common German Shepherd Health Problems (Kenya)",
+    excerpt:
+      "What health problems are German Shepherds prone to? Here's an honest guide to the conditions the breed is most known for — hips, bloat, and more — why they happen, and how to lower the risk long before you bring a puppy home.",
+    category: "Health",
+    date: "2026-10-23",
+    readingTime: "8 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-portrait-2.jpg",
+      alt: "A healthy adult German Shepherd in Kenya",
+      label: "Health",
+    },
+    body: [
+      {
+        type: "p",
+        text: "What health problems are German Shepherds prone to? The conditions the breed is most associated with are hip and elbow dysplasia (joint problems), bloat (a sudden, life-threatening stomach emergency), degenerative myelopathy (a progressive spinal disease of older dogs), and a tendency towards skin, allergy and digestive sensitivities. Most are strongly influenced by genetics — which is exactly why buying from health-tested parents, and then keeping your dog lean and well-fed, does more to protect its health than anything else you can do.",
+      },
+      {
+        type: "p",
+        text: "This is general education, not veterinary advice — always see a licensed vet for diagnosis and treatment. But knowing what the breed is prone to helps you buy well, spot trouble early, and keep your German Shepherd healthy for a long life.",
+      },
+      { type: "h2", text: "Hip and elbow dysplasia" },
+      {
+        type: "p",
+        text: "This is the one the breed is best known for. Dysplasia is where a joint — the hip or elbow — develops loosely or imperfectly, so it wears over time and leads to arthritis, stiffness and pain. It is heavily influenced by genetics and by growth, which is why responsible breeders hip-score their dogs before breeding and why you should never over-exercise or overfeed a growing puppy. Our full guide to [hip dysplasia in German Shepherds](/blog/hip-dysplasia-in-german-shepherds-kenya) explains scoring and prevention in detail.",
+      },
+      { type: "h2", text: "Bloat (gastric dilatation-volvulus)" },
+      {
+        type: "p",
+        text: "Bloat is the most urgent item on this list. In deep-chested breeds like the German Shepherd, the stomach can fill with gas and then twist, cutting off its blood supply — and it can kill within hours. Warning signs include a swollen, hard abdomen, unproductive retching, drooling, restlessness and obvious distress. Bloat is a true emergency: get to a vet immediately. You can lower the risk by feeding two smaller meals a day rather than one large one, and avoiding hard exercise right before and after meals — our [feeding guide for Kenya](/blog/german-shepherd-feeding-guide-kenya) covers this.",
+      },
+      { type: "h2", text: "Degenerative myelopathy" },
+      {
+        type: "p",
+        text: "Degenerative myelopathy is a progressive disease of the spinal cord seen in older German Shepherds, causing gradual weakness and loss of coordination in the hind legs. It isn't painful, but it is progressive and has no cure, though good care keeps affected dogs comfortable. A genetic test exists, and responsible breeders increasingly screen for it. It's uncommon, and not a reason to worry about a young puppy — just something to be aware of in the breed.",
+      },
+      { type: "h2", text: "Skin, coat and allergy sensitivities" },
+      {
+        type: "p",
+        text: "German Shepherds can be prone to allergies and sensitive skin, which show up as itching, rashes or recurring hot spots. In Kenya, ticks and fleas make good parasite control especially important, and heat and humidity can aggravate skin issues. Regular grooming, a quality diet and staying on top of tick-and-flea prevention all help — see our [coat care guide for Kenya](/blog/german-shepherd-coat-care-kenya-ticks-heat-shedding).",
+      },
+      { type: "h2", text: "Digestive sensitivity and EPI" },
+      {
+        type: "p",
+        text: "The breed is known for sometimes-sensitive stomachs, so a consistent, good-quality diet and gradual food changes matter. German Shepherds are also the breed most associated with a specific condition called exocrine pancreatic insufficiency (EPI), where the pancreas doesn't produce enough digestive enzymes — the classic sign is a dog that loses weight despite eating well, with loose, pale stools. It's manageable once diagnosed, so see your vet if you notice those signs.",
+      },
+      { type: "h2", text: "How do you lower the risk of these health problems?" },
+      {
+        type: "p",
+        text: "Far more is in your control than most buyers realise. Start with a puppy from health-tested, hip-scored parents — this is the single biggest lever, and the main reason to buy from a responsible [registered breeder](/german-shepherd-breeder-kenya). Then keep your dog lean (obesity worsens almost everything), feed a complete quality diet, exercise appropriately without over-exercising a growing pup, stay current on vaccinations and parasite control, and see your vet for routine checks rather than only in a crisis. Our guide to [German Shepherd lifespan](/blog/german-shepherd-lifespan-kenya) covers healthy ageing in more depth.",
+      },
+      {
+        type: "note",
+        text: "This is general information, not veterinary advice — always consult a licensed vet for any health concern. And remember: the most powerful thing you can do for your dog's health happens before you ever collect it — choosing a puppy from healthy, health-tested parents.",
+      },
+      {
+        type: "p",
+        text: "At Citadel K9s we breed from hip-scored, EAKC-registered parents to give every puppy the soundest possible start. Read about our approach as a [German Shepherd breeder in Kenya](/german-shepherd-breeder-kenya), or see our [available puppies](/available-puppies).",
+      },
+    ],
+  },
+  {
+    slug: "german-shepherd-temperament-kenya",
+    title: "German Shepherd Temperament: What to Really Expect",
+    metaTitle: "German Shepherd Temperament (Kenya Guide)",
+    excerpt:
+      "What is a German Shepherd really like to live with? Here's an honest guide to the breed's temperament — loyal, protective, intelligent and active — what shapes it, and whether a German Shepherd is the right dog for you.",
+    category: "Buyer's Guide",
+    date: "2026-10-23",
+    readingTime: "7 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-handler.jpg",
+      alt: "A calm, confident German Shepherd with its owner in Kenya",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "What is a German Shepherd's temperament like? A well-bred German Shepherd is intelligent, loyal, confident and deeply devoted to its family — naturally protective and alert, yet stable and gentle with the people it loves. They are among the most trainable of all breeds and thrive on having a job and being part of the household. Temperament comes from breeding and early socialisation, so a stable, well-raised Shepherd is calm and trustworthy — never nervous, and never indiscriminately aggressive.",
+      },
+      {
+        type: "p",
+        text: "The German Shepherd's character is the real reason the breed is so loved — and also the reason it isn't for everyone. Here's an honest look at what to expect day to day, what shapes it, and how to decide if a Shepherd suits your home.",
+      },
+      { type: "h2", text: "Are German Shepherds loyal and affectionate?" },
+      {
+        type: "p",
+        text: "Famously so. German Shepherds bond deeply with their people and are devoted, affectionate family dogs — many are “velcro dogs” that want to be wherever you are. That loyalty is a joy, but it also means they do not do well left alone in a yard for long stretches; they want to be part of family life.",
+      },
+      { type: "h2", text: "Are German Shepherds protective?" },
+      {
+        type: "p",
+        text: "Yes — they are naturally alert and territorial, and their presence alone is a serious deterrent, which is why they are Kenya's favourite guard dog. But a good Shepherd is protective, not aggressive: it assesses a situation and responds appropriately, rather than reacting with fear or indiscriminate aggression. That stability is the mark of good breeding — our guides on [whether German Shepherds are aggressive](/blog/are-german-shepherds-aggressive-kenya) and on [security and guard dogs](/blog/security-dogs-for-sale-kenya) go deeper.",
+      },
+      { type: "h2", text: "Are German Shepherds good with children and families?" },
+      {
+        type: "p",
+        text: "A well-bred, well-socialised German Shepherd is an excellent family dog — patient and gentle with its own children and naturally watchful over them. As with any dog, young children should be supervised and taught to treat the dog with respect. Raised properly, Shepherds are among the most trustworthy family companions there are; see [are German Shepherds good for Kenyan homes](/blog/are-german-shepherds-good-for-kenyan-homes).",
+      },
+      { type: "h2", text: "How intelligent and trainable are German Shepherds?" },
+      {
+        type: "p",
+        text: "Exceptionally. The German Shepherd is consistently ranked among the most intelligent dog breeds, which is why police and military forces worldwide rely on them. That intelligence is a gift and a responsibility: they learn quickly, but they also need their minds worked, or they'll find their own (usually unwanted) jobs. Consistent, positive training from puppyhood is essential — see [how to train a German Shepherd puppy in Kenya](/blog/how-to-train-a-german-shepherd-puppy-kenya).",
+      },
+      { type: "h2", text: "Do German Shepherds need a lot of exercise and attention?" },
+      {
+        type: "p",
+        text: "Yes — this is the part people underestimate. German Shepherds are an active working breed that needs daily physical exercise and mental stimulation, plus genuine time with their family. A bored, under-exercised Shepherd becomes restless and destructive. If you want a low-energy, low-maintenance or aloof dog, this is not the breed. Our guide to [how much exercise a German Shepherd needs](/blog/german-shepherd-exercise-needs-kenya) sets realistic expectations.",
+      },
+      { type: "h2", text: "What shapes a German Shepherd's temperament?" },
+      {
+        type: "p",
+        text: "Three things, in order: breeding, early socialisation, and training. A puppy from stable, well-selected parents starts with the right foundation; thoughtful socialisation in the first weeks builds confidence; and consistent training shapes the adult. Colour and sex have almost nothing to do with it. This is why the breeder matters so much — see [how to choose an ethical German Shepherd breeder in Kenya](/blog/how-to-choose-an-ethical-german-shepherd-breeder-kenya).",
+      },
+      { type: "h2", text: "When is a German Shepherd NOT the right dog for you?" },
+      {
+        type: "p",
+        text: "Honestly, a German Shepherd is the wrong choice if you can't give it daily exercise, training and companionship, or if you want a dog that's content to be left alone most of the day. Their intelligence, energy and devotion are wonderful in the right home and overwhelming in the wrong one. The happiest Shepherds live with people who want an active, involved, trainable companion.",
+      },
+      {
+        type: "note",
+        text: "Temperament is made, not guaranteed by the breed name — it comes from good breeding and good raising. The surest way to judge the temperament your puppy will grow into is to meet its parents in person.",
+      },
+      {
+        type: "p",
+        text: "At Citadel K9s we breed for stable, confident, family-friendly temperament above all else. Come and meet our dogs and see it for yourself — view our [German Shepherd puppies in Kenya](/german-shepherd-puppies-kenya) or [get in touch](/contact).",
+      },
+    ],
+  },
+  {
     slug: "german-shepherd-colours-kenya",
     title: "German Shepherd Colours Explained: Every Coat Colour in the Breed",
     metaTitle: "German Shepherd Colours Explained (Kenya Guide)",
@@ -692,7 +825,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Common health issues to be aware of" },
       {
         type: "p",
-        text: "Like any breed, German Shepherds have conditions they're more prone to. The best known is hip and elbow dysplasia, which is why health testing of the parents matters so much. Bloat (a sudden, life-threatening twisting of the stomach) is a risk in deep-chested breeds — feeding two smaller meals rather than one large one, and avoiding hard exercise right around mealtimes, helps reduce it. Older Shepherds can also develop joint and mobility issues. This isn't a diagnostic list, and it's not a reason to worry — it's a reason to buy well, keep your dog lean, and see your vet routinely rather than only in a crisis.",
+        text: "Like any breed, German Shepherds have conditions they're more prone to. The best known is hip and elbow dysplasia, which is why health testing of the parents matters so much. Bloat (a sudden, life-threatening twisting of the stomach) is a risk in deep-chested breeds — feeding two smaller meals rather than one large one, and avoiding hard exercise right around mealtimes, helps reduce it. Older Shepherds can also develop joint and mobility issues. This isn't a diagnostic list, and it's not a reason to worry — it's a reason to buy well, keep your dog lean, and see your vet routinely rather than only in a crisis. Our guide to [common German Shepherd health problems](/blog/common-german-shepherd-health-problems-kenya) covers each condition in more detail.",
       },
       { type: "h2", text: "How to help your German Shepherd live longer" },
       {
@@ -2185,7 +2318,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Security and family life are not a trade-off" },
       {
         type: "p",
-        text: "Many Kenyan families want a dog that is gentle indoors and serious about the gate. A well-bred German Shepherd is exactly that: naturally watchful and territorial without being unstable. A sound one does not need to be made aggressive — and a dog made aggressive through mistreatment is a liability, not protection. Temperament comes from breeding and rearing, not from chaining a dog up. If security is your main reason for wanting a dog, our guide to [security and guard dogs in Kenya](/blog/security-dogs-for-sale-kenya) goes deeper into choosing one wisely.",
+        text: "Many Kenyan families want a dog that is gentle indoors and serious about the gate. A well-bred German Shepherd is exactly that: naturally watchful and territorial without being unstable. A sound one does not need to be made aggressive — and a dog made aggressive through mistreatment is a liability, not protection. Temperament comes from breeding and rearing, not from chaining a dog up. For a fuller picture of what the breed is like to live with, see our guide to [German Shepherd temperament](/blog/german-shepherd-temperament-kenya); and if security is your main reason for wanting a dog, our guide to [security and guard dogs in Kenya](/blog/security-dogs-for-sale-kenya) goes deeper into choosing one wisely.",
       },
       { type: "h2", text: "When a German Shepherd is NOT for you" },
       {
