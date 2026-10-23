@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { SITE, GOOGLE_SITE_VERIFICATION } from "@/lib/site";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
@@ -11,17 +11,28 @@ import { WhatsAppFab } from "@/components/layout/WhatsAppFab";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const display = Cormorant_Garamond({
-  subsets: ["latin"],
-  // 700 is unused (no font-bold anywhere); font-light headings fall back to
-  // 400, so 400/500/600 are the weights actually rendered. One fewer file.
-  weight: ["400", "500", "600"],
+// Fonts are SELF-HOSTED (next/font/local) rather than fetched from Google at
+// build time. next/font/google intermittently crashes the Vercel build when
+// Google's font API returns a malformed response; serving the woff2 files from
+// the repo removes that dependency entirely (and avoids an external fetch at runtime).
+const display = localFont({
+  src: [
+    { path: "./fonts/cormorant-garamond-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/cormorant-garamond-500.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/cormorant-garamond-600.woff2", weight: "600", style: "normal" },
+  ],
   variable: "--font-display",
   display: "swap",
 });
 
-const sans = Inter({
-  subsets: ["latin"],
+const sans = localFont({
+  src: [
+    { path: "./fonts/inter-300.woff2", weight: "300", style: "normal" },
+    { path: "./fonts/inter-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/inter-500.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/inter-600.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/inter-700.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-sans",
   display: "swap",
 });
