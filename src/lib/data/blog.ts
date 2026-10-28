@@ -7,6 +7,70 @@ import type { BlogPost } from "@/lib/types";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "eakc-registration-german-shepherd-kenya",
+    title: "How to Register a German Shepherd with the EAKC in Kenya",
+    metaTitle: "EAKC Dog Registration in Kenya (GSD Guide)",
+    excerpt:
+      "Wondering how to register a German Shepherd with the East African Kennel Club? In most cases the breeder has already done it. Here's what EAKC registration means, why it matters, and what to ask before you buy.",
+    category: "Buyer's Guide",
+    date: "2026-10-28",
+    readingTime: "6 min read",
+    author: "Citadel K9s",
+    cover: {
+      src: "/images/gallery/adult-portrait-3.jpg",
+      alt: "An EAKC-registered German Shepherd in Kenya",
+      label: "Buyer's Guide",
+    },
+    body: [
+      {
+        type: "p",
+        text: "How do you register a German Shepherd with the East African Kennel Club (EAKC)? In almost all cases, you don't have to — if you buy from a registered breeder, your puppy is already registered, and you simply receive its EAKC registration certificate and pedigree along with the puppy. The breeder registers the litter; the paperwork then passes to you as the new owner. Registering a dog that has no documented pedigree is far harder, which is exactly why buying from a registered breeder from the start matters so much.",
+      },
+      {
+        type: "p",
+        text: "Registration confuses a lot of Kenyan buyers, and dishonest sellers take advantage of that confusion. Here's a clear, honest explanation of what EAKC registration is, why it matters, and what to check before you hand over any money.",
+      },
+      { type: "h2", text: "What is the East African Kennel Club (EAKC)?" },
+      {
+        type: "p",
+        text: "The East African Kennel Club is the recognised body for pedigree dogs in the region. It maintains the register of pedigree dogs and breeders, records litters and lineage, and runs activities such as dog shows and the hip-scoring scheme used to assess breeding dogs. When a dog is “EAKC registered,” it means its parentage is documented and traceable through the club rather than simply being called “pure breed” with nothing to back it up.",
+      },
+      { type: "h2", text: "Why does EAKC registration matter?" },
+      {
+        type: "p",
+        text: "Registration gives you a documented, traceable pedigree — proof of what your dog actually is, rather than a seller's word. It's a baseline of accountability and the gateway to activities like showing and responsible breeding. It is not, on its own, a guarantee that a breeder is ethical or that a dog is healthy — you still need to check health testing and temperament — but it's an important starting point that backyard sellers cannot offer. Our guides on [finding a good dog breeder in Kenya](/blog/dog-breeders-in-kenya) and [choosing an ethical German Shepherd breeder](/blog/how-to-choose-an-ethical-german-shepherd-breeder-kenya) explain how registration fits into the bigger picture.",
+      },
+      { type: "h2", text: "How does a German Shepherd actually get registered?" },
+      {
+        type: "p",
+        text: "The work is done by the breeder, not the buyer. A registered breeder whose breeding dogs are themselves EAKC registered applies to register the litter with the club; each puppy is then issued its own registration and pedigree paperwork. When you collect your puppy, that paperwork is handed to you (sometimes the transfer of ownership into your name is completed shortly after). In short: if you buy from a properly registered breeder, your puppy arrives already registered and you don't have to do anything to make it so.",
+      },
+      { type: "h2", text: "What should you ask a breeder about registration?" },
+      {
+        type: "p",
+        text: "Keep it simple and direct. Ask: Are both parents EAKC registered — and can I see their papers? Will my puppy come with its own EAKC registration and pedigree? Can I see that paperwork before I pay? A genuine breeder answers these easily and shows you the documents. Be very wary of anyone who says “papers will follow later,” can't show the parents' registration, or treats the question as a nuisance — those are classic warning signs covered in our guide to [avoiding puppy scams in Kenya](/blog/avoid-puppy-scams-kenya).",
+      },
+      { type: "h2", text: "Can you register a dog that has no papers?" },
+      {
+        type: "p",
+        text: "It's much harder, and often not possible as a full pedigree. Without documented, registered parentage, a dog generally cannot simply be “registered” as a pedigree German Shepherd — pedigree registration depends on a traceable line. If you already own an unregistered dog and want to know your options, the right step is to contact the East African Kennel Club directly for their current procedures and fees. Be sceptical of any seller who promises that an undocumented puppy can be “easily registered” later; that's frequently part of a sales pitch rather than reality.",
+      },
+      { type: "h2", text: "How do you contact the EAKC?" },
+      {
+        type: "p",
+        text: "For official, up-to-date procedures, membership and fees, go straight to the East African Kennel Club itself rather than relying on a seller's version. Any reputable breeder will be able to point you to the club and show you their own membership and registration details — we're happy to.",
+      },
+      {
+        type: "note",
+        text: "One honest caveat: registration proves pedigree, not quality. It tells you what a dog is and where it comes from — not that it was bred responsibly or is healthy. Always pair “registered” with real health testing (hip scoring) and a stable temperament before you buy.",
+      },
+      {
+        type: "p",
+        text: "Citadel K9s breeds as an EAKC Associate Member (#2217); our dogs are EAKC registered, and every puppy leaves with its registration paperwork and pedigree. Read more about our approach as a [German Shepherd breeder in Kenya](/german-shepherd-breeder-kenya), meet [our dogs](/our-dogs), or see our [available puppies](/available-puppies).",
+      },
+    ],
+  },
+  {
     slug: "german-shepherd-vs-labrador-kenya",
     title: "German Shepherd vs Labrador in Kenya: Which Is the Better Family Dog?",
     metaTitle: "German Shepherd vs Labrador (Kenya Guide)",
